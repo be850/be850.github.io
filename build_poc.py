@@ -262,6 +262,9 @@ CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
  '.dir a{color:var(--text)}.dir .todo{color:var(--todo)}'
  '.dir a.done{font-weight:700;color:var(--accent)}'
  'article ul{margin:14px 0;padding-left:24px}article li{margin:5px 0}'
+ '.short-toggle{margin:14px 0 0}'
+ '.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--accent);cursor:pointer}'
+ '.video-short{width:min(100%,270px);aspect-ratio:9/16;margin:14px auto 0}'
  '#theme-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;'
  'width:30px;height:30px;padding:0;border:1px solid var(--border);border-radius:50%;'
  'background:var(--card);color:var(--muted);cursor:pointer}'
@@ -384,6 +387,38 @@ def ad_unit(slot):
             f'data-ad-slot="{slot}" data-ad-format="auto" data-full-width-responsive="true"></ins>\n'
             f'<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>')
 
+def iframe_html(vid, title):
+    """Lazy YouTube iframe; title is escaped (Studio titles carry quotes)."""
+    return (f'<iframe src="https://www.youtube.com/embed/{vid}" title="{html.escape(title)}" '
+            f'loading="lazy" allowfullscreen style="width:100%;height:100%;border:0;'
+            f'border-radius:10px"></iframe>')
+
+def video_block_for(w, m):
+    """Dual video (2026-11-01, per kraser's 'дуально и шортс и полное'):
+    full lesson 16:9 as the primary embed + the Short as a collapsed <details>
+    — user picks 'quick or detailed' WITHOUT a second article (one chapter =
+    one word = one URL stays intact; two articles would fork the spiral and
+    halve every page's ranking signals). Short ALONE -> vertical primary embed.
+    A closed <details> hides the iframe from layout, so its loading=lazy never
+    fires until the reader opens it — zero cost for those who skip it."""
+    vid = (m.get('video') or '').strip()
+    sid = (m.get('short') or '').strip()
+    out = ''
+    if vid:
+        out += ('<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'
+                + iframe_html(vid, f'{w} — Basic English lesson') + '</div>'
+                f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
+                f'Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
+    st = (m.get('short_title') or '').strip() or f'{w} in 60 seconds'
+    if sid and vid:
+        out += (f'<details class="short-toggle"><summary>In a hurry? Watch the Short — {html.escape(st)}</summary>'
+                f'<div class="video-short">' + iframe_html(sid, f'{w} — Short') + '</div></details>')
+    elif sid:
+        out += ('<div class="video-short">' + iframe_html(sid, f'{w} — Short') + '</div>'
+                f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
+                f'The Short version: <strong>{w}</strong> in under a minute.</p>')
+    return out or f'<!-- VIDEO SLOT: embed BasicEnglish40 video for "{w}" here (ID from channel library) -->'
+
 # Clean build (2026-11-01): wipe the output dir first. Pre-mortem: a stale
 # artifact from an older config (e.g. ads.txt after the AdSense id was removed,
 # or a chapter page that no longer exists) must never leak into a deploy.
@@ -472,6 +507,22 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif vid and not vdate:
         WARNINGS.append(f'ch{num}: VideoObject skipped — need video_date from Studio (title/duration known: {vt!r} {vdur!r})')
+    # Short (dual video): its own VideoObject on the SAME page — Google accepts
+    # several video objects per URL; both formats become eligible for video
+    # results without any second article.
+    sid = (m.get('short') or '').strip()
+    st = (m.get('short_title') or '').strip()
+    sdur = (m.get('short_duration') or '').strip()
+    sdate = (m.get('short_date') or '').strip()
+    if sid and st and sdur and sdate:
+        jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
+          "name":st, "description":f"60-second Short lesson for the word \"{w}\" (word {num} of 850).",
+          "thumbnailUrl":[f"https://i.ytimg.com/vi/{sid}/hqdefault.jpg"],
+          "uploadDate":sdate, "duration":sdur,
+          "embedUrl":f"https://www.youtube.com/embed/{sid}",
+          "publisher":{"@type":"Person","name":"BasicEnglish40"}})
+    elif sid and not sdate:
+        WARNINGS.append(f'ch{num}: Short VideoObject skipped — need short_date from Studio (title/duration known: {st!r} {sdur!r})')
     prev_next = ''
     if num > 1 and (num - 1) in CHAPTERS:
         prev_next += (f'<p><a href="{chap_path(num-1)}">&larr; Previous word: '
@@ -482,14 +533,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     else:
         prev_next += (f'<p style="font:15px/1.6 Arial,sans-serif;color:var(--muted)">'
                       f'Chapter {num+1} &mdash; word {num+1} of 850 &mdash; comes next.</p>')
-    vid = (m.get('video') or '').strip()
-    if vid:
-        video_block = (f'<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'
-                       f'<iframe src="https://www.youtube.com/embed/{vid}" title="{w} — Basic English lesson" '
-                       f'loading="lazy" allowfullscreen style="width:100%;height:100%;border:0;border-radius:10px"></iframe></div>'
-                       f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
-    else:
-        video_block = f'<!-- VIDEO SLOT: embed BasicEnglish40 video for "{w}" here (ID from channel library) -->'
+    video_block = video_block_for(w, m)
     ad_a = ad_unit(ADS_SLOT_A) or '<!-- AD SLOT A: reserved (config.json -> adsense.client) -->'
     ad_b = ad_unit(ADS_SLOT_B) or '<!-- AD SLOT B: reserved (config.json -> adsense.client) -->'
     content = f'''
