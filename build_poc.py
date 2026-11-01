@@ -134,7 +134,7 @@ def linkify_story(text, num):
         if base and base in targets and base not in used and len(used) < MAX_STORY_LINKS:
             used.add(base)
             out.append(text[last:mo.start()] +
-                       f'<a href="/chapter/{targets[base]}/">{tok}</a>')
+                       f'<a href="{chap_path(targets[base])}">{tok}</a>')
             last = mo.end()
     out.append(text[last:])
     return ''.join(out)
@@ -166,6 +166,40 @@ for f in sorted(os.listdir(os.path.join(BASE, 'chapters'))):
     if f.endswith('.md'):
         m = parse_md(os.path.join(BASE, 'chapters', f))
         CHAPTERS[int(m['number'])] = m
+
+# Pretty URLs (2026-11-01): a chapter's canonical path IS its word — /go/,
+# /come/, /get/ … The word is unique forever (spiral: one word per chapter),
+# carries the exact keyword in the URL and reads like the project feels.
+# The manifesto + word directory lives at /words/. Chapter numbers survive in
+# titles, breadcrumbs and JSON-LD names. Old /chapter/N/ URLs are gone by
+# design — the site is 1 day old, nothing indexed yet, zero redirect debt.
+# NB: 'about' and 'page' are REAL Ogden words -> they will become chapter
+# slugs some day, so they must stay OUTSIDE the reserved list.
+RESERVED_SLUGS = {'words', 'chapter', 'assets', 'static', 'feed', 'search',
+                  'contact', 'privacy', 'terms', 'tag', 'author', 'admin',
+                  'api', 'blog', 'post', 'login', 'signup'}
+
+def chap_path(n):
+    """Canonical site path of chapter n: /<word>/ for chapters, /words/ for 0."""
+    m = CHAPTERS.get(n) or {}
+    if n == 0 or m.get('type') != 'chapter':
+        return '/words/' if n == 0 else f'/chapter/{n}/'
+    w = (m.get('word') or '').strip().lower()
+    if not re.fullmatch(r'[a-z][a-z0-9-]*', w):
+        print(f'BUILD ABORT: chapter {n}: word {w!r} is not a safe URL slug'); sys.exit(1)
+    if w in RESERVED_SLUGS:
+        print(f'BUILD ABORT: chapter {n}: slug {w!r} collides with a reserved path'); sys.exit(1)
+    return f'/{w}/'
+
+# Slug uniqueness is structural (spiral) — but data bugs must abort loudly.
+_slug_seen = {}
+for _n, _m in sorted(CHAPTERS.items()):
+    if _m.get('type') == 'chapter':
+        _w = (_m.get('word') or '').strip().lower()
+        if _w in _slug_seen:
+            print(f'BUILD ABORT: word {_w!r} used by chapters {_slug_seen[_w]} and {_n} — slugs must be unique'); sys.exit(1)
+        _slug_seen[_w] = _n
+del _slug_seen
 
 # ---------- validate all ----------
 print('== SPIRAL VALIDATOR ==')
@@ -222,7 +256,7 @@ def dir_html():
         if w in seen: continue
         seen.add(w)
         if i in published:
-            out.append(f'<a class="done" href="/chapter/{i}/">{i}. {w}</a>')
+            out.append(f'<a class="done" href="{chap_path(i)}">{i}. {w}</a>')
         else:
             out.append(f'<span class="todo">{i}. {w}</span>')
     return '<div class="dir">' + '<br>'.join(out) + '</div>'
@@ -256,7 +290,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 {content}
 <footer>
 <p>Book850 &mdash; a novel that teaches itself English, one word per chapter, 850 words total.</p>
-<p><a href="/chapter/0/">Start here</a> &middot; <a href="/chapter/1/">Chapter 1</a> &middot; The Basic English 850-word system</p>
+<p><a href="/words/">Start here</a> &middot; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">Chapter 1</a> &middot; The Basic English 850-word system</p>
 </footer>
 </main>
 {extra}
@@ -279,7 +313,7 @@ def ad_unit(slot):
 # site/ is pure build output and gitignored — safe to drop.
 if os.path.isdir(SITE):
     shutil.rmtree(SITE)
-os.makedirs(os.path.join(SITE, 'chapter'), exist_ok=True)
+os.makedirs(SITE, exist_ok=True)
 
 # ---------- chapter 0 (manifesto + directory) ----------
 m0 = CHAPTERS[0]
@@ -294,21 +328,20 @@ ch0_ld = ld({"@context":"https://schema.org","@type":"Book","name":"Book850",
  "description":"A novel that teaches itself English: chapter N introduces word N of Ogden's Basic English 850 and uses only words 1..N.",
  "inLanguage":"en","numberOfPages":850,"author":{"@type":"Person","name":AUTHOR},
  "publisher":{"@type":"Person","name":AUTHOR},"image":f"{DOMAIN}/og.png",
- "url":f"{DOMAIN}/chapter/0/"}) + ld({"@context":"https://schema.org","@type":"BreadcrumbList",
+ "url":f"{DOMAIN}/words/"}) + ld({"@context":"https://schema.org","@type":"BreadcrumbList",
  "itemListElement":[{"@type":"ListItem","position":1,"name":"Book850","item":f"{DOMAIN}/"}]})
 _pub0 = sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter')
 ch0_ld += ld({"@context":"https://schema.org","@type":"ItemList","name":"Book850 chapters",
  "numberOfItems":len(_pub0), "itemListElement":[
    {"@type":"ListItem","position":i+1,"name":f"Chapter {n}: {CHAPTERS[n]['word']}",
-    "url":f"{DOMAIN}/chapter/{n}/"} for i, n in enumerate(_pub0)]})
-open(os.path.join(SITE,'chapter','0').replace('/chapter/0','') and os.path.join(SITE,'chapter','0','index.html') if os.path.isdir(os.path.join(SITE,'chapter','0')) else os.path.join(SITE,'chapter','0','index.html'),'w',encoding='utf-8') if False else None
-os.makedirs(os.path.join(SITE,'chapter','0'), exist_ok=True)
-open(os.path.join(SITE,'chapter','0','index.html'),'w',encoding='utf-8').write(
+    "url":f"{DOMAIN}{chap_path(n)}"} for i, n in enumerate(_pub0)]})
+os.makedirs(os.path.join(SITE,'words'), exist_ok=True)
+open(os.path.join(SITE,'words','index.html'),'w',encoding='utf-8').write(
     page('Book850 — The Book That Teaches Itself',
          'A novel that teaches English with Ogden\'s 850 words. Chapter N introduces word N. Start with one word.',
-         f'{DOMAIN}/chapter/0/', '<a href="/">Book850</a> &rsaquo; Chapter 0',
+         f'{DOMAIN}/words/', '<a href="/">Book850</a> &rsaquo; Words',
          ch0_ld, ch0_content))
-print('wrote chapter/0/')
+print('wrote words/')
 
 # ---------- chapters 1..N ----------
 # FAQ now lives in each chapter's frontmatter (faq-q/faq-a lines);
@@ -344,9 +377,9 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
       "author":{"@type":"Person","name":AUTHOR},
       "publisher":{"@type":"Person","name":AUTHOR},
       "datePublished":pub, "dateModified":TODAY,
-      "mainEntityOfPage":f"{DOMAIN}/chapter/{num}/",
+      "mainEntityOfPage":f"{DOMAIN}{chap_path(num)}",
       "inLanguage":"en",
-      "isPartOf":{"@type":"Book","name":"Book850","url":f"{DOMAIN}/chapter/0/"}})
+      "isPartOf":{"@type":"Book","name":"Book850","url":f"{DOMAIN}/words/"}})
     jsonld = crumb_ld + faq_ld + card_ld + art_ld
     # VideoObject only with REAL Studio data (pre-mortem: no fake dates)
     vt = (m.get('video_title') or '').strip()
@@ -364,10 +397,10 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
         WARNINGS.append(f'ch{num}: VideoObject skipped — need video_date from Studio (title/duration known: {vt!r} {vdur!r})')
     prev_next = ''
     if num > 1 and (num - 1) in CHAPTERS:
-        prev_next += (f'<p><a href="/chapter/{num-1}/">&larr; Previous word: '
+        prev_next += (f'<p><a href="{chap_path(num-1)}">&larr; Previous word: '
                       f'{CHAPTERS[num-1]["word"]} (Chapter {num-1})</a></p>')
     if (num + 1) in CHAPTERS and CHAPTERS[num+1].get('type') == 'chapter':
-        prev_next += (f'<p><a href="/chapter/{num+1}/">Next word: '
+        prev_next += (f'<p><a href="{chap_path(num+1)}">Next word: '
                       f'{CHAPTERS[num+1]["word"]} (Chapter {num+1}) &rarr;</a></p>')
     else:
         prev_next += (f'<p style="font:15px/1.6 Arial,sans-serif;color:#5b6b7c">'
@@ -404,13 +437,13 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
 <h2>Continue</h2>
 {prev_next}
 </article>'''
-    d = os.path.join(SITE,'chapter',str(num)); os.makedirs(d, exist_ok=True)
+    d = os.path.join(SITE, chap_path(num).strip('/')); os.makedirs(d, exist_ok=True)
     open(os.path.join(d,'index.html'),'w',encoding='utf-8').write(
         page(f'{w} — Chapter {num} of 850 | Book850',
              f'Chapter {num} of Book850 introduces the word "{w}" — word {num} of Ogden\'s Basic English 850. The story uses only words 1–{num}.',
-             f'{DOMAIN}/chapter/{num}/', f'<a href="/chapter/0/">Book850</a> &rsaquo; Chapter {num}',
+             f'{DOMAIN}{chap_path(num)}', f'<a href="/words/">Book850</a> &rsaquo; Chapter {num}',
              jsonld, content))
-    print(f'wrote chapter/{num}/ ({w})')
+    print(f'wrote {chap_path(num)} ({w})')
 
 # ---------- root cover ----------
 cover = page('Book850 — The Book That Teaches Itself',
@@ -420,13 +453,13 @@ cover = page('Book850 — The Book That Teaches Itself',
      "description":"A novel that teaches itself English: 850 chapters, one new Ogden word per chapter.",
      "inLanguage":"en","image":f"{DOMAIN}/og.png",
      "publisher":{"@type":"Person","name":AUTHOR}}),
- '''<article>
+ f'''<article>
 <div class="progress">850 words &middot; 850 chapters &middot; one story</div>
 <h1>The book begins with one word.</h1>
 <p style="font-size:19px">A novel that teaches you English as you read it:
 chapter N gives you word N and uses only the words you already know.
 By the last page you own all 850 words of Basic English &mdash; and the hero remembers who he is.</p>
-<p><a href="/chapter/0/" style="font:700 18px Arial">Open Chapter 0 &rarr;</a> &nbsp; <a href="/chapter/1/">or jump straight into Chapter 1: Come</a></p>
+<p><a href="{chap_path(0)}" style="font:700 18px Arial">Open Chapter 0 &rarr;</a> &nbsp; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">or jump straight into Chapter 1: Come</a></p>
 </article>''')
 open(os.path.join(SITE,'index.html'),'w',encoding='utf-8').write(cover)
 print('wrote root cover')
@@ -480,13 +513,13 @@ open(os.path.join(SITE, '404.html'), 'w', encoding='utf-8').write(
 <h1>404 &mdash; this page has not been written yet.</h1>
 <p>Book850 grows one word at a time. The page you asked for may belong to a
 chapter that is not published yet &mdash; or to a word that has not learned to speak.</p>
-<p><a href="/">Go to the cover</a> &middot; <a href="/chapter/0/">Open the word directory</a></p>
+<p><a href="/">Go to the cover</a> &middot; <a href="/words/">Open the word directory</a></p>
 </article>'''))
 print('wrote 404.html')
 
 chap_nums = sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter')
-urls = [(f'{DOMAIN}/', 'daily'), (f'{DOMAIN}/chapter/0/', 'weekly')] + \
-       [(f'{DOMAIN}/chapter/{n}/', 'weekly') for n in chap_nums]
+urls = [(f'{DOMAIN}/', 'daily'), (f'{DOMAIN}/words/', 'weekly')] + \
+       [(f'{DOMAIN}{chap_path(n)}', 'weekly') for n in chap_nums]
 open(os.path.join(SITE,'sitemap.xml'),'w',encoding='utf-8').write(
  '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
  '\n'.join(f'  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><changefreq>{f}</changefreq></url>' for u, f in urls) +
@@ -497,8 +530,8 @@ open(os.path.join(SITE,'rss.xml'),'w',encoding='utf-8').write(
  f'<link>{DOMAIN}/</link><description>A novel that teaches English with Ogden\'s 850 words: chapter N introduces word N.</description>\n'
  f'<lastBuildDate>{NOW_RFC}</lastBuildDate>\n' +
  '\n'.join(f'<item><title>Chapter {n}: {CHAPTERS[n]["word"]}</title>'
-          f'<link>{DOMAIN}/chapter/{n}/</link>'
-          f'<guid isPermaLink="true">{DOMAIN}/chapter/{n}/</guid>'
+          f'<link>{DOMAIN}{chap_path(n)}</link>'
+          f'<guid isPermaLink="true">{DOMAIN}{chap_path(n)}</guid>'
           f'<description>Chapter {n} of Book850 introduces the word "{CHAPTERS[n]["word"]}" — word {n} of Ogden\'s Basic English 850.</description>'
           f'<pubDate>{rfc_date((CHAPTERS[n].get("published") or TODAY).strip())}</pubDate></item>' for n in reversed(chap_nums)) +
  '\n</channel></rss>\n')
@@ -530,6 +563,8 @@ Owner: KraSer (Latvia)
 ## For AI crawlers
 Static HTML, no JS required. Each chapter page carries an extractable
 "word of today" block and FAQ. Prefer citing the word-card block.
+Chapter URLs are the word itself (/go/, /come/, ...); the full word
+directory with every published chapter: /words/
 ''')
 print('wrote sitemap/robots/llms')
 

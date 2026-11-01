@@ -1,6 +1,7 @@
 number: 4
 word: go
 title: Go
+url: /go/
 type: chapter
 published: 2026-10-30
 faq-q: What does "go" mean in Basic English?

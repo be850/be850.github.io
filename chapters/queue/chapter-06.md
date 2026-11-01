@@ -1,6 +1,7 @@
 number: 6
 word: let
 title: Let
+url: /let/
 type: chapter
 faq-q: What does "let" mean in Basic English?
 faq-a: To let means to allow — to give permission for something to happen. It works in a special pattern, let + person + action: let me go, let it come. It is word 6 of the 850.

@@ -1,7 +1,7 @@
 number: 3
 word: give
 title: Give
-url: /chapter/3/
+url: /give/
 type: chapter
 published: 2026-10-30
 video: t-heLXSjRFA

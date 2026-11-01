@@ -1,7 +1,7 @@
 number: 1
 word: come
 title: Come
-url: /chapter/1/
+url: /come/
 type: chapter
 published: 2026-10-30
 video: oT87tLGQDl0

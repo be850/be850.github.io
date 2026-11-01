@@ -1,6 +1,7 @@
 number: 9
 word: seem
 title: Seem
+url: /seem/
 type: chapter
 faq-q: What does "seem" mean in Basic English?
 faq-a: To seem means to appear to be, to look like — without saying what really is. It is word 9 of the 850, and the story uses it to make the whole world uncertain.

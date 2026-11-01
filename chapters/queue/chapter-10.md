@@ -1,6 +1,7 @@
 number: 10
 word: take
 title: Take
+url: /take/
 type: chapter
 faq-q: What does "take" mean in Basic English?
 faq-a: To take means to get a thing into your hands or to remove it from where it was. It is word 10 of the 850 and the first verb of loss in the book.

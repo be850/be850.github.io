@@ -1,7 +1,7 @@
 number: 2
 word: get
 title: Get
-url: /chapter/2/
+url: /get/
 type: chapter
 published: 2026-10-30
 video: hfFk90mRnho

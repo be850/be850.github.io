@@ -1,6 +1,7 @@
 number: 8
 word: put
 title: Put
+url: /put/
 type: chapter
 faq-q: What does "put" mean in Basic English?
 faq-a: To put means to move a thing to a place and leave it there. It is word 8 of the 850 — and the only verb of the first ten that is about position, not action.

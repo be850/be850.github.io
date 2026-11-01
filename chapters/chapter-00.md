@@ -1,7 +1,7 @@
 number: 0
 word: —
 title: The Book That Teaches Itself
-url: /chapter/0/
+url: /words/
 type: manifesto
 ---
 ## The promise

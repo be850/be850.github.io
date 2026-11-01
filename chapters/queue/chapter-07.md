@@ -1,6 +1,7 @@
 number: 7
 word: make
 title: Make
+url: /make/
 type: chapter
 faq-q: What does "make" mean in Basic English?
 faq-a: To make means to create or to cause: make a thing, make it go, make me happy. It is word 7 of the 850 and one of the most productive verbs in everyday English.

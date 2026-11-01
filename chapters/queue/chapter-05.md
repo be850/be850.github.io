@@ -1,6 +1,7 @@
 number: 5
 word: keep
 title: Keep
+url: /keep/
 type: chapter
 faq-q: What does "keep" mean in Basic English?
 faq-a: To keep means to continue to have or to hold a thing: not give it, not lose it — hold it. It is word 5 of the 850 and the first verb of possession in the book.
