@@ -494,6 +494,18 @@ print('wrote words/')
 # short_date from the 2026-11-01 channel scrape); a video without a date gets
 # NO markup (pre-mortem: never fabricate uploadDate) — only a build warning.
 
+def iso_dt(d):
+    """'YYYY-MM-DD' -> full ISO-8601 datetime with explicit UTC offset.
+    GSC's rich-result validator flags date-only uploadDate with two warnings
+    ('invalid date/time value', 'no timezone specified') — full datetime
+    clears both. Datetime-shaped or empty input passes through unchanged;
+    the midnight-UTC boundary is the honest reading of a date scraped
+    without time-of-day."""
+    d = (d or '').strip()
+    if d and re.match(r'^\d{4}-\d{2}-\d{2}$', d):
+        return f'{d}T00:00:00+00:00'
+    return d
+
 for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     m = CHAPTERS[num]
     w = m['word']; cat = CATS[num-1]
@@ -536,7 +548,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
         jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
           "name":vt, "description":f"Full Basic English video lesson for the word \"{w}\" (word {num} of 850): meaning, grammar patterns and spoken examples.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"],
-          "uploadDate":vdate, "duration":vdur,
+          "uploadDate":iso_dt(vdate), "duration":vdur,
           "embedUrl":f"https://www.youtube.com/embed/{vid}",
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif vid and not vdate:
@@ -552,7 +564,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
         jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
           "name":st, "description":f"Quick vertical video lesson for the word \"{w}\" (word {num} of 850): the key rule in about a minute.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{sid}/hqdefault.jpg"],
-          "uploadDate":sdate, "duration":sdur,
+          "uploadDate":iso_dt(sdate), "duration":sdur,
           "embedUrl":f"https://www.youtube.com/embed/{sid}",
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif sid and not sdate:
@@ -623,14 +635,14 @@ cover = page('Book850 — The Book That Teaches Itself',
      "name":TITLE_VIDEO['video_title'],
      "description":"The whole Book850 method in one video: how 850 Basic English words cover almost everything you need to say.",
      "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_VIDEO['video']}/hqdefault.jpg"],
-     "uploadDate":TITLE_VIDEO['video_date'], "duration":TITLE_VIDEO['video_duration'],
+     "uploadDate":iso_dt(TITLE_VIDEO['video_date']), "duration":TITLE_VIDEO['video_duration'],
      "embedUrl":f"https://www.youtube.com/embed/{TITLE_VIDEO['video']}",
      "publisher":{"@type":"Person","name":"BasicEnglish40"}})
  + ld({"@context":"https://schema.org","@type":"VideoObject",
      "name":TITLE_SHORT['short_title'],
      "description":"Quick vertical intro to Book850: fluent English from 850 words — the Word Builder secret in about a minute.",
      "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_SHORT['short']}/hqdefault.jpg"],
-     "uploadDate":TITLE_SHORT['short_date'], "duration":TITLE_SHORT['short_duration'],
+     "uploadDate":iso_dt(TITLE_SHORT['short_date']), "duration":TITLE_SHORT['short_duration'],
      "embedUrl":f"https://www.youtube.com/embed/{TITLE_SHORT['short']}",
      "publisher":{"@type":"Person","name":"BasicEnglish40"}}),
  f'''<article>
