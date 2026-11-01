@@ -3,6 +3,7 @@ word: keep
 title: Keep
 url: /keep/
 type: chapter
+published: 2026-11-01
 video_date: 2026-01-18
 video_duration: PT5M34S
 video_title: The Fortress Word: Why "KEEP" is One of the Most Important Words in English
