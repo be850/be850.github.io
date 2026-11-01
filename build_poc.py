@@ -601,13 +601,38 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     print(f'wrote {chap_path(num)} ({w})')
 
 # ---------- root cover ----------
+# Title videos (kraser, 2026-11-01): two channel videos ABOUT the method itself
+# (not tied to one word) -> they live on the cover. Metadata scraped for real:
+# dates from rendered dateText (watch page / search), full duration from the
+# search-badge render (6:21), short duration from /shorts page leak
+# (lengthSeconds 64). Same pre-mortem as chapter videos: no real date -> no markup.
+TITLE_VIDEO = dict(video='xNnrVmNyRxw',
+                   video_title='Speak English with Only 850 Words! (The Simple Guide)',
+                   video_duration='PT6M21S', video_date='2026-01-14')
+TITLE_SHORT = dict(short='xTIzWfP28-g',
+                   short_title='How to Speak Fluent English with ONLY 850 Words! 🤯 (The Word Builder Secret)',
+                   short_duration='PT1M04S', short_date='2026-08-24')
 cover = page('Book850 — The Book That Teaches Itself',
  'The book begins with one word. 850 chapters. 850 words. One story. Basic English by Ogden.',
  f'{DOMAIN}/', 'Book850',
  ld({"@context":"https://schema.org","@type":"WebSite","name":"Book850","url":DOMAIN,
      "description":"A novel that teaches itself English: 850 chapters, one new Ogden word per chapter.",
      "inLanguage":"en","image":f"{DOMAIN}/og.png",
-     "publisher":{"@type":"Person","name":AUTHOR}}),
+     "publisher":{"@type":"Person","name":AUTHOR}})
+ + ld({"@context":"https://schema.org","@type":"VideoObject",
+     "name":TITLE_VIDEO['video_title'],
+     "description":"The whole Book850 method in one video: how 850 Basic English words cover almost everything you need to say.",
+     "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_VIDEO['video']}/hqdefault.jpg"],
+     "uploadDate":TITLE_VIDEO['video_date'], "duration":TITLE_VIDEO['video_duration'],
+     "embedUrl":f"https://www.youtube.com/embed/{TITLE_VIDEO['video']}",
+     "publisher":{"@type":"Person","name":"BasicEnglish40"}})
+ + ld({"@context":"https://schema.org","@type":"VideoObject",
+     "name":TITLE_SHORT['short_title'],
+     "description":"Quick vertical intro to Book850: fluent English from 850 words — the Word Builder secret in about a minute.",
+     "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_SHORT['short']}/hqdefault.jpg"],
+     "uploadDate":TITLE_SHORT['short_date'], "duration":TITLE_SHORT['short_duration'],
+     "embedUrl":f"https://www.youtube.com/embed/{TITLE_SHORT['short']}",
+     "publisher":{"@type":"Person","name":"BasicEnglish40"}}),
  f'''<article>
 <div class="progress">850 words &middot; 850 chapters &middot; one story</div>
 <h1>The book begins with one word.</h1>
@@ -615,6 +640,10 @@ cover = page('Book850 — The Book That Teaches Itself',
 chapter N gives you word N and uses only the words you already know.
 By the last page you own all 850 words of Basic English &mdash; and the hero remembers who he is.</p>
 <p><a href="{chap_path(0)}" style="font:700 18px Arial">Open Chapter 0 &rarr;</a> &nbsp; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">or jump straight into Chapter 1: Come</a></p>
+<h2>The idea, in six minutes</h2>
+<p>The whole method on one video: how 850 simple words cover almost everything you ever need to say &mdash; and how this book feeds them to you one chapter at a time. In a hurry? There is a quick vertical version too.</p>
+<div class="video" style="margin:16px 0 8px;aspect-ratio:16/9;width:100%">{iframe_html(TITLE_VIDEO['video'], 'Book850 &mdash; the method in 850 words')}</div>
+<details class="short-toggle"><summary>In a hurry? Watch the quick version &mdash; {html.escape(TITLE_SHORT['short_title'])}</summary><div class="video-short vertical">{iframe_html(TITLE_SHORT['short'], 'Book850 &mdash; quick intro')}</div></details>
 </article>''')
 open(os.path.join(SITE,'index.html'),'w',encoding='utf-8').write(cover)
 print('wrote root cover')
