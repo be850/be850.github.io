@@ -3,6 +3,10 @@ word: take
 title: Take
 url: /take/
 type: chapter
+video_date: 2026-01-19
+video_duration: PT5M24S
+video_title: The Most Flexible Word in English? Why You Need to Master "TAKE" (Basic English)
+video: T8m148FKJgE
 short: p8Xc7teJJww
 short_title: The Secret "Action Engine" of the English Verb "TAKE" 🚶‍♂️ (Grammar Hack Explained)
 short_duration: PT0M57S

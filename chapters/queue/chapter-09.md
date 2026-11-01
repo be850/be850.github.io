@@ -3,9 +3,13 @@ word: seem
 title: Seem
 url: /seem/
 type: chapter
+video_date: 2026-01-19
+video_duration: PT5M00S
+video_title: The Bridge to Your Brain: Why You Need the Word "SEEM" (Basic English)
+video: n6-9wVsObKM
 short: ErJmiysC3N0
 short_title: How English Speakers Make Smart Guesses! 🕵️ (The Secret of the Verb "SEEM")
-short_duration: PT1M5S
+short_duration: PT1M05S
 short_date: 2026-08-24
 faq-q: What does "seem" mean in Basic English?
 faq-a: To seem means to appear to be, to look like — without saying what really is. It is word 9 of the 850, and the story uses it to make the whole world uncertain.

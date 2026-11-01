@@ -3,6 +3,10 @@ word: go
 title: Go
 url: /go/
 type: chapter
+video_date: 2026-01-18
+video_duration: PT6M03S
+video_title: The Tiny Word with GIANT Power: Mastering "GO" (Basic English)
+video: g-CA6Fwvsco
 published: 2026-10-30
 short: fpgznCl0Qjc
 short_title: The Hidden Meaning of the English Verb "GO" 🥛 (Why Milk "Goes Bad")

@@ -400,13 +400,15 @@ def video_block_for(w, m):
     <details> — user picks 'quick or detailed' WITHOUT a second article (one
     chapter = one word = one URL stays intact; two articles would fork the
     spiral and halve every page's ranking signals). Quick video ALONE -> it
-    becomes the primary embed. Reality check (2026-11-01, channel scraped):
-    the channel's per-word quick lessons are HORIZONTAL 1-minute videos, so
-    the toggle embed defaults to 16:9; true vertical Shorts may set
-    'short_shape: vertical' in frontmatter for the 9:16 player."""
+    becomes the primary embed. Reality check (2026-11-01, FULL channel scrape,
+    1700+ videos paginated): each word has BOTH formats — a ~1-min quick
+    lesson that IS a true vertical Short (/shorts/ redirect verified) and a
+    4-6 min full lesson (fulls uploaded Jan 2026, shorts Aug 2026). The
+    toggle embed therefore defaults to the 9:16 vertical player; a
+    horizontal short may set 'short_shape: horizontal' for 16:9."""
     vid = (m.get('video') or '').strip()
     sid = (m.get('short') or '').strip()
-    vcls = 'video-short vertical' if (m.get('short_shape') or '').strip() == 'vertical' else 'video-short'
+    vcls = 'video-short' if (m.get('short_shape') or '').strip() == 'horizontal' else 'video-short vertical'
     out = ''
     if vid:
         out += ('<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'

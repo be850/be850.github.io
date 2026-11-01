@@ -3,6 +3,10 @@ word: make
 title: Make
 url: /make/
 type: chapter
+video_date: 2026-01-18
+video_duration: PT5M44S
+video_title: The Word That Does EVERYTHING: How to Use "MAKE" (Basic English)
+video: dtEegJN_ejk
 short: y0u77w0XxE8
 short_title: The Secret Shortcut of the English Verb "MAKE" 🥞 (Create vs Arrange Explained)
 short_duration: PT1M11S

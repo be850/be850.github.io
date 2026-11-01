@@ -3,6 +3,10 @@ word: be
 title: Be
 url: /be/
 type: chapter
+video_date: 2026-01-19
+video_duration: PT6M02S
+video_title: The Ultimate Shapeshifter: Master the 8 Identities of "BE" (Basic English)
+video: 1V4sZ4ZzS4Y
 short: xt2RrguSRHA
 short_title: The Secret Math Behind the English Verb "BE" 🟰 (AM, IS, ARE Explained!)
 short_duration: PT1M15S

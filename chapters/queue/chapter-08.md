@@ -3,6 +3,10 @@ word: put
 title: Put
 url: /put/
 type: chapter
+video_date: 2026-01-19
+video_duration: PT4M40S
+video_title: The Tiny Word with a Secret Superpower: Why You Need "PUT" (Basic English)
+video: auA-uYe3TkI
 short: IyJRX2k-Hd8
 short_title: The Strangest Irregular Verb in English! 🤯 (Why "PUT" Never Changes)
 short_duration: PT0M53S
