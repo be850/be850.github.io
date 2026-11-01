@@ -3,6 +3,7 @@ word: put
 title: Put
 url: /put/
 type: chapter
+published: 2026-11-01
 video_date: 2026-01-19
 video_duration: PT4M40S
 video_title: The Tiny Word with a Secret Superpower: Why You Need "PUT" (Basic English)
