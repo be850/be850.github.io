@@ -22,6 +22,8 @@ faq-q: Why is there no "to" in "I go"?
 faq-a: The word to is word 35 of the 850, and chapter 4 may only use words 1 to 4. English happily says I go with no destination named — and that gap becomes part of the story: the hero goes, but where is not said. When to finally arrives at word 35, the same sentence will grow into I go to the sea — and you will feel the new word click into a slot that has been waiting for it.
 faq-q: What is "the going"?
 faq-a: The verb turned into a thing — a gerund. English does this freely: the going goes, the coming comes. Ogden's list loves such moves, because one verb plus this trick can cover dozens of nouns like trip, walk and departure.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment remembers a leaving: they went. Every memory of motion in this book cuts both ways, come and go — and this is the first one that hurts.
 ---
 I come. I get. I give.
 
@@ -32,6 +34,8 @@ You come; we go.
 He goes. She goes. They go.
 
 The going goes. The coming comes.
+
+<i>I went. They went. Gone, gone. They went; I went.</i>
 
 I go &mdash; it comes.
 I go, I go, I go &mdash;

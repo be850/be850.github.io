@@ -22,6 +22,8 @@ faq-q: What forms does "keep" take?
 faq-a: keep, keeps, keeping and the irregular past kept. Notice the family: sleep–slept, keep–kept. The book slips such families in one at a time, so the grammar arrives as a feeling, not as a rule to memorize.
 faq-q: Why is the chapter built from so few words?
 faq-a: Chapter 5 may use only words 1 to 5 of Ogden's list (plus pronouns, a and the). The narrowness is the design: with five verbs the sentences stay simple enough to read on day one, and the story still moves forward.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment holds the warmest and strangest memory so far: they kept me. Kept like a thing, or kept like a person? English will not say — and the story will not, either. Not yet.
 ---
 I come, I get, I give, I go.
 
@@ -32,6 +34,8 @@ I keep them. They keep me?
 You keep me. You keep me!
 
 The keeping keeps. The getting gets. The going goes.
+
+<i>I kept it. They kept me. Keep it, keep it &mdash; they kept me.</i>
 
 I go &mdash; it comes.
 I keep it &mdash; it keeps me!

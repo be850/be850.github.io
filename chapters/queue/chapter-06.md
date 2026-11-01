@@ -21,6 +21,8 @@ faq-q: What does "It lets me go" mean grammatically?
 faq-a: Let follows a fixed three-part pattern: subject + let + person + bare verb. No to is needed — it lets me go, never it lets me to go. The chapter drills that pattern from both sides.
 faq-q: What is the difference between "let" and "make"?
 faq-a: They are neighbours with opposite feelings: make somebody do something means cause it; let somebody do something means allow it. Make is word 7 — the next chapter — and the story is already setting up the pair.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment is a memory of permission: let them come, let me go. The first memory with other people's will in it — and the first time letting sounds like love.
 ---
 I come. I get. I give. I go. I keep.
 
@@ -34,6 +36,10 @@ Let it come! Let it go!
 Let me get. Let me keep. Let me go!
 
 The letting lets. The keeping keeps. The going goes.
+
+<i>Let them come. Let me go.
+They let. They let.
+I came. They kept me.</i>
 
 I let it come &mdash; it comes.
 I let it go &mdash; it goes!

@@ -21,6 +21,8 @@ faq-q: What forms does "take" take?
 faq-a: take, takes, taking, and two irregular forms: took and taken — it took time, it was taken. The chapter keeps its drumbeat on the simple form, and this answer gives you the whole family at once.
 faq-q: What does the last line "I take!" change?
 faq-a: The hero has been getting, keeping, giving — receiving words from somewhere. Now he takes. It is the first active rebellion in the book: the pupil stops waiting and grabs. Volume One needs exactly that push to move.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. Here the fragment breaks open: they took me. It took me. The quiet crime the whole first act was built on, said at last in plain words — and the last lines of the chapter (I take me!) are his first answer to it.
 ---
 I come. I get. I give. I go. I keep. I let. I make. I put. I seem.
 
@@ -31,6 +33,11 @@ I take you? I take you!
 I take. It takes. They take. We take.
 
 The taking takes. The seeming seems. The putting puts.
+
+<i>They took me.
+They took me &mdash; it took me!
+I gave. I gave. I gave.
+They took it. They took me.</i>
 
 I take it &mdash; it takes me!
 I keep it &mdash; it takes it!
@@ -46,3 +53,5 @@ I give. You take. It takes.
 
 It takes &mdash; I get it &mdash; I give &mdash;
 I take!
+I take it. I take me.
+I take me!

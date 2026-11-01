@@ -21,6 +21,8 @@ faq-q: Is "It seems" related to the dummy "it"?
 faq-a: Yes. The same empty it from Chapter 1 — it comes, it gives — now runs the most doubtful sentence in English: it seems. Grammar gave the story its ghost back in Chapter 1; here the ghost starts talking.
 faq-q: How do I use "seem" in my own sentences?
 faq-a: Three easy frames: it seems + adjective (it seems true), it seems that + sentence (it seems that it comes), and subject + seems to + verb (he seems to go). All three appear in the chapter in miniature.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. In this fragment memory begins to eat itself: I got them? They got me? On the seeming page even the past seems reversible — and the reader is left holding both versions.
 ---
 I come. I get. I give. I go. I keep. I let. I make. I put.
 
@@ -30,6 +32,10 @@ I seem. You seem. It seems.
 We seem. They seem.
 
 The seeming seems. The putting puts. The making makes.
+
+<i>It seemed. It seemed.
+I got them? They got me?
+The seeming, the seeming.</i>
 
 It seems it comes. It seems it goes.
 It seems I get it. It seems I keep it.

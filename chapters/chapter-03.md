@@ -24,6 +24,8 @@ faq-q: Can "give" mean things other than objects?
 faq-a: Yes: give time, give help, give a look, give it a go. English hands out this verb everywhere. In the story the hero gives and gives — and the strangest gift of the chapter is the question at the end: can a thing give itself?
 faq-q: What is "The giving gives" doing in the story?
 faq-a: The same gerund beat as the chapters before: the coming comes, the getting gets, the giving gives. By word 3 the drumbeat is a pattern you can hear — and patterns are what make a small vocabulary feel big.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment remembers a gift: they gave me it. What the thing was, the book cannot say yet — the word thing is still chapters away, so the memory stays unfinished, like all of his past.
 ---
 I come. I get. I give.
 
@@ -35,6 +37,8 @@ I give. You give. It gives?
 It gives!
 
 The giving gives. The getting gets. The coming comes.
+
+<i>They gave. I gave. They gave me it. I got it.</i>
 
 I give you it &mdash; you give me it &mdash;
 we give, we get, we come.

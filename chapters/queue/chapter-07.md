@@ -21,6 +21,8 @@ faq-q: What is the difference between "make" and "do"?
 faq-a: Make creates a thing (make a cake, make a plan); do performs an activity (do work, do it again). English mixes them up constantly. In the book make is word 7 and do is word 12 — five chapters apart, like two sides of one coin.
 faq-q: What forms does "make" take?
 faq-a: make, makes, making and the irregular made. And the causative pattern makes the verb bigger than itself: make it go, make them come, make me get it — one verb, endless sentences.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment remembers making: I made it — and they got it. His first creation is also his first loss, and the chapter's strangest line (I make me?) starts to look less strange: he is trying to rebuild what was taken.
 ---
 I come. I get. I give. I go. I keep. I let.
 
@@ -34,6 +36,10 @@ You make me? You make me!
 It makes me. We make. They make.
 
 The making makes. The letting lets. The keeping keeps.
+
+<i>I made it. I made it go.
+They came. They got it.
+They kept it. I made it.</i>
 
 I make it go. I make it come.
 I make it give. I make it get.

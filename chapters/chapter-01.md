@@ -24,6 +24,8 @@ faq-q: Can I really learn English starting from one word?
 faq-a: Yes — that is the idea of the book. Ogden's Basic English works with 850 words that cover about 90 percent of everyday speech. The novel feeds you those 850 words one at a time, in full sentences, so every chapter is readable the moment you open it.
 faq-q: What is "the coming" in the last lines?
 faq-a: It is the verb turned into a thing — a gerund. English lets a verb act like a noun: the coming comes, the getting gets. Basic English uses this trick to squeeze many meanings out of a tiny vocabulary, and the story uses it as a drumbeat.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story running under the main one. In Chapter 1 the whole remembered past is four words: they came, I came. Eight hundred chapters will follow to find out who they are.
 ---
 I come.
 
@@ -34,6 +36,8 @@ We come. They come.
 
 I come, you come &mdash; we come!
 The coming comes.
+
+<i>Come, come. They came. I came.</i>
 
 I come. It comes.
 

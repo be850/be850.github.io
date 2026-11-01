@@ -21,6 +21,8 @@ faq-q: Is "It is me" correct English?
 faq-a: In everyday English, yes — it is what almost everyone says. Formal grammar prefers It is I (the subject form after be), but Basic English and the book side with living speech. You will sound natural, not like a textbook.
 faq-q: What do "was" and "were" give the story?
 faq-a: The past. Chapter 11 is the first moment the book can say I was — and the hero immediately uses it: I was. Was it me? It was me. A grammar form becomes a memory recovered, which is the whole theme of the novel in one line.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. With be come was and were, and the fragment finally speaks of identity: I was them; they were me. It was me. The hidden story and the main story touch for the first time — and both end this act on the same word: me.
 ---
 I come. I get. I give. I go. I keep. I let. I make. I put. I seem. I take.
 
@@ -39,6 +41,11 @@ Was it me? It was me!
 I am me &mdash; I was me &mdash; I am me.
 
 The being is. The seeming was. The taking takes.
+
+<i>I was. You were. We were.
+I was them; they were me.
+They took me. It was me.
+It was me!</i>
 
 I get it. I get me. I am me.
 

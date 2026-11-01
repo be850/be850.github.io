@@ -21,6 +21,8 @@ faq-q: Why does "I get me!" return in this chapter?
 faq-a: In Chapter 2 the hero could only ask "I get me?" — it was an open question. Here, after putting himself somewhere, he says it flat: I get me. The book resolves small mysteries one word at a time; that is its reading reward system.
 faq-q: What forms does "put" take?
 faq-a: put, puts, putting — and the past is put again: yesterday I put it there. One of the easiest irregular verbs in English, and the chapter uses it as a drumbeat: put, put, put.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. The fragment asks the question he cannot answer: they put me. Placed like a thing on a shelf — by them, or by it? The grammar of the sentence refuses to name the hand.
 ---
 I come. I get. I give. I go. I keep. I let. I make.
 
@@ -32,6 +34,10 @@ I put it &mdash; it comes.
 I put, I put, I put &mdash;
 
 The putting puts. The making makes. The keeping keeps.
+
+<i>They put me. It put me.
+Them? It? Them?
+I put it. I got it. I kept it.</i>
 
 I put you? I put you!
 I put me? I put me!

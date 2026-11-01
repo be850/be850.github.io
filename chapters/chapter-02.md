@@ -24,6 +24,8 @@ faq-q: Can "get" really replace so many verbs?
 faq-a: In daily English, yes: get a letter (receive), get a joke (understand), get home (arrive), get sick (become). Ogden put it at word 2 for exactly this reason. The story plays with all of these shades at once — which is why the chapter feels like a riddle.
 faq-q: What does "The getting gets" mean?
 faq-a: Again the gerund trick: the act of getting is treated as a thing that itself gets. It sounds like a tongue-twister on purpose — the book teaches you how English bends verbs into nouns before you ever see the word "noun".
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far — the fragments form a second, hidden story under the main one. Here the memory darkens for the first time: they got me. Two words he cannot explain yet — and the lines around them, I got it and they got me, are the whole chapter standing on its head.
 ---
 I come.
 It comes. It comes &mdash; I get it.
@@ -36,6 +38,8 @@ I come &mdash; I get. I get &mdash; I come.
 I get you; you get me; we get it.
 
 The getting gets. The coming comes.
+
+<i>I got it. They got me. Come, come &mdash; they got me.</i>
 
 I get it. I get you. I get me?
 
