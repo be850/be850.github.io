@@ -62,3 +62,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Post-wave QA (2026-11-01, per kraser: 'после каждого поста главы — анализ').
+      # Audits the built artifact deterministically (no network flakiness on
+      # runners; the LIVE check runs from the HQ sandbox and reports to Discord).
+      - name: Audit the wave (post-deploy QA)
+        run: python3 audit_chapter.py --artifact site/public

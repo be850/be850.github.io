@@ -266,6 +266,10 @@ CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
  '.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--accent);cursor:pointer}'
  '.video-short{aspect-ratio:16/9;width:100%;margin:14px auto 0}'
  '.video-short.vertical{width:min(100%,270px);aspect-ratio:9/16}'
+ '#video-course{margin:20px 0 28px}'
+ '#video-course .pl{font:15px/1.9 Arial,sans-serif}'
+ '#video-course .pl a{color:var(--accent);font-weight:700}'
+ '#video-course .pl-meta{color:var(--muted)}'
  '#theme-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;'
  'width:30px;height:30px;padding:0;border:1px solid var(--border);border-radius:50%;'
  'background:var(--card);color:var(--muted);cursor:pointer}'
@@ -336,6 +340,27 @@ def dir_html():
         else:
             out.append(f'<span class="todo">{i}. {w}</span>')
     return '<div class="dir">' + '<br>'.join(out) + '</div>'
+
+# The channel's playlists = the book's five volumes 1:1 (both follow Ogden's
+# categories). Linking them from the hub (2026-11-01, per kraser's 'прикрутить
+# плейлисты для рекламы') is the site-side half of the promo loop: a reader can
+# switch to audio/video for ANY volume, and every playlist points back at the
+# matching chapters via video descriptions (see HQ promo pack). No video
+# counts here on purpose — they change as kraser uploads; spans are evergreen.
+PLAYLISTS = [
+    ('Operations', 'words 1–100', 'PLAF_m1QwGc__c5gEDn5nWpCdJN9BPuOig'),
+    ('Things — General', 'words 101–500', 'PLAF_m1QwGc__dXClYMxv4j9jwrzpx4t1P'),
+    ('Things — Picturable', 'words 501–700', 'PLAF_m1QwGc_-hMMzGwCywzy9Ch-rQc2Tx'),
+    ('Qualities — General', 'words 701–800', 'PLAF_m1QwGc_-4wqj9AT0qm0UaLwwBDje5'),
+    ('Qualities — Opposites', 'words 801–850', 'PLAF_m1QwGc_890m8GDcExtNJTd0onsxJt'),
+]
+
+def playlist_html():
+    rows = [f'<a href="https://www.youtube.com/playlist?list={pid}" target="_blank" rel="noopener">{name}</a>'
+            f'<span class="pl-meta"> — {span}</span>' for name, span, pid in PLAYLISTS]
+    return ('<div class="card" id="video-course"><strong>The video course</strong> — every word of the book has '
+            'a full lesson and a 60-second short on YouTube:<br><span class="pl">'
+            + '<br>'.join(rows) + '</span></div>')
 
 def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
     return f'''<!DOCTYPE html>
@@ -440,6 +465,7 @@ ch0_content = f'''
 <div class="progress">Book850 &middot; Chapter 0 &middot; Word 0 of 850</div>
 <h1>{m0['title']}</h1>
 {md_html(linkify_story(m0['body'], 999))}
+{playlist_html()}
 <div id="directory">{dir_html()}</div>
 </article>'''
 ch0_ld = ld({"@context":"https://schema.org","@type":"Book","name":"Book850",
