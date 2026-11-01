@@ -3,6 +3,7 @@ word: let
 title: Let
 url: /let/
 type: chapter
+published: 2026-11-01
 video_date: 2026-01-18
 video_duration: PT4M55S
 video_title: The Word That Breaks All the Rules: Why "LET" is a Secret Agent in English
