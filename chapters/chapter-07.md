@@ -3,6 +3,7 @@ word: make
 title: Make
 url: /make/
 type: chapter
+published: 2026-11-01
 video_date: 2026-01-18
 video_duration: PT5M44S
 video_title: The Word That Does EVERYTHING: How to Use "MAKE" (Basic English)
