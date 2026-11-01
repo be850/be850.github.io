@@ -75,10 +75,29 @@ def stamp_published(path):
     open(path, 'w', encoding='utf-8').write(txt)
 
 
+def chapter_url(n):
+    """Canonical URL of chapter N from its frontmatter (word slugs, 96510be).
+    Falls back to None when the file is missing/malformed."""
+    p = os.path.join(CHAPS, f'chapter-{n:02d}.md')
+    try:
+        with open(p, encoding='utf-8') as f:
+            for line in f:
+                if line.strip() == '---':
+                    break
+                m = re.match(r'^url:\s*(\S+)', line)
+                if m:
+                    return m.group(1)
+    except OSError:
+        pass
+    return None
+
+
 def indexnow_ping(new_nums):
     """Ping IndexNow (Bing/Yandex/Seznam/Naver) about changed URLs.
     Non-fatal on failure. NOTE: Google does NOT consume IndexNow —
-    Google discovery = sitemap lastmod + GSC."""
+    Google discovery = sitemap lastmod + GSC.
+    URLs come from the chapters' frontmatter (word slugs) — a stale
+    /chapter/N/ path here would make IndexNow crawl 404s (fixed 2026-11-01)."""
     cfgp = os.path.join(BASE, 'config.json')
     if not os.path.exists(cfgp):
         print('indexnow: no config.json — skipped'); return
@@ -88,7 +107,8 @@ def indexnow_ping(new_nums):
     if not dom or not key or 'example.org' in dom:
         print('indexnow: skipped (placeholder domain or no key)'); return
     host = dom.split('//', 1)[1]
-    urls = [f'{dom}/chapter/{n}/' for n in new_nums] + [f'{dom}/chapter/0/', f'{dom}/']
+    urls = [dom + u for u in (chapter_url(n) for n in new_nums) if u]
+    urls += [f'{dom}/words/', f'{dom}/']
     body = json.dumps({'host': host, 'key': key,
                        'keyLocation': f'{dom}/{key}.txt', 'urlList': urls}).encode('utf-8')
     req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body,
