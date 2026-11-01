@@ -225,27 +225,99 @@ if not all_ok:
 print('== ALL PASS ==\n')
 
 # ---------- HTML template ----------
-CSS = ('body{margin:0;font:17px/1.7 Georgia,serif;color:#1a2430;background:#fff}'
+# Theme system (2026-11-01): CSS custom properties + prefers-color-scheme +
+# a manual toggle in the crumbs row. Three states: unset (follow the OS),
+# data-theme=light, data-theme=dark — stored in localStorage('b850-theme').
+# The dark palette lives ONCE in _DARK_VARS and is injected into BOTH the
+# media-query branch and the explicit data-theme branch: the two can never
+# drift apart. Reading-optimized: deep blue-black canvas, brighter link blue,
+# same hue family as the light theme so og.png / brand stay coherent.
+_LIGHT_VARS = ('--bg:#fff;--text:#1a2430;--head:#1a2430;--accent:#0b6bcb;'
+               '--muted:#5b6b7c;--card:#f2f7fc;--border:#e3e9ef;--todo:#8b98a5')
+_DARK_VARS = ('--bg:#0f1720;--text:#c9d4de;--head:#e9eff5;--accent:#5ba4f5;'
+              '--muted:#8494a3;--card:#16212d;--border:#263342;--todo:#5f6e7d')
+CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
+ f'@media(prefers-color-scheme:dark){{:root:not([data-theme=light]){{{_DARK_VARS};color-scheme:dark}}}}'
+ f':root[data-theme=dark]{{{_DARK_VARS};color-scheme:dark}}'
+ 'body{margin:0;font:17px/1.7 Georgia,serif;color:var(--text);background:var(--bg)}'
  'main{max-width:680px;margin:0 auto;padding:24px 20px 64px}'
- 'a{color:#0b6bcb;text-decoration:none}a:hover{text-decoration:underline}'
- '.crumbs{font:14px/1.4 Arial,sans-serif;color:#5b6b7c;margin-bottom:20px}'
- 'h1{font:700 30px/1.25 Arial,sans-serif;margin:0 0 6px}'
- 'h2{font:700 21px/1.3 Arial,sans-serif;margin:34px 0 10px}'
+ 'a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}'
+ '.crumbs{display:flex;align-items:center;justify-content:space-between;gap:12px;'
+ 'font:14px/1.4 Arial,sans-serif;color:var(--muted);margin-bottom:20px}'
+ 'h1{font:700 30px/1.25 Arial,sans-serif;margin:0 0 6px;color:var(--head)}'
+ 'h2{font:700 21px/1.3 Arial,sans-serif;margin:34px 0 10px;color:var(--head)}'
  '.story{font-size:19px;line-height:2.0;white-space:pre-wrap}'
  '.story p{margin:0.9em 0;white-space:normal}'
  '.story a{text-decoration:underline dotted;text-underline-offset:4px}'
- '.card{background:#f2f7fc;border-left:4px solid #0b6bcb;padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0}'
+ '.card{background:var(--card);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0}'
  '.card strong{font-family:Arial,sans-serif}'
- '.progress{font:700 13px/1.4 Arial,sans-serif;letter-spacing:1px;color:#0b6bcb;text-transform:uppercase}'
+ '.progress{font:700 13px/1.4 Arial,sans-serif;letter-spacing:1px;color:var(--accent);text-transform:uppercase}'
  'table{border-collapse:collapse;width:100%;margin:14px 0;font-size:16px}'
- 'th,td{border:1px solid #e3e9ef;padding:8px 10px;text-align:left}'
- 'th{background:#f2f7fc;font-family:Arial,sans-serif}'
- '.faq-item{border-top:1px solid #e3e9ef;padding:12px 0}'
- '.faq-item h3{font:700 17px/1.4 Arial,sans-serif;margin:0 0 6px}.faq-item p{margin:0}'
- 'footer{margin-top:48px;border-top:1px solid #e3e9ef;padding-top:18px;font:14px/1.6 Arial,sans-serif;color:#5b6b7c}'
+ 'th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}'
+ 'th{background:var(--card);font-family:Arial,sans-serif}'
+ '.faq-item{border-top:1px solid var(--border);padding:12px 0}'
+ '.faq-item h3{font:700 17px/1.4 Arial,sans-serif;margin:0 0 6px;color:var(--head)}.faq-item p{margin:0}'
+ 'footer{margin-top:48px;border-top:1px solid var(--border);padding-top:18px;font:14px/1.6 Arial,sans-serif;color:var(--muted)}'
  '.dir{font:15px/2 Arial,sans-serif;columns:3;column-gap:24px}'
- '.dir a{color:#1a2430}.dir .todo{color:#8b98a5}'
- '.dir a.done{font-weight:700;color:#0b6bcb}')
+ '.dir a{color:var(--text)}.dir .todo{color:var(--todo)}'
+ '.dir a.done{font-weight:700;color:var(--accent)}'
+ 'article ul{margin:14px 0;padding-left:24px}article li{margin:5px 0}'
+ '#theme-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;'
+ 'width:30px;height:30px;padding:0;border:1px solid var(--border);border-radius:50%;'
+ 'background:var(--card);color:var(--muted);cursor:pointer}'
+ '#theme-btn:hover{color:var(--accent);border-color:var(--accent)}'
+ '#theme-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;'
+ 'stroke-width:2;stroke-linecap:round;stroke-linejoin:round}'
+ '#theme-btn .sun{display:none}'
+ '[data-theme=dark] #theme-btn .sun{display:inline}[data-theme=dark] #theme-btn .moon{display:none}'
+ '@media(prefers-color-scheme:dark){:root:not([data-theme=light]) #theme-btn .sun{display:inline}'
+ ':root:not([data-theme=light]) #theme-btn .moon{display:none}}')
+# Moon/sun button: feather icons, stroke=currentColor (adapts to both themes).
+# Which icon shows = the theme a click will SWITCH TO: sun visible only while
+# dark is in effect. Covers all three states (light / dark / OS-following).
+_THEME_BTN = ('<button id="theme-btn" type="button" aria-label="Switch color theme" title="Light / dark mode">'
+ '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true">'
+ '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+ '<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/>'
+ '<path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2'
+ 'M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>')
+# Runs before first paint: a saved preference must win over the OS setting,
+# otherwise dark-mode readers get a white flash on every navigation.
+_THEME_HEAD_JS = ('<script>try{var t=localStorage.getItem("b850-theme");'
+ 'if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>')
+_THEME_JS = ('<script>(function(){var b=document.getElementById("theme-btn");if(!b)return;'
+ 'function eff(){var t=document.documentElement.getAttribute("data-theme");'
+ 'return t?t:(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}'
+ 'b.addEventListener("click",function(){var n=eff()==="dark"?"light":"dark";'
+ 'document.documentElement.setAttribute("data-theme",n);'
+ 'try{localStorage.setItem("b850-theme",n)}catch(e){}})})();</script>')
+
+def md_html(text):
+    """Tiny Markdown subset for the manifesto (2026-11-01). Until today the
+    front-door /words page printed raw '##' and '-' source — a real defect
+    everyone learned to ignore. Covered: '## ' headings, '- ' lists (with
+    two-space continuation lines), blank-line paragraphs. Entities and inline
+    tags (<em>, <a>) pass through untouched. Render-time only: m0['body']
+    stays raw for the spiral validator."""
+    out, para, lst = [], [], []
+    def flush_p():
+        if para: out.append('<p>' + ' '.join(para) + '</p>'); para.clear()
+    def flush_l():
+        if lst: out.append('<ul>' + ''.join(f'<li>{x}</li>' for x in lst) + '</ul>'); lst.clear()
+    for ln in text.splitlines():
+        s = ln.strip()
+        if not s:
+            flush_p(); flush_l()
+        elif s.startswith('## '):
+            flush_p(); flush_l(); out.append('<h2>' + s[3:] + '</h2>')
+        elif s.startswith('- '):
+            flush_p(); lst.append(s[2:])
+        elif ln[:2] == '  ' and lst:            # wrapped continuation of a list item
+            lst[-1] += ' ' + s
+        else:
+            flush_l(); para.append(s)
+    flush_p(); flush_l()
+    return '\n'.join(out)
 
 def dir_html():
     # Only PUBLISHED chapters get links; future words are plain text
@@ -280,13 +352,17 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{DOMAIN}/og.png">
 <link rel="alternate" type="application/rss+xml" title="Book850" href="{DOMAIN}/rss.xml">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
+{_THEME_HEAD_JS}
 {ADS_HEAD}
 <style>{CSS}</style>
 {jsonld}
 </head>
 <body>
 <main>
-<nav class="crumbs">{crumbs}</nav>
+<nav class="crumbs"><span>{crumbs}</span>{_THEME_BTN}</nav>
 {content}
 <footer>
 <p>Book850 &mdash; a novel that teaches itself English, one word per chapter, 850 words total.</p>
@@ -294,6 +370,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 </footer>
 </main>
 {extra}
+{_THEME_JS}
 </body>
 </html>'''
 
@@ -321,7 +398,7 @@ ch0_content = f'''
 <article>
 <div class="progress">Book850 &middot; Chapter 0 &middot; Word 0 of 850</div>
 <h1>{m0['title']}</h1>
-{m0['body']}
+{md_html(linkify_story(m0['body'], 999))}
 <div id="directory">{dir_html()}</div>
 </article>'''
 ch0_ld = ld({"@context":"https://schema.org","@type":"Book","name":"Book850",
@@ -403,14 +480,14 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
         prev_next += (f'<p><a href="{chap_path(num+1)}">Next word: '
                       f'{CHAPTERS[num+1]["word"]} (Chapter {num+1}) &rarr;</a></p>')
     else:
-        prev_next += (f'<p style="font:15px/1.6 Arial,sans-serif;color:#5b6b7c">'
+        prev_next += (f'<p style="font:15px/1.6 Arial,sans-serif;color:var(--muted)">'
                       f'Chapter {num+1} &mdash; word {num+1} of 850 &mdash; comes next.</p>')
     vid = (m.get('video') or '').strip()
     if vid:
         video_block = (f'<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'
                        f'<iframe src="https://www.youtube.com/embed/{vid}" title="{w} — Basic English lesson" '
                        f'loading="lazy" allowfullscreen style="width:100%;height:100%;border:0;border-radius:10px"></iframe></div>'
-                       f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:#5b6b7c">Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
+                       f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
     else:
         video_block = f'<!-- VIDEO SLOT: embed BasicEnglish40 video for "{w}" here (ID from channel library) -->'
     ad_a = ad_unit(ADS_SLOT_A) or '<!-- AD SLOT A: reserved (config.json -> adsense.client) -->'
