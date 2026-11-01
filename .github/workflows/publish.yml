@@ -1,0 +1,64 @@
+name: publish
+
+# Book850 publishing machine (2026-11-01).
+# WHY Actions: on public repositories standard GitHub-hosted runners are free
+# with NO minute quota — an hourly drip is affordable out of the box, unlike
+# GitLab Free (400 CI-minutes/month even for public projects).
+#
+# Every run: move the next chapter out of chapters/queue/ (guarded by the
+# min_hours_between_chapters pace gate + the SPIRAL VALIDATOR in build_poc.py,
+# which aborts the build on any constraint violation), rebuild the whole
+# static site, commit the new state back and deploy to GitHub Pages.
+# Machine commits carry [skip ci] so a push event never loops the workflow.
+
+on:
+  schedule:
+    - cron: '15 * * * *'        # hourly at :15 (top-of-hour queues are congested)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Ignore the min-hours pace gate (calibration waves)'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+permissions:
+  contents: write               # commit the published state back
+  pages: write                  # deploy the site
+  id-token: write               # OIDC for actions/deploy-pages
+
+concurrency:
+  group: publish-pages
+  cancel-in-progress: false     # never overlap two waves
+
+jobs:
+  publish-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Machine identity (for state commits)
+        run: |
+          git config user.name  "book850-machine"
+          git config user.email "kraser@users.noreply.github.com"
+
+      - name: Publish next wave (validator-guarded)
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="--force"
+          fi
+          python3 publish_next.py $ARGS
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

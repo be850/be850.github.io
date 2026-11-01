@@ -1,0 +1,4266 @@
+{
+ "source": "simple.wikipedia.org/wiki/Wikipedia:Basic_English_ordered_wordlist",
+ "fetched": "2026-10-29",
+ "totals": {
+  "operations": 100,
+  "things_general": 400,
+  "things_picturable": 200,
+  "qualities_general": 100,
+  "qualities_opposites": 50
+ },
+ "total_raw": 850,
+ "unique": 850,
+ "duplicates": [],
+ "order": [
+  {
+   "word": "come",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "get",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "give",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "go",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "keep",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "let",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "make",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "put",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "seem",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "take",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "be",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "do",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "have",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "say",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "see",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "send",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "may",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "will",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "about",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "across",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "after",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "against",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "among",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "at",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "before",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "between",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "by",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "down",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "from",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "in",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "off",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "on",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "over",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "through",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "to",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "under",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "up",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "with",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "as",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "for",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "of",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "till",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "than",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "a",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "the",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "all",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "any",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "every",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "little",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "much",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "no",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "other",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "some",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "such",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "that",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "this",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "i",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "he",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "you",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "who",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "and",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "because",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "but",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "or",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "if",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "though",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "while",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "how",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "when",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "where",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "why",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "again",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "ever",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "far",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "forward",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "here",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "near",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "now",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "out",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "still",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "then",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "there",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "together",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "well",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "almost",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "enough",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "even",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "not",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "only",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "quite",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "so",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "very",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "tomorrow",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "yesterday",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "north",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "south",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "east",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "west",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "please",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "yes",
+   "category": "operations",
+   "volume": "Том 1 «Действия»"
+  },
+  {
+   "word": "account",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "act",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "addition",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "adjustment",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "advertisement",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "agreement",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "air",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "amount",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "amusement",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "animal",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "answer",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "apparatus",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "approval",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "argument",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "art",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "attack",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "attempt",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "attention",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "attraction",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "authority",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "back",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "balance",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "base",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "behavior",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "belief",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "birth",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "bit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "bite",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "blood",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "blow",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "body",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "brass",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "bread",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "breath",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "brother",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "building",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "burn",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "burst",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "business",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "butter",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "canvas",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "care",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cause",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "chalk",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "chance",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "change",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cloth",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "coal",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "color",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "comfort",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "committee",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "company",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "comparison",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "competition",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "condition",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "connection",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "control",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cook",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "copper",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "copy",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cork",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cotton",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cough",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "country",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cover",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "crack",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "credit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "crime",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "crush",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "cry",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "current",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "curve",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "damage",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "danger",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "daughter",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "day",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "death",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "debt",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "decision",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "degree",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "design",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "desire",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "destruction",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "detail",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "development",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "digestion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "direction",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "discovery",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "discussion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "disease",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "disgust",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "distance",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "distribution",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "division",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "doubt",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "drink",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "driving",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "dust",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "earth",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "edge",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "education",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "effect",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "end",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "error",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "event",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "example",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "exchange",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "existence",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "expansion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "experience",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "expert",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fact",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fall",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "family",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "father",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fear",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "feeling",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fiction",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "field",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fight",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fire",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "flame",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "flight",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "flower",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fold",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "food",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "force",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "form",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "friend",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "front",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "fruit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "glass",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "gold",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "government",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "grain",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "grass",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "grip",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "group",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "growth",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "guide",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "harbor",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "harmony",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "hate",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "hearing",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "heat",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "help",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "history",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "hole",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "hope",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "hour",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "humor",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "ice",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "idea",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "impulse",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "increase",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "industry",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "ink",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "insect",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "instrument",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "insurance",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "interest",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "invention",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "iron",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "jelly",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "join",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "journey",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "judge",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "jump",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "kick",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "kiss",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "knowledge",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "land",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "language",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "laugh",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "law",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "lead",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "learning",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "leather",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "letter",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "level",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "lift",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "light",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "limit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "linen",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "liquid",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "list",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "look",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "loss",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "love",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "machine",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "man",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "manager",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mark",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "market",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mass",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "meal",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "measure",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "meat",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "meeting",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "memory",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "metal",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "middle",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "milk",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mind",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mine",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "minute",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mist",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "money",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "month",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "morning",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mother",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "motion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "mountain",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "move",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "music",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "name",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "nation",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "need",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "news",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "night",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "noise",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "note",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "number",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "observation",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "offer",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "oil",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "operation",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "opinion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "order",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "organization",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "ornament",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "owner",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "page",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "pain",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "paint",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "paper",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "part",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "paste",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "payment",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "peace",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "person",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "place",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "plant",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "play",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "pleasure",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "point",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "poison",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "polish",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "porter",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "position",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "powder",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "power",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "price",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "print",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "process",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "produce",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "profit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "property",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "prose",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "protest",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "pull",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "punishment",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "purpose",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "push",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "quality",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "question",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rain",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "range",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rate",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "ray",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "reaction",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "reading",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "reason",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "record",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "regret",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "relation",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "religion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "representative",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "request",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "respect",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rest",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "reward",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rhythm",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rice",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "river",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "road",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "roll",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "room",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rub",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "rule",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "run",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "salt",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sand",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "scale",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "science",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sea",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "seat",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "secretary",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "selection",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "self",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sense",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "servant",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sex",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "shade",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "shake",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "shame",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "shock",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "side",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sign",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "silk",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "silver",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sister",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "size",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sky",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sleep",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "slip",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "slope",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "smash",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "smell",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "smile",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "smoke",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sneeze",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "snow",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "soap",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "society",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "son",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "song",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sort",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sound",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "soup",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "space",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "stage",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "start",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "statement",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "steam",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "steel",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "step",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "stitch",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "stone",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "stop",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "story",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "stretch",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "structure",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "substance",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "sugar",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "suggestion",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "summer",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "support",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "surprise",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "swim",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "system",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "talk",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "taste",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "tax",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "teaching",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "tendency",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "test",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "theory",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "thing",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "thought",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "thunder",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "time",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "tin",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "top",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "touch",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "trade",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "transport",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "trick",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "trouble",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "turn",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "twist",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "unit",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "use",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "value",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "verse",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "vessel",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "view",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "voice",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "walk",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "war",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wash",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "waste",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "water",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wave",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wax",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "way",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "weather",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "week",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "weight",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wind",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wine",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "winter",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "woman",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wood",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wool",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "word",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "work",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "wound",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "writing",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "year",
+   "category": "things_general",
+   "volume": "Том 2 «Вещи»"
+  },
+  {
+   "word": "angle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ant",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "apple",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "arch",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "arm",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "army",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "baby",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bag",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ball",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "band",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "basin",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "basket",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bath",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bed",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bee",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bell",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "berry",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bird",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "blade",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "board",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "boat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bone",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "book",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "boot",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bottle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "box",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "boy",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "brain",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "brake",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "branch",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "brick",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bridge",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "brush",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bucket",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "bulb",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "button",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cake",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "camera",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "card",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cart",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "carriage",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "chain",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cheese",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "chest",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "chin",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "church",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "circle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "clock",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cloud",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "coat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "collar",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "comb",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cord",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cow",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cup",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "curtain",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "cushion",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "dog",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "door",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "drain",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "drawer",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "dress",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "drop",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ear",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "egg",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "engine",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "eye",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "face",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "farm",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "feather",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "finger",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "fish",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "flag",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "floor",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "fly",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "foot",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "fork",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "fowl",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "frame",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "garden",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "girl",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "glove",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "goat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "gun",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hair",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hammer",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hand",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "head",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "heart",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hook",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "horn",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "horse",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "hospital",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "house",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "island",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "jewel",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "kettle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "key",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "knee",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "knife",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "knot",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "leaf",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "leg",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "library",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "line",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "lip",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "lock",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "map",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "match",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "monkey",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "moon",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "mouth",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "muscle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "nail",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "neck",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "needle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "nerve",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "net",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "nose",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "nut",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "office",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "orange",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "oven",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "parcel",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pen",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pencil",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "picture",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pig",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pin",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pipe",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "plane",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "plate",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "plow",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pocket",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pot",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "potato",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "prison",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "pump",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "rail",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "rat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "receipt",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ring",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "rod",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "roof",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "root",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "sail",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "school",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "scissors",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "screw",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "seed",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "sheep",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "shelf",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ship",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "shirt",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "shoe",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "skin",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "skirt",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "snake",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "sock",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "spade",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "sponge",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "spoon",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "spring",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "square",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "stamp",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "star",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "station",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "stem",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "stick",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "stocking",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "stomach",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "store",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "street",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "sun",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "table",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "tail",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "thread",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "throat",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "thumb",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "ticket",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "toe",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "tongue",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "tooth",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "town",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "train",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "tray",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "tree",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "trousers",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "umbrella",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "wall",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "watch",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "wheel",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "whip",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "whistle",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "window",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "wing",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "wire",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "worm",
+   "category": "things_picturable",
+   "volume": "Том 3 «Прикосновения»"
+  },
+  {
+   "word": "able",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "acid",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "angry",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "automatic",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "beautiful",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "black",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "boiling",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "bright",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "broken",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "brown",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "cheap",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "chemical",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "chief",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "clean",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "clear",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "common",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "complex",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "conscious",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "cut",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "deep",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "dependent",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "early",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "elastic",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "electric",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "equal",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "fat",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "fertile",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "first",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "fixed",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "flat",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "free",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "frequent",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "full",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "general",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "good",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "great",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "gray",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "hanging",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "happy",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "hard",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "healthy",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "high",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "hollow",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "important",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "kind",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "like",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "living",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "long",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "male",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "married",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "material",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "medical",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "military",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "natural",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "necessary",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "new",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "normal",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "open",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "parallel",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "past",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "physical",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "political",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "poor",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "possible",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "present",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "private",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "probable",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "quick",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "quiet",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "ready",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "red",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "regular",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "responsible",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "right",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "round",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "same",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "second",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "separate",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "serious",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "sharp",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "smooth",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "sticky",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "stiff",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "straight",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "strong",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "sudden",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "sweet",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "tall",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "thick",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "tight",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "tired",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "true",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "violent",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "waiting",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "warm",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "wet",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "wide",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "wise",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "yellow",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "young",
+   "category": "qualities_general",
+   "volume": "Том 4 «Цветов»"
+  },
+  {
+   "word": "awake",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "bad",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "bent",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "bitter",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "blue",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "certain",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "cold",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "complete",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "cruel",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "dark",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "dead",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "dear",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "delicate",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "different",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "dirty",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "dry",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "false",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "feeble",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "female",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "foolish",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "future",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "green",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "ill",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "last",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "late",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "left",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "loose",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "loud",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "low",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "mixed",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "narrow",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "old",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "opposite",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "public",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "rough",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "sad",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "safe",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "secret",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "short",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "shut",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "simple",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "slow",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "small",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "soft",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "solid",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "special",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "strange",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "thin",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "white",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  },
+  {
+   "word": "wrong",
+   "category": "qualities_opposites",
+   "volume": "Том 5 «Противоположностей»"
+  }
+ ]
+}
