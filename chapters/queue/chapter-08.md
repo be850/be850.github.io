@@ -3,6 +3,10 @@ word: put
 title: Put
 url: /put/
 type: chapter
+short: IyJRX2k-Hd8
+short_title: The Strangest Irregular Verb in English! 🤯 (Why "PUT" Never Changes)
+short_duration: PT0M53S
+short_date: 2026-08-24
 faq-q: What does "put" mean in Basic English?
 faq-a: To put means to move a thing to a place and leave it there. It is word 8 of the 850 — and the only verb of the first ten that is about position, not action.
 faq-q: How can the chapter say "put" with no place words?

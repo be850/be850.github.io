@@ -3,6 +3,10 @@ word: be
 title: Be
 url: /be/
 type: chapter
+short: xt2RrguSRHA
+short_title: The Secret Math Behind the English Verb "BE" 🟰 (AM, IS, ARE Explained!)
+short_duration: PT1M15S
+short_date: 2026-08-24
 faq-q: What does "be" mean in Basic English?
 faq-a: Be is the verb of existence and equality: to exist, to be a thing, to be somewhere. Its forms are am, is, are, was, were, being and been. It is word 11 of the 850 — and the most used word in the whole English language.
 faq-q: Why is "be" only word 11 and not word 1?

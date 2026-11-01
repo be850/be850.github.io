@@ -3,6 +3,10 @@ word: let
 title: Let
 url: /let/
 type: chapter
+short: 9M34LIsBEsQ
+short_title: The Secret Grammar Power of the English Verb "LET" 🔓 (Stop Confusing It!)
+short_duration: PT1M10S
+short_date: 2026-08-24
 faq-q: What does "let" mean in Basic English?
 faq-a: To let means to allow — to give permission for something to happen. It works in a special pattern, let + person + action: let me go, let it come. It is word 6 of the 850.
 faq-q: Why is "let" a small word with power in the story?

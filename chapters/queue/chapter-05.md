@@ -3,6 +3,10 @@ word: keep
 title: Keep
 url: /keep/
 type: chapter
+short: VlcjENvi9Hw
+short_title: The Secret Meaning of the English Word "KEEP" 🏰 (Why Castles Have a "Keep")
+short_duration: PT1M1S
+short_date: 2026-08-24
 faq-q: What does "keep" mean in Basic English?
 faq-a: To keep means to continue to have or to hold a thing: not give it, not lose it — hold it. It is word 5 of the 850 and the first verb of possession in the book.
 faq-q: What is the difference between "get" and "keep"?

@@ -264,7 +264,8 @@ CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
  'article ul{margin:14px 0;padding-left:24px}article li{margin:5px 0}'
  '.short-toggle{margin:14px 0 0}'
  '.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--accent);cursor:pointer}'
- '.video-short{width:min(100%,270px);aspect-ratio:9/16;margin:14px auto 0}'
+ '.video-short{aspect-ratio:16/9;width:100%;margin:14px auto 0}'
+ '.video-short.vertical{width:min(100%,270px);aspect-ratio:9/16}'
  '#theme-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;'
  'width:30px;height:30px;padding:0;border:1px solid var(--border);border-radius:50%;'
  'background:var(--card);color:var(--muted);cursor:pointer}'
@@ -395,14 +396,17 @@ def iframe_html(vid, title):
 
 def video_block_for(w, m):
     """Dual video (2026-11-01, per kraser's 'дуально и шортс и полное'):
-    full lesson 16:9 as the primary embed + the Short as a collapsed <details>
-    — user picks 'quick or detailed' WITHOUT a second article (one chapter =
-    one word = one URL stays intact; two articles would fork the spiral and
-    halve every page's ranking signals). Short ALONE -> vertical primary embed.
-    A closed <details> hides the iframe from layout, so its loading=lazy never
-    fires until the reader opens it — zero cost for those who skip it."""
+    full lesson 16:9 as the primary embed + the quick lesson in a collapsed
+    <details> — user picks 'quick or detailed' WITHOUT a second article (one
+    chapter = one word = one URL stays intact; two articles would fork the
+    spiral and halve every page's ranking signals). Quick video ALONE -> it
+    becomes the primary embed. Reality check (2026-11-01, channel scraped):
+    the channel's per-word quick lessons are HORIZONTAL 1-minute videos, so
+    the toggle embed defaults to 16:9; true vertical Shorts may set
+    'short_shape: vertical' in frontmatter for the 9:16 player."""
     vid = (m.get('video') or '').strip()
     sid = (m.get('short') or '').strip()
+    vcls = 'video-short vertical' if (m.get('short_shape') or '').strip() == 'vertical' else 'video-short'
     out = ''
     if vid:
         out += ('<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'
@@ -411,12 +415,12 @@ def video_block_for(w, m):
                 f'Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
     st = (m.get('short_title') or '').strip() or f'{w} in 60 seconds'
     if sid and vid:
-        out += (f'<details class="short-toggle"><summary>In a hurry? Watch the Short — {html.escape(st)}</summary>'
-                f'<div class="video-short">' + iframe_html(sid, f'{w} — Short') + '</div></details>')
+        out += (f'<details class="short-toggle"><summary>In a hurry? Watch the quick lesson — {html.escape(st)}</summary>'
+                f'<div class="{vcls}">' + iframe_html(sid, f'{w} — quick lesson') + '</div></details>')
     elif sid:
-        out += ('<div class="video-short">' + iframe_html(sid, f'{w} — Short') + '</div>'
+        out += (f'<div class="{vcls}">' + iframe_html(sid, f'{w} — quick lesson') + '</div>'
                 f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
-                f'The Short version: <strong>{w}</strong> in under a minute.</p>')
+                f'The quick version: <strong>{w}</strong> in about a minute.</p>')
     return out or f'<!-- VIDEO SLOT: embed BasicEnglish40 video for "{w}" here (ID from channel library) -->'
 
 # Clean build (2026-11-01): wipe the output dir first. Pre-mortem: a stale
@@ -516,13 +520,13 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     sdate = (m.get('short_date') or '').strip()
     if sid and st and sdur and sdate:
         jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
-          "name":st, "description":f"60-second Short lesson for the word \"{w}\" (word {num} of 850).",
+          "name":st, "description":f"Quick video lesson for the word \"{w}\" (word {num} of 850).",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{sid}/hqdefault.jpg"],
           "uploadDate":sdate, "duration":sdur,
           "embedUrl":f"https://www.youtube.com/embed/{sid}",
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif sid and not sdate:
-        WARNINGS.append(f'ch{num}: Short VideoObject skipped — need short_date from Studio (title/duration known: {st!r} {sdur!r})')
+        WARNINGS.append(f'ch{num}: quick-lesson VideoObject skipped — need short_date (title/duration known: {st!r} {sdur!r})')
     prev_next = ''
     if num > 1 and (num - 1) in CHAPTERS:
         prev_next += (f'<p><a href="{chap_path(num-1)}">&larr; Previous word: '

@@ -5,8 +5,13 @@ url: /come/
 type: chapter
 published: 2026-10-30
 video: oT87tLGQDl0
-video_title: The Hidden Power of the Word "COME"
+video_title: The Hidden Power of the Word "COME" (Basic English Lesson)
 video_duration: PT4M58S
+video_date: 2026-01-17
+short: RxNaLWHguw0
+short_title: The Secret Rule of COME vs GO in English (Never Confuse Again!) 🤯
+short_duration: PT0M54S
+short_date: 2026-08-24
 faq-q: What does "come" mean in Basic English?
 faq-a: To come means to move toward the speaker or toward a place the speaker points to. It is word 1 of 850 and the first real word of the whole book.
 faq-q: Why is Chapter 1 so short?

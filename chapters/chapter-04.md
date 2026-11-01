@@ -4,6 +4,10 @@ title: Go
 url: /go/
 type: chapter
 published: 2026-10-30
+short: fpgznCl0Qjc
+short_title: The Hidden Meaning of the English Verb "GO" 🥛 (Why Milk "Goes Bad")
+short_duration: PT0M56S
+short_date: 2026-08-24
 faq-q: What does "go" mean in Basic English?
 faq-a: To go means to move away, to travel from one place to another. Together with come (word 1) it forms the first pair of opposites in the book: come moves toward the speaker, go moves away.
 faq-q: Why does the story repeat "I go — it comes"?

@@ -5,8 +5,13 @@ url: /give/
 type: chapter
 published: 2026-10-30
 video: t-heLXSjRFA
-video_title: The Magic Word for Sharing
+video_title: The Magic Word for Sharing: Why You Must Master "GIVE" (Basic English)
 video_duration: PT4M39S
+video_date: 2026-01-18
+short: w2-CH1IYokk
+short_title: The Secret Rule Behind the English Verb "GIVE" 🎁 (Never Get This Wrong!)
+short_duration: PT1M4S
+short_date: 2026-08-24
 faq-q: What does "give" mean in Basic English?
 faq-a: To give means to put a thing into someone's hands. English lets you say give someone something: I give you it. It is word 3 of the 850.
 faq-q: Why does the book say "I give you it" and not "I give it to you"?

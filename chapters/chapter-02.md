@@ -5,8 +5,13 @@ url: /get/
 type: chapter
 published: 2026-10-30
 video: hfFk90mRnho
-video_title: The Swiss Army Knife of English
+video_title: The Swiss Army Knife of English: How to Use "GET" (Basic English)
 video_duration: PT4M31S
+video_date: 2026-01-18
+short: HODO90QccIU
+short_title: The Secret Grammar Code of the English Verb "GET" 🤯 (Stop Memorizing!)
+short_duration: PT0M59S
+short_date: 2026-08-24
 faq-q: What does "get" mean in Basic English?
 faq-a: Get is one of the most useful verbs in English: it can mean receive (get a gift), understand (I get it), and arrive (get here). It is word 2 of the 850.
 faq-q: Why does the hero say "I get me?"

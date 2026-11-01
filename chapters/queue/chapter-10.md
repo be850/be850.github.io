@@ -3,6 +3,10 @@ word: take
 title: Take
 url: /take/
 type: chapter
+short: p8Xc7teJJww
+short_title: The Secret "Action Engine" of the English Verb "TAKE" 🚶‍♂️ (Grammar Hack Explained)
+short_duration: PT0M57S
+short_date: 2026-08-24
 faq-q: What does "take" mean in Basic English?
 faq-a: To take means to get a thing into your hands or to remove it from where it was. It is word 10 of the 850 and the first verb of loss in the book.
 faq-q: Why is "It takes" the scariest line so far?
