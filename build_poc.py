@@ -490,7 +490,9 @@ print('wrote words/')
 # ---------- chapters 1..N ----------
 # FAQ now lives in each chapter's frontmatter (faq-q/faq-a lines);
 # video: <youtube-id> in frontmatter fills the embed, no key -> invisible slot.
-# TODO: exact uploadDates from YouTube Studio -> then add VideoObject JSON-LD per chapter
+# VideoObject JSON-LD is emitted per video with real scraped dates (video_date/
+# short_date from the 2026-11-01 channel scrape); a video without a date gets
+# NO markup (pre-mortem: never fabricate uploadDate) — only a build warning.
 
 for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     m = CHAPTERS[num]
@@ -532,7 +534,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     vid = (m.get('video') or '').strip()
     if vid and vt and vdur and vdate:
         jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
-          "name":vt, "description":f"Basic English lesson for the word \"{w}\" (word {num} of 850).",
+          "name":vt, "description":f"Full Basic English video lesson for the word \"{w}\" (word {num} of 850): meaning, grammar patterns and spoken examples.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"],
           "uploadDate":vdate, "duration":vdur,
           "embedUrl":f"https://www.youtube.com/embed/{vid}",
@@ -548,7 +550,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
     sdate = (m.get('short_date') or '').strip()
     if sid and st and sdur and sdate:
         jsonld += ld({"@context":"https://schema.org","@type":"VideoObject",
-          "name":st, "description":f"Quick video lesson for the word \"{w}\" (word {num} of 850).",
+          "name":st, "description":f"Quick vertical video lesson for the word \"{w}\" (word {num} of 850): the key rule in about a minute.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{sid}/hqdefault.jpg"],
           "uploadDate":sdate, "duration":sdur,
           "embedUrl":f"https://www.youtube.com/embed/{sid}",
