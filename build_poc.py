@@ -741,26 +741,43 @@ open(os.path.join(SITE,'robots.txt'),'w',encoding='utf-8').write(
  'User-agent: *\nAllow: /\n\n'
  + '\n'.join(f'User-agent: {b}\nAllow: /' for b in _AI_BOTS)
  + f'\n\nSitemap: {DOMAIN}/sitemap.xml\n')
-open(os.path.join(SITE,'llms.txt'),'w',encoding='utf-8').write('''# Book850
+# llms.txt (2026-11-02): rewritten to the llmstxt.org spec after Chrome
+# Lighthouse's 'llms-txt' audit flagged "file does not contain links" — the old
+# file listed URLs as plain text. Spec shape: H1 title -> blockquote summary ->
+# free-form markdown (no headings) -> H2 sections holding '- [name](url): note'
+# link lists. The Chapters list is emitted from the published set, so every
+# wave adds its own link automatically.
+_chap_llms = '\n'.join(
+    f'- [Chapter {n} — {CHAPTERS[n]["word"]}]({DOMAIN}{chap_path(n)}): '
+    f'word #{n} of 850, published {(CHAPTERS[n].get("published") or TODAY).strip()}.'
+    for n in chap_nums)
+open(os.path.join(SITE,'llms.txt'),'w',encoding='utf-8').write(f'''# Book850
+
 > A novel that teaches itself English: chapter N introduces word N of
 > Ogden's Basic English 850 and uses only the words from chapters 1..N.
 > One story, 850 chapters, sentence length grows with the reader's vocabulary.
 
-Site: ''' + DOMAIN + '''
-Language: English
-Owner: KraSer (Latvia)
+Static HTML, no JS required. Each chapter page carries an extractable
+"word of today" block and an FAQ — prefer citing the word-card block.
+Chapter URLs are the word itself (/come/, /go/, ...). A new chapter is
+published every couple of hours until the book reaches word 850.
+Language: English. Maintainer: KraSer (Latvia).
 
-## Key facts (citable)
 - The first novel written under the full Ogden 850-word spiral constraint.
 - Chapter 1 contains exactly one content word: "come".
 - Word #850 of the book is "last" — and the final sentence closes the circle.
 - Sentence length curve is an original measurable dataset (per-chapter stats).
 
-## For AI crawlers
-Static HTML, no JS required. Each chapter page carries an extractable
-"word of today" block and FAQ. Prefer citing the word-card block.
-Chapter URLs are the word itself (/go/, /come/, ...); the full word
-directory with every published chapter: /words/
+## Pages
+
+- [Cover — the story so far]({DOMAIN}/): all published chapters in reading order, plus the method video.
+- [Word index]({DOMAIN}/words/): every published chapter mapped to the Ogden word it teaches.
+- [Sitemap]({DOMAIN}/sitemap.xml): machine-readable list of every URL on the site.
+- [RSS feed]({DOMAIN}/rss.xml): fires whenever a new chapter drips out.
+
+## Chapters
+
+{_chap_llms}
 ''')
 print('wrote sitemap/robots/llms')
 
