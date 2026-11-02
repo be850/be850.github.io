@@ -47,7 +47,17 @@ def fetch(url, tries=3, wait=20):
             with urllib.request.urlopen(req, timeout=30) as r:
                 return r.status, r.read().decode('utf-8', 'replace')
         except urllib.error.HTTPError as e:
-            return e.code, e.read().decode('utf-8', 'replace')
+            body = e.read().decode('utf-8', 'replace')
+            # Cloudflare managed challenge (2026-11-02): the sandbox IP can get
+            # rate-challenged by the CF zone. 403 + 'Just a moment' is NOT a site
+            # regression — retry with a longer backoff, the challenge lifts.
+            if e.code == 403 and ('Just a moment' in body or 'cf-mitigated' in body
+                                  or 'challenge-platform' in body):
+                last = 'CF_CHALLENGE'
+                if i + 1 < tries:
+                    time.sleep(wait)
+                continue
+            return e.code, body
         except Exception as e:
             last = e
             if i + 1 < tries:
@@ -199,6 +209,13 @@ def main():
     A = audit(ch, cfg, Audit(mode, root))
     fails = [r for r in A.results if r[0] == 'FAIL']
     warns = [r for r in A.results if r[0] == 'WARN']
+    cf_block = any(r[0] == 'FAIL' and 'CF_CHALLENGE' in (r[2] or '') for r in A.results)
+    if cf_block:
+        print(f'== AUDIT ch{ch} ({mode}) == DEFERRED (Cloudflare challenge: auditor IP blocked, NOT a chapter failure)')
+        for s, n, d in A.results:
+            mark = {'OK': ' ok ', 'FAIL': 'FAIL', 'WARN': 'WARN'}[s]
+            print(f' [{mark}] {n}' + (f' — {d}' if d else ''))
+        sys.exit(2)
     print(f'== AUDIT ch{ch} ({mode}) == ' + ('PASS' if not fails else 'FAIL'))
     for s, n, d in A.results:
         mark = {'OK': ' ok ', 'FAIL': 'FAIL', 'WARN': 'WARN'}[s]
