@@ -3,6 +3,7 @@ word: be
 title: Be
 url: /be/
 type: chapter
+published: 2026-11-02
 video_date: 2026-01-19
 video_duration: PT6M02S
 video_title: The Ultimate Shapeshifter: Master the 8 Identities of "BE" (Basic English)
