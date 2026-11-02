@@ -3,6 +3,7 @@ word: seem
 title: Seem
 url: /seem/
 type: chapter
+published: 2026-11-02
 video_date: 2026-01-19
 video_duration: PT5M00S
 video_title: The Bridge to Your Brain: Why You Need the Word "SEEM" (Basic English)
