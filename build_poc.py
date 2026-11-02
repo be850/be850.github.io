@@ -26,6 +26,21 @@ ADS_SLOT_B = (ADS.get('slot_b') or '').strip()
 ADS_HEAD = (f'<meta name="google-adsense-account" content="{ADS_CLIENT}">\n'
             f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>'
             ) if ADS_CLIENT else ''
+# Google Tag Manager (2026-11-02): config.json -> "gtm_id": "GTM-…". Empty = no tag
+# code ships at all (same philosophy as adsense). Canonical install, NOT the hybrid
+# <script async src=gtm.js> + gtag shim: IIFE loader as high as possible in <head>
+# + <noscript> iframe right after <body> (works with JS disabled, gtm.start timing).
+GTM_ID = (CFG.get('gtm_id') or '').strip()
+_GTM_IIFE = ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+             "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+             "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;\n"
+             "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+             "})(window,document,'script','dataLayer','__GTM_ID__');</script>\n"
+             "<!-- End Google Tag Manager -->")
+GTM_HEAD = (_GTM_IIFE.replace('__GTM_ID__', GTM_ID)) if GTM_ID else ''
+GTM_NOSCRIPT = ('<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '"\n'
+                'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+                '<!-- End Google Tag Manager (noscript) -->') if GTM_ID else ''
 AUTHOR = 'KraSer'
 TODAY = datetime.date.today().isoformat()          # real build/deploy date
 WARNINGS = []
@@ -368,6 +383,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{GTM_HEAD}
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}">
@@ -390,7 +406,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 {jsonld}
 </head>
 <body>
-<main>
+{GTM_NOSCRIPT}<main>
 <nav class="crumbs"><span>{crumbs}</span>{_THEME_BTN}</nav>
 {content}
 <footer>
