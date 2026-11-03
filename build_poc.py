@@ -464,7 +464,11 @@ def video_block_for(w, m):
         out += (f'<div class="{vcls}">' + iframe_html(sid, f'{w} — quick lesson') + '</div>'
                 f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
                 f'The quick version: <strong>{w}</strong> in about a minute.</p>')
-    return out or f'<!-- VIDEO SLOT: embed BasicEnglish40 video for "{w}" here (ID from channel library) -->'
+    # No video data -> no slot at all (rule: "данных нет — слоты пустые,
+    # невидимый слот, БЕЗ фейков"). A literal placeholder comment here leaks
+    # "VIDEO SLOT" into the page source and fails watchdog audit check #10
+    # (first hit: ch12 "do", 2026-11-03 02:20 tick).
+    return out
 
 # Clean build (2026-11-01): wipe the output dir first. Pre-mortem: a stale
 # artifact from an older config (e.g. ads.txt after the AdSense id was removed,
