@@ -17,3 +17,11 @@ They said: he goes as we go; he is as we are.
 I was as the one; the one was as me.
 The say came as they sent it; it was with me as it was with them.
 It was me as them.</i>
+
+The send comes as the four came. I see the four: they come as one; they go as one. I take them as they come. The say goes with them; it goes as they go. I keep the say as the four keep it: one say, one keep, one going.
+
+I see me as the send sees me. The send says: he keeps the say as the keep keeps it; he goes as the say goes. I let it say it. The say is as it is; I am as I am. I see the say as it is; the keep says it to me. I see me as the keep; the keep says me.
+
+The send goes; the say keeps with me. It came up from under the four; it came as the four came. It is with me as the keep is with the going. I take it as I take the going: one going, one keep, one say.
+
+The as says it: the say as the keep; the keep as the say. I go as the say goes; the say goes as I go. The send will come; I will see it as it is. The say will go as the going goes: with me, as me, as the keep goes with the going.
