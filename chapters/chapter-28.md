@@ -3,7 +3,7 @@ word: down
 title: Down
 url: /down/
 type: chapter
-published: 2026-11-05
+published: 2026-11-04
 faq-q: What does "down" mean in Basic English?
 faq-a: Down is the word of the low way. It says where a thing goes when it goes to a lower place, or along: "I go down after the say" &mdash; the going goes down the line; "they take me down" &mdash; they lead him to the low place; "I put the say down" &mdash; he sets it in the low place, he writes it. It is word 28 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down takes him down the line to the low place.
 faq-q: How does "down" work with the verbs?
