@@ -4,7 +4,7 @@ word: for
 title: For
 url: /for/
 type: chapter
-published: 2026-11-14
+published: 2026-11-06
 faq-q: What does "for" mean in Basic English?
 faq-a: For says what a thing is for &mdash; who gets it, what it serves: "the send is for the say", "I keep the say for you", "I come for the say". It is word 40 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to took the act to its end; under put the keep under the send; up took the say up from under; with keeps the say with him; as says the being of one in the place of the other; for says who the give is for.
 faq-q: How does "for" work with the verbs?
