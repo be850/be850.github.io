@@ -245,16 +245,31 @@ print('== ALL PASS ==\n')
 # data-theme=light, data-theme=dark — stored in localStorage('b850-theme').
 # The dark palette lives ONCE in _DARK_VARS and is injected into BOTH the
 # media-query branch and the explicit data-theme branch: the two can never
-# drift apart. Reading-optimized: deep blue-black canvas, brighter link blue,
-# same hue family as the light theme so og.png / brand stay coherent.
+# drift apart. Light theme untouched since 2026-11-01.
+# Dark palette 2.0 (2026-11-06, kraser ok «твой выбор ок»): «Тёплый вечер» —
+# warm dark plum canvas, ivory text, amber accent + rose secondary, soft
+# top glow instead of a flat void. Fixes the gloomy cold-monochrome feel
+# (old: blue-gray everything, one accent, flat canvas). Same dual-branch
+# pattern for the glow/card extras (_DARK_EXTRAS) — no drift, ever.
 _LIGHT_VARS = ('--bg:#fff;--text:#1a2430;--head:#1a2430;--accent:#0b6bcb;'
                '--muted:#5b6b7c;--card:#f2f7fc;--border:#e3e9ef;--todo:#8b98a5')
-_DARK_VARS = ('--bg:#0f1720;--text:#c9d4de;--head:#e9eff5;--accent:#5ba4f5;'
-              '--muted:#8494a3;--card:#16212d;--border:#263342;--todo:#5f6e7d')
+_DARK_VARS = ('--bg:#1a1622;--text:#ded7cd;--head:#f3ede3;--accent:#e8a54b;'
+              '--muted:#a0948a;--card:#241e2e;--border:#3a3244;--todo:#6b6157;'
+              '--acc2:#d97fb0')
+_DARK_GLOW = ('background-image:radial-gradient(760px 260px at 22% -70px,'
+              'rgba(232,165,75,.11),transparent 72%),' 
+              'radial-gradient(560px 220px at 96% -50px,'
+              'rgba(217,127,176,.08),transparent 72%)')
+_DARK_EXTRAS = (
+ f'@media(prefers-color-scheme:dark){{:root:not([data-theme=light]) body{{{_DARK_GLOW}}}'
+ f':root:not([data-theme=light]) .card{{border-left-color:var(--acc2)}}}}'
+ f':root[data-theme=dark] body{{{_DARK_GLOW}}}'
+ ':root[data-theme=dark] .card{border-left-color:var(--acc2)}')
 CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
  f'@media(prefers-color-scheme:dark){{:root:not([data-theme=light]){{{_DARK_VARS};color-scheme:dark}}}}'
  f':root[data-theme=dark]{{{_DARK_VARS};color-scheme:dark}}'
  'body{margin:0;font:17px/1.7 Georgia,serif;color:var(--text);background:var(--bg)}'
+ + _DARK_EXTRAS +
  'main{max-width:680px;margin:0 auto;padding:24px 20px 64px}'
  'a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}'
  '.crumbs{display:flex;align-items:center;justify-content:space-between;gap:12px;'
