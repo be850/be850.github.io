@@ -5,13 +5,13 @@ title: Any
 url: /any/
 type: chapter
 
-The one came from the keep of says; I saw it come; the keep went with it as one. The one may be any one of them: the say you took, the say before you, a say from the keep of them. I put the keep of them before me; the one was in it; the keep was the keep of me.
+The one came from the keep of says; I saw it come; the keep went with it as one. The keep of all was before me; all the says of them were in it as one keep. The keep let one of them go; the one may be any one of them: the say you took, the say you saw before it, a say from between the says of the keep. I put the keep of them before me; the one was in it; I saw it among them as one of all; the keep was the keep of me; the one was of me as the keep was of me.
 
-They said the one is of the keep; the keep is of them; any one of them may go. They saw the one go from the keep; it went as one going; the keep of them kept as one. I said it to me: the one is of me; the keep is of me; the going of one from them is the going of all as one.
+They said the one is of the keep; the keep is of them; any one of them may go. They saw the one go from the keep; it went as one going; the keep of them kept as one. The take was one take: any one of them may be taken; the keep will go with the one it let go; the say of the one will be with me as the keep is with me. I said it to me: the one is of me; the keep is of me; the going of one from them is the going of all as one.
 
-The keep of says came to me as one keep; I saw all of it: the say, the coming, the going. They put the one before me; the one was any one of them; I took it as one. The say of it came to me as one say; the keep of it came as one keep; all of it was of me as the keep was of me.
+The keep of says came to me as one keep; I saw all of it: the say, the coming, the going. They put the one before me; the one was any one of them; I took it as one. It was to me as any one: the say of it came to me as one say, the keep of it came as one keep; all of it was of me as the keep was of me. Any one of the says may come from the keep as one, may go with me as one, may be of me as the keep of them is of me.
 
-They came to me with the one; the keep went with them as one. I said: till the one after me comes, the one is with me; the keep of them is with me; any one of them may be the one. The going of them was one going; the coming of the one after will be one coming; the keep of them will go with it as one.
+They came to me with the one; the keep went with them as one. I said: till the one after me comes, the one is with me; the keep of them is with me; any one of them may be the one. The take of the one was one take; the take of any one was the take of all to them; the keep went with the one it let go.
 
 The any says: I am one of them — any one of them. You had all the says as one keep; I take one from it. The one may be the say you took; the one may be the say before you; the one may be any say of the keep. It is one to me; the keep of them went with the one.
 
