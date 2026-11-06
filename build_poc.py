@@ -414,7 +414,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <link rel="alternate" type="application/rss+xml" title="Book850" href="{DOMAIN}/rss.xml">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
 {_THEME_HEAD_JS}
 {ADS_HEAD}
 <style>{CSS}</style>
