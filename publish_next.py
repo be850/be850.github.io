@@ -62,16 +62,23 @@ def write_state(nums):
 
 
 def stamp_published(path):
-    """Insert 'published: YYYY-MM-DD' (real publish date) into frontmatter once."""
+    """Stamp 'published: YYYY-MM-DD' = real publish date (Riga) into frontmatter.
+    BACKLOG #15 (урок W28.6): дату ставит ИЗДАТЕЛЬ, не писатель — перезаписываем
+    и пустое поле, и «пророческую» дату, угаданную писателем заранее."""
     txt = open(path, encoding='utf-8').read()
+    try:
+        from zoneinfo import ZoneInfo
+        today = datetime.datetime.now(ZoneInfo('Europe/Riga')).date().isoformat()
+    except Exception:  # tzdata недоступен — UTC как fallback
+        today = datetime.datetime.utcnow().date().isoformat()
     if re.search(r'^published:', txt, re.M):
-        return
-    today = datetime.date.today().isoformat()
-    txt, n = re.subn(r'^(type:\s*chapter\s*)$', r'type: chapter\npublished: ' + today,
-                     txt, count=1, flags=re.M)
-    if n == 0:  # no type line -> put right after 'number:' line
-        txt = re.sub(r'^(number:\s*\d+\s*)$', r'\1\npublished: ' + today,
-                     txt, count=1, flags=re.M)
+        txt = re.sub(r'^published:.*$', 'published: ' + today, txt, count=1, flags=re.M)
+    else:
+        txt, n = re.subn(r'^(type:\s*chapter\s*)$', r'type: chapter\npublished: ' + today,
+                         txt, count=1, flags=re.M)
+        if n == 0:  # no type line -> put right after 'number:' line
+            txt = re.sub(r'^(number:\s*\d+\s*)$', r'\1\npublished: ' + today,
+                         txt, count=1, flags=re.M)
     open(path, 'w', encoding='utf-8').write(txt)
 
 
