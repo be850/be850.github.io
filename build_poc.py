@@ -241,18 +241,20 @@ print('== ALL PASS ==\n')
 
 # ---------- HTML template ----------
 # Theme system (2026-11-01): CSS custom properties + prefers-color-scheme +
-# a manual toggle in the crumbs row. Three states: unset (follow the OS),
-# data-theme=light, data-theme=dark — stored in localStorage('b850-theme').
-# The dark palette lives ONCE in _DARK_VARS and is injected into BOTH the
-# media-query branch and the explicit data-theme branch: the two can never
-# drift apart. Light theme untouched since 2026-11-01.
+# a manual toggle in the crumbs row. Stored in localStorage('b850-theme').
+# TWO themes since 2026-11-06 (kraser 14:16Z: «может только 2 оставить, эту
+# белую не надо» — согласен, белая дублировала светлую «Бумагу»): «Бумага»
+# (sepia) is the DEFAULT — it replaces the old white light theme as the day
+# palette, white is deleted; dark is the night option. Unset follows the OS
+# (light-OS -> Бумага, dark-OS -> dark), an explicit data-theme wins over
+# the OS. The dark palette lives ONCE in _DARK_VARS and is injected into
+# BOTH the media-query branch and the explicit data-theme branch: the two
+# can never drift apart.
 # Dark palette 2.0 (2026-11-06, kraser ok «твой выбор ок»): «Тёплый вечер» —
 # warm dark plum canvas, ivory text, amber accent + rose secondary, soft
 # top glow instead of a flat void. Fixes the gloomy cold-monochrome feel
 # (old: blue-gray everything, one accent, flat canvas). Same dual-branch
 # pattern for the glow/card extras (_DARK_EXTRAS) — no drift, ever.
-_LIGHT_VARS = ('--bg:#fff;--text:#1a2430;--head:#1a2430;--accent:#0b6bcb;'
-               '--muted:#5b6b7c;--card:#f2f7fc;--border:#e3e9ef;--todo:#8b98a5')
 _DARK_VARS = ('--bg:#1a1622;--text:#ded7cd;--head:#f3ede3;--accent:#e8a54b;'
               '--muted:#a0948a;--card:#241e2e;--border:#3a3244;--todo:#6b6157;'
               '--acc2:#d97fb0')
@@ -262,19 +264,19 @@ _DARK_GLOW = ('background-image:radial-gradient(760px 260px at 22% -70px,'
               'rgba(217,127,176,.08),transparent 72%)')
 _SEPIA_VARS = ('--bg:#f4ecd8;--text:#4b3d28;--head:#3b2f1e;--accent:#a05a2c;'
                '--muted:#8a7a5f;--card:#ede1c6;--border:#dccfae;--todo:#a2916f')
-# «Бумага» (2026-11-06, kraser ok: «сделай её тоже… но только светлую кому надо
-# по кнопке. остальное всё мне нравится»): третья тема-сепия как в читалках —
-# кремовая бумага, коричневые чернила, тёплый сиена-акцент. Только явный выбор
-# (кнопка), без OS-ветки: sepia — сознательный режим чтения.
+# «Бумага» (2026-11-06: kraser «сделай её тоже», 14:02Z; в 14:16Z — «может
+# только 2 оставить, эту белую не надо»): кремовая бумага как в читалках,
+# коричневые чернила, тёплый сиена-акцент. Сначала — третья тема по кнопке,
+# теперь единственная светлая и ДЕФОЛТ сайта: белая light удалена совсем.
+# Палитру не меняли — та, что kraser одобрил на превью 3 тем.
 _DARK_EXTRAS = (
- f'@media(prefers-color-scheme:dark){{:root:not([data-theme=light]) body{{{_DARK_GLOW}}}'
- f':root:not([data-theme=light]) .card{{border-left-color:var(--acc2)}}}}'
+ f'@media(prefers-color-scheme:dark){{:root:not([data-theme=sepia]) body{{{_DARK_GLOW}}}'
+ f':root:not([data-theme=sepia]) .card{{border-left-color:var(--acc2)}}}}'
  f':root[data-theme=dark] body{{{_DARK_GLOW}}}'
  ':root[data-theme=dark] .card{border-left-color:var(--acc2)}')
-CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
- f'@media(prefers-color-scheme:dark){{:root:not([data-theme=light]){{{_DARK_VARS};color-scheme:dark}}}}'
+CSS = (f':root{{{_SEPIA_VARS};color-scheme:light}}'
+ f'@media(prefers-color-scheme:dark){{:root:not([data-theme=sepia]){{{_DARK_VARS};color-scheme:dark}}}}'
  f':root[data-theme=dark]{{{_DARK_VARS};color-scheme:dark}}'
- f':root[data-theme=sepia]{{{_SEPIA_VARS};color-scheme:light}}'
  'body{margin:0;font:17px/1.7 Georgia,serif;color:var(--text);background:var(--bg)}'
  + _DARK_EXTRAS +
  'main{max-width:680px;margin:0 auto;padding:24px 20px 64px}'
@@ -313,41 +315,36 @@ CSS = (f':root{{{_LIGHT_VARS};color-scheme:light}}'
  '#theme-btn:hover{color:var(--accent);border-color:var(--accent)}'
  '#theme-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;'
  'stroke-width:2;stroke-linecap:round;stroke-linejoin:round}'
- '#theme-btn .sun{display:none}#theme-btn .book{display:none}'
- '[data-theme=dark] #theme-btn .sun{display:none}[data-theme=dark] #theme-btn .moon{display:none}'
+ '#theme-btn .book{display:none}'
+ '[data-theme=dark] #theme-btn .moon{display:none}'
  '[data-theme=dark] #theme-btn .book{display:inline}'
- '[data-theme=sepia] #theme-btn .sun{display:inline}'
- '@media(prefers-color-scheme:dark){:root:not([data-theme=light]) #theme-btn .sun{display:none}'
- ':root:not([data-theme=light]) #theme-btn .book{display:inline}}')
-# Icon = the theme a click will SWITCH TO: light -> moon (dark),
-# dark -> book (sepia «Бумага»), sepia -> sun (light). OS-dark unset counts
-# as dark (book shows).
-# Moon/sun button: feather icons, stroke=currentColor (adapts to both themes).
-# Which icon shows = the theme a click will SWITCH TO: sun visible only while
-# dark is in effect. Covers all three states (light / dark / OS-following).
-_THEME_BTN = ('<button id="theme-btn" type="button" aria-label="Switch color theme" title="Light / dark / sepia theme">'
+ '@media(prefers-color-scheme:dark){:root:not([data-theme=sepia]) #theme-btn .moon{display:none}'
+ ':root:not([data-theme=sepia]) #theme-btn .book{display:inline}}')
+# Icon = the theme a click will SWITCH TO: «Бумага» (default) -> moon (dark),
+# dark -> book (Бумага). OS-dark unset counts as dark (book shows).
+# Moon/book button: feather icons, stroke=currentColor (adapts to both themes).
+# Which icon shows = the theme a click will SWITCH TO. Covers all states
+# (unset / data-theme=sepia / data-theme=dark / OS-following).
+_THEME_BTN = ('<button id="theme-btn" type="button" aria-label="Switch color theme" title="Бумага / dark theme">'
  '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true">'
  '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
- '<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/>'
- '<path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2'
- 'M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
  '<svg class="book" viewBox="0 0 24 24" aria-hidden="true">'
  '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>'
  '<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></button>')
 # Runs before first paint: a saved preference must win over the OS setting,
 # otherwise dark-mode readers get a white flash on every navigation.
 _THEME_HEAD_JS = ('<script>try{var t=localStorage.getItem("b850-theme");'
- 'if(t==="dark"||t==="light"||t==="sepia")document.documentElement.setAttribute("data-theme",t);'
- 'var mc={light:"#ffffff",dark:"#1a1622",sepia:"#f4ecd8"}[t];'
+ 'if(t==="dark"||t==="sepia")document.documentElement.setAttribute("data-theme",t);'
+ 'var mc={dark:"#1a1622",sepia:"#f4ecd8"}[t];'
  'if(mc){var m=document.querySelector("meta[name=theme-color]");if(m)m.setAttribute("content",mc)}}catch(e){}</script>')
 _THEME_JS = ('<script>(function(){var b=document.getElementById("theme-btn");if(!b)return;'
- 'var ord=["light","dark","sepia"],mc={light:"#ffffff",dark:"#1a1622",sepia:"#f4ecd8"};'
+ 'var ord=["sepia","dark"],mc={dark:"#1a1622",sepia:"#f4ecd8"};'
  'function eff(){var t=document.documentElement.getAttribute("data-theme");'
- 'return t?t:(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}'
+ 'return t?t:(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"sepia")}'
  'function set(t){document.documentElement.setAttribute("data-theme",t);'
  'var m=document.querySelector("meta[name=theme-color]");if(m)m.setAttribute("content",mc[t]);'
  'try{localStorage.setItem("b850-theme",t)}catch(e){}}'
- 'b.addEventListener("click",function(){set(ord[(ord.indexOf(eff())+1)%3])})})();</script>')
+ 'b.addEventListener("click",function(){set(ord[(ord.indexOf(eff())+1)%ord.length])})})();</script>')
 
 def md_html(text):
     """Tiny Markdown subset for the manifesto (2026-11-01). Until today the
@@ -432,7 +429,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <meta name="twitter:image" content="{DOMAIN}/og.png">
 <link rel="alternate" type="application/rss+xml" title="Book850" href="{DOMAIN}/rss.xml">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#f4ecd8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
 {_THEME_HEAD_JS}
 {ADS_HEAD}
