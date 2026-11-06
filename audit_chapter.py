@@ -23,7 +23,7 @@ Audited for the LAST PUBLISHED chapter (state.json -> last_chapter, or --ch N):
  15. IndexNow key file answers 200
 Exit 1 on any FAIL; WARNs (network-bound checks) never fail the run.
 """
-import json, os, re, sys, time, urllib.request
+import json, os, re, subprocess, sys, time
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'}
@@ -39,25 +39,43 @@ def parse_md(path):
     return meta
 
 
+def _cf_challenge(body):
+    """Cloudflare challenge markers (page body, not headers)."""
+    return ('Just a moment' in body or 'challenge-platform' in body
+            or 'challenges.cloudflare.com' in body)
+
+
 def fetch(url, tries=3, wait=20):
+    """Live fetch via curl subprocess.
+
+    2026-11-06 22:30Z: python-urllib TLS fingerprint (JA3) started getting
+    Cloudflare challenges served as 404 pages, while curl with the same UA
+    passes fine -> hard FAIL 'page -> 404' on a perfectly healthy site.
+    curl transport is the fix; challenge detection kept (403/404/503 + markers).
+    """
     last = None
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=30) as r:
-                return r.status, r.read().decode('utf-8', 'replace')
-        except urllib.error.HTTPError as e:
-            body = e.read().decode('utf-8', 'replace')
-            # Cloudflare managed challenge (2026-11-02): the sandbox IP can get
-            # rate-challenged by the CF zone. 403 + 'Just a moment' is NOT a site
-            # regression — retry with a longer backoff, the challenge lifts.
-            if e.code == 403 and ('Just a moment' in body or 'cf-mitigated' in body
-                                  or 'challenge-platform' in body):
+            p = subprocess.run(
+                ['curl', '-s', '-A', UA['User-Agent'], '--max-time', '25',
+                 '-w', '\n__STATUS__%{http_code}', url],
+                capture_output=True, text=True, timeout=30)
+            out = p.stdout
+            if '__STATUS__' in out:
+                body, _, code = out.rpartition('\n__STATUS__')
+                code = int(code.strip() or 0)
+            else:
+                body, code = out, 0
+            if code and not _cf_challenge(body):
+                return code, body
+            if code in (403, 404, 503) and _cf_challenge(body):
                 last = 'CF_CHALLENGE'
-                if i + 1 < tries:
-                    time.sleep(wait)
-                continue
-            return e.code, body
+            elif code:
+                return code, body          # real HTTP answer, no challenge
+            else:
+                last = f'curl exit {p.returncode}: {p.stderr[:80]}'
+            if i + 1 < tries:
+                time.sleep(wait)
         except Exception as e:
             last = e
             if i + 1 < tries:
@@ -116,7 +134,9 @@ def audit(ch, cfg, A):
     page_path = (meta.get('url') or f'/{w}/')
 
     st, html_text = A.get(page_path)
-    if not A.check(f'page {page_path} -> {st}', st == 200, '' if st == 200 else 'chapter page not reachable'):
+    page_detail = '' if st == 200 else 'chapter page not reachable' + (
+        f' ({str(html_text)[:60]})' if html_text else '')
+    if not A.check(f'page {page_path} -> {st}', st == 200, page_detail):
         return A
     # 2 canonical
     A.check('canonical', f'href="{dom}{page_path}"' in html_text or f"href='{dom}{page_path}'" in html_text)
