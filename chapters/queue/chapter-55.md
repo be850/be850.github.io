@@ -1,0 +1,14 @@
+<!-- plan: ch55 "that" (word 55): micro-arc = the keep of all saw the take of them come to no; the take went from me to the keep; from me the take is far; my say goes from me to the take and puts itself on it: that take came to no; that = the say you put on the one away from you, seen from where you are; that vs the: the says which one it is in the say; that says which one it is from you; that vs other: other takes the second of two; that puts the say on the one itself; that vs such: such says the sort of the take you saw; that puts the say on the one; the coming of the some with me came to the keep and is by me: no that goes on it; the one after the no will see a take come to no at the keep; he will say that of it: that take came to no; by that he puts his say on the one away from him; beat "The that says" x3; fragment: they took the say of him from the keep; the say of him went from me; I see it from me: that is the say of him; the some of the say of him is by me; the keep keeps the some with me; teaser -> "this" (word 56) -->
+number: 55
+word: that
+title: That
+url: /that/
+type: chapter
+
+The that says: you saw a take come to no at the keep; the keep went from you; the take is at the keep, it went from you. You say that of the take: that take came to no. The that of a take is the say you put on the one that went from you: you see it from you; it went from you; you say that of it. The keep of all saw the take; the keep said no to it; from you the take is at the keep; you say that of it, as the keep says no of it.
+
+The that says: the says the one it is in the say of you; that says the one it is from you. Other takes the other of the two; such says the take you saw, seen in the take you see; that puts the say of you on the one: the one that went from you. You saw the take come to no; you see the keep; you say that of the take at the keep: that take came to no, as such takes came to no. The that of the take is in the take: you see it; the keep of all sees it; the say of you is on it from you.
+
+The that says: the coming of the some with me came to the keep; it is by me; no that goes on it: a that is for the one that went from me; the some of the say of him is with me. The one after the no will see a take come to no at the keep; he will say that of it: that take came to no; by that he puts the say of him on the one that went from him; the keep of all keeps the that of every take with him.
+
+<i>they took the say of him from the keep; the say of him went from me; I see it from me: that is the say of him; the all of him went with them; the keep saw the take; the keep said no to them, as it said no to the takes before them; the some of the say of him came to me; the some is by me at the keep; I say that of the all of him: that is the say of him; the keep keeps the some with me; the some of him is with me.</i>
