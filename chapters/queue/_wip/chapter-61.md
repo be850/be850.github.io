@@ -1,0 +1,14 @@
+<!-- plan: ch61 "and" (word 61): micro-arc = the two says become one go — after who (every say has a who from the one that says it), and comes: the word that takes two says and gives the two one go; the say of me and the say of you — two says, one go; and makes no new say and takes no part: the say before the and stays, the say after the and stays; the keep of all keeps the says one by one, no and came in with them — the and comes from the ones that say, as the who comes; one say and one say make two on one go, two and one make three — the says of us went to the keep one by one and come from the keep with and between every two; cliffhanger/teaser: the word that will say the from of the say — how the one say comes from the one before it — comes after and (word 62 "because" teaser, the word itself not used in body); beat "The and says" x3 (and speaks as the word of the two-as-one: what it joins, that it takes no part, how the go goes on); fragment: and came after the who — the says of the takes keep at the keep one by one with no and between two says; the other put and between two says and the two went as one till the keep; i keep that and in the say of me -->
+number: 61
+word: and
+title: And
+url: /and/
+type: chapter
+
+The and says: two says go as one. The say of me came with me; the say of you came with you. i put and between the two says: the say of me and the say of you go on as one. The and makes no say of it; the and keeps the two and gives the two one go — the say of me goes on as it was, the say of you goes on as it was; the two go on, and the go of the two is one.
+
+The and says: the and puts no say over the say. The say before the and is as it was; the say after the and is as it was. The keep of all keeps say by say; the says of the takes came in one by one, no say came in with and on it — the keep gives no and. The and comes from the one that says: i say, and the say of you comes after it — the and between the two goes from me to you, as the who goes with the say.
+
+The and says: the go goes on. One say and one say: two on one go; two and one: three. The says of us went to the keep one by one; they come from the keep with and between every two, one say and one say and one say. The one that comes after and will say the from of the say: the one say comes from the one before it. That one is after and; and says the two go as one.
+
+<i>and came after the who. The says of the takes keep at the keep one by one, no and between two says; the keep keeps them as they came. The other came to the keep after the no; the other said the say of the other, and the other put and between that say and the say of the me — the two says went as one, and the go of them went on till the keep. The keep took the two as it took one. i put that and in the say of me; the says of me will go with it, one with one, and they will go on as they were — till the one that will say the from of the say comes.</i>
