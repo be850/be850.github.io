@@ -5,6 +5,14 @@ title: Such
 url: /such/
 type: chapter
 
+The keep of all saw takes before the take of them. No one of the takes before them is with me; I see them in the say of the keep: the keep keeps every take it saw, as it keeps the some of the say of him with me. The take of them came to no; the keep said no to it. The coming of the some with me came to the keep; the keep keeps it, as it keeps the say of the takes before it.
+
+You saw a take come to no. After it you saw a take come to no. The two came to no as one; the one was in the other, as the other was in the one; I say such of the two: such a take comes to no. Such is the say you give the take you saw, seen in the take you see: the such of the take is in the take; you see it; the keep of all sees it. You may say of a take: I saw the such of it before; such a take comes to no at the keep of all.
+
+The take of them was such a take as the keep had seen. The keep had seen takes; such takes came to no; the take of them came to no, as the takes before it came to no. The coming of the some with me was no such take. The keep had seen them come to the keep before; such a coming the keep keeps; the coming of the some came to the keep, as they came; the keep keeps the some of the say of him with me. The take of them came before the keep; the coming of the some came before the keep; the keep saw the two; by the such of the two the keep said no to the one; the keep keeps the other.
+
+The one after the no will see takes at the keep. He will see a take come to no; he will say such of it: such a take came to no before; such takes come to no at the keep of all. The keep of all sees the such of every take with him. The some of the say of him is with me; the such of the say is in the say: I see it in the little of it; I see it in the some of it; the keep of all keeps the all of it. No take is no take to the keep of all: the keep saw the such of it before the take came; the keep said no to it after it came, as it had said no to such takes before.
+
 The such says: the take of them came to no; you saw it come to no. Such a take comes to no at the keep of all; the keep saw such takes before the take of them; to such takes the keep says no. I saw the take come to no; I say such of the take: the such of it was in the take; the keep saw the such of it come to no.
 
 The such says: I saw the take of them; I see other takes; I put the take I saw with the take I see; the two came to no as one. The such of a take is the take you saw in the take you see: you saw it come to no; you see such a take; you say such of it. The keep of all saw the such of every take at the keep; no take came to the keep with the such of the take of them; such a take came to no.
