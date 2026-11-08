@@ -11,7 +11,7 @@ Audited for the LAST PUBLISHED chapter (state.json -> last_chapter, or --ch N):
   3. h1 title present
   4. "The word of today: {word}" block
   5. full-lesson iframe (embed/{video}) when video: set
-  6. quick-lesson <details class="short-toggle"> when short: set
+  6. quick-lesson: <details> toggle when short+video, plain embed when short-only
   7. VideoObject count == expected (full needs video+title+duration+date; short ditto)
   8. FAQPage JSON-LD present
   9. prev/next navigation (prev chapter link / 'comes next' stub)
@@ -148,13 +148,17 @@ def audit(ch, cfg, A):
     vid = (meta.get('video') or '').strip()
     if vid:
         A.check(f'full embed {vid}', f'/embed/{vid}' in html_text)
-    # 6 short toggle
+    # 6 short lesson (2026-11-08: mirror build_poc.py — the <details> toggle
+    # renders ONLY for short+video pairs; short-only chapters get a plain
+    # quick-lesson iframe (elif branch), so demanding <details> there was a
+    # false FAIL on all 57 sweep chapters ch12-68, first hit ch62 'because')
     sid = (meta.get('short') or '').strip()
-    if sid:
+    if sid and vid:
         A.check(f'short toggle {sid}', '<details class="short-toggle">' in html_text)
-        if vid:
-            m = re.search(r'<details class="short-toggle">.*?</details>', html_text, re.DOTALL)
-            A.check('short inside details', bool(m and f'/embed/{sid}' in m.group(0)))
+        m = re.search(r'<details class="short-toggle">.*?</details>', html_text, re.DOTALL)
+        A.check('short inside details', bool(m and f'/embed/{sid}' in m.group(0)))
+    elif sid:
+        A.check(f'short quick-lesson {sid}', f'/embed/{sid}' in html_text)
     # 7 VideoObjects
     vos = video_objects(html_text)
     expect = 0
