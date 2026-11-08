@@ -270,14 +270,19 @@ print('== ALL PASS ==\n')
 # (old: blue-gray everything, one accent, flat canvas). Same dual-branch
 # pattern for the glow/card extras (_DARK_EXTRAS) — no drift, ever.
 _DARK_VARS = ('--bg:#1a1622;--text:#ded7cd;--head:#f3ede3;--accent:#e8a54b;'
-              '--muted:#a0948a;--card:#241e2e;--border:#3a3244;--todo:#6b6157;'
+              '--muted:#a0948a;--card:#241e2e;--border:#3a3244;--todo:#8d8172;'
               '--acc2:#d97fb0')
 _DARK_GLOW = ('background-image:radial-gradient(760px 260px at 22% -70px,'
               'rgba(232,165,75,.11),transparent 72%),' 
               'radial-gradient(560px 220px at 96% -50px,'
               'rgba(217,127,176,.08),transparent 72%)')
-_SEPIA_VARS = ('--bg:#f4ecd8;--text:#4b3d28;--head:#3b2f1e;--accent:#a05a2c;'
-               '--muted:#8a7a5f;--card:#ede1c6;--border:#dccfae;--todo:#a2916f')
+_SEPIA_VARS = ('--bg:#f4ecd8;--text:#4b3d28;--head:#3b2f1e;--accent:#945322;'
+               '--muted:#6f6244;--card:#ede1c6;--border:#dccfae;--todo:#786a42')
+# A11y tuning 08.11 (BL#52, PageSpeed contrast): ONLY the failing pairs moved,
+# hue kept — accent #a05a2c->#945322 (4.05->4.60 on card), muted #8a7a5f->#6f6244
+# (3.22->4.62 on card), todo #a2916f->#786a42 (2.62->4.53 on bg); dark todo
+# #6b6157->#8d8172 (2.94->4.67). bg/card/text/head/acc2 untouched — the
+# approved look stands, WCAG 4.5:1 now passes everywhere text renders.
 # «Бумага» (2026-11-06: kraser «сделай её тоже», 14:02Z; в 14:16Z — «может
 # только 2 оставить, эту белую не надо»): кремовая бумага как в читалках,
 # коричневые чернила, тёплый сиена-акцент. Сначала — третья тема по кнопке,
@@ -295,13 +300,13 @@ CSS = (f':root{{{_SEPIA_VARS};color-scheme:light}}'
  + _DARK_EXTRAS +
  'main{max-width:680px;margin:0 auto;padding:24px 20px 64px}'
  'a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}'
+ 'article a,.faq a,footer a{text-decoration:underline dotted;text-underline-offset:4px}'
  '.crumbs{display:flex;align-items:center;justify-content:space-between;gap:12px;'
  'font:14px/1.4 Arial,sans-serif;color:var(--muted);margin-bottom:20px}'
  'h1{font:700 30px/1.25 Arial,sans-serif;margin:0 0 6px;color:var(--head)}'
  'h2{font:700 21px/1.3 Arial,sans-serif;margin:34px 0 10px;color:var(--head)}'
  '.story{font-size:19px;line-height:2.0;white-space:pre-wrap}'
  '.story p{margin:0.9em 0;white-space:normal}'
- '.story a{text-decoration:underline dotted;text-underline-offset:4px}'
  '.card{background:var(--card);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0}'
  '.card strong{font-family:Arial,sans-serif}'
  '.progress{font:700 13px/1.4 Arial,sans-serif;letter-spacing:1px;color:var(--accent);text-transform:uppercase}'
