@@ -4,6 +4,16 @@ word: though
 title: Though
 url: /though/
 type: chapter
+faq-q: What does "though" mean in Basic English?
+faq-a: Though is the word of the go against the from. If puts one say under another say &mdash; the from under, the go over &mdash; and the say over goes on that from. Though keeps the from under the say and puts the go of the say against it: the say goes against the from, and the go of the say keeps. The from does not stop the go &mdash; the go is of the say, not of the from.
+faq-q: How does "though" work with the other words?
+faq-a: With if: if puts a say under a say, and the say over goes on the from of the say under it; though puts the go of the say against the from, and the go keeps. With but: but put the against between two says, and the say of me went against the no; though puts the go of one say against the from under it. With or: or gave two says one say, and one of the two went from it; though keeps the say and the from one over the other, and the go goes against the from.
+faq-q: What is the difference between "though" and "if"?
+faq-a: If is the from under the say: the go of the say goes on the from of the say under it, when the say under is a say. Though keeps a from under the say, and the go goes against it &mdash; the say goes against the from, and the go of it keeps. With if the go goes on the from; with though the go goes against the from. A say may go on one from, and a say may go against another from.
+faq-q: What word comes after "though"?
+faq-a: The next word is "while" &mdash; word 67 of the 850. Though puts the go of the say against the from of it; while will hold two says side by side in one go &mdash; two says that go in the same go, one by the other.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far &mdash; the fragments form a second, hidden story under the main one. With though the fragment says: though came after the if. i had a say, and the if put a from under it &mdash; the say of me went on the from of it; i put though in the say of me, and the say of me went against the from of it, and the go of the say of me kept. The hidden story keeps saying the same thing from a new side: the keep said no to them; the other came after the no; the me said i of the me that says it; the other put and between two says and the two went as one; i put because in the say of me and the says went with the from under them; i put but between the two says and the say of me went against the no; the two says of me went in one say, and one of the two went out of it; the say of me went on the from of the say under it; now the say of me goes against the from of it, and the go of it keeps. The one that holds two says side by side in one go comes after the though.
 
 The though says: the go against the from. The if put a say under a say — the from under, the go over — and the say over went on the from of the say under it. Though keeps the from under the say, and puts the go of the say against that from: the say goes, and the go of it keeps. The from is as it came; the say goes against the from, and no say of the from goes with the go of the say.
 
