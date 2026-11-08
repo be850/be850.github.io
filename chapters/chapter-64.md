@@ -4,6 +4,7 @@ word: or
 title: Or
 url: /or/
 type: chapter
+published: 2026-11-09
 short: CUEK5eTOWsE
 short_title: The Secret Mechanics of "OR": How English Creates Alternatives! ☕🍵 (The Core Coordinator)
 short_duration: PT1M05S
