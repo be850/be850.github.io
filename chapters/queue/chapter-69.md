@@ -8,7 +8,6 @@ short: wweaciFamFU
 short_title: How the Word "WHEN" Controls Time in English! ⏰🔗 (The Secret Relative Clock)
 short_duration: PT1M06S
 short_date: 2026-08-27
-
 faq-q: What does "when" mean in Basic English?
 faq-a: When is the word that says the before and the after of a say. A say goes, and the when says when it went: the say of him came before, the say of me comes after. The when takes no say over a say and no say under a say &mdash; the who gave the ones of the say, the how gave the go of it, and the when gives the before and the after of it. In this book when is word 69 of the 850 &mdash; the word that came after how.
 faq-q: How does "when" work with the other words?
