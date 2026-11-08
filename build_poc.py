@@ -23,16 +23,18 @@ ADS = CFG.get('adsense') or {}
 ADS_CLIENT = (ADS.get('client') or '').strip()
 ADS_SLOT_A = (ADS.get('slot_a') or '').strip()
 ADS_SLOT_B = (ADS.get('slot_b') or '').strip()
-ADS_HEAD = (f'<meta name="google-adsense-account" content="{ADS_CLIENT}">\n'
-            f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>'
-            ) if ADS_CLIENT else ''
+# BL#52 (08.11): the adsbygoogle/gtag <script async src> tags are GONE from
+# <head> — both srcs are injected on idle by _THIRD_PARTY_LOADER instead.
+# The queue patterns (window.adsbygoogle.push, dataLayer+gtag config) already
+# work pre-load, so units/analytics still fire — just after the page is
+# interactive. PageSpeed: removes ~hundreds of KB of third-party JS from TBT.
+ADS_HEAD = (f'<meta name="google-adsense-account" content="{ADS_CLIENT}">\n') if ADS_CLIENT else ''
 # Google tag gtag.js / GA4 (2026-11-02, replaced GTM-58RV2C6 at owner request):
 # config.json -> "ga4_id": "G-…". Empty = no tag code ships at all (same philosophy
 # as adsense). Canonical gtag.js snippet in <head>; no <noscript> part (that is
 # GTM-only, GA4 needs none).
 GA_ID = (CFG.get('ga4_id') or '').strip()
-_GA_SNIPPET = ('<!-- Google tag (gtag.js) -->\n'
-               '<script async src="https://www.googletagmanager.com/gtag/js?id=__GA_ID__"></script>\n'
+_GA_SNIPPET = ('<!-- Google tag (gtag.js) — src loaded on idle, see _THIRD_PARTY_LOADER -->\n'
                '<script>\n'
                '  window.dataLayer = window.dataLayer || [];\n'
                '  function gtag(){dataLayer.push(arguments);}\n'
@@ -41,6 +43,18 @@ _GA_SNIPPET = ('<!-- Google tag (gtag.js) -->\n'
                "  gtag('config', '__GA_ID__');\n"
                '</script>')
 GA_HEAD = (_GA_SNIPPET.replace('__GA_ID__', GA_ID)) if GA_ID else ''
+# One loader for BOTH third-party srcs (BL#52): nothing network/main-thread
+# heavy before idle. requestIdleCallback with a 4s cap, setTimeout fallback.
+_TP_URLS = ([f'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}']
+            if ADS_CLIENT else []) + \
+           ([f'https://www.googletagmanager.com/gtag/js?id={GA_ID}'] if GA_ID else [])
+_THIRD_PARTY_LOADER = (
+    '<!-- adsense+gtag off the critical path (BL#52): srcs injected on idle -->\n'
+    '<script>(function(){var u=' + json.dumps(_TP_URLS) + ';'
+    'function go(){for(var k=0;k<u.length;k++){var s=document.createElement("script");'
+    's.async=true;s.src=u[k];document.head.appendChild(s);}}'
+    'if("requestIdleCallback" in window){requestIdleCallback(go,{timeout:4000})}'
+    'else{setTimeout(go,2500)}})()</script>') if _TP_URLS else ''
 AUTHOR = 'KraSer'
 TODAY = datetime.date.today().isoformat()          # real build/deploy date
 WARNINGS = []
@@ -305,6 +319,10 @@ CSS = (f':root{{{_SEPIA_VARS};color-scheme:light}}'
  '.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--accent);cursor:pointer}'
  '.video-short{aspect-ratio:16/9;width:100%;margin:14px auto 0}'
  '.video-short.vertical{width:min(100%,270px);aspect-ratio:9/16}'
+ '.yt-facade{position:relative;width:100%;height:100%;background:#000 center/cover no-repeat;border-radius:10px;cursor:pointer}'
+ '.yt-facade:focus-visible{outline:3px solid var(--accent);outline-offset:2px}'
+ '.yt-play{position:absolute;inset:0;margin:auto;width:66px;height:46px;border-radius:12px;background:rgba(23,18,30,.82);display:flex;align-items:center;justify-content:center}'
+ '.yt-play:before{content:"";border-style:solid;border-width:9px 0 9px 16px;border-color:transparent transparent transparent #fff;margin-left:3px}'
  '#video-course{margin:20px 0 28px}'
  '#video-course .pl{font:15px/1.9 Arial,sans-serif}'
  '#video-course .pl a{color:var(--accent);font-weight:700}'
@@ -337,6 +355,21 @@ _THEME_HEAD_JS = ('<script>try{var t=localStorage.getItem("b850-theme");'
  'if(t==="dark"||t==="sepia")document.documentElement.setAttribute("data-theme",t);'
  'var mc={dark:"#1a1622",sepia:"#f4ecd8"}[t];'
  'if(mc){var m=document.querySelector("meta[name=theme-color]");if(m)m.setAttribute("content",mc)}}catch(e){}</script>')
+# YouTube facade loader (BL#52): one delegated click/keydown handler for ALL
+# .yt-facade divs — swaps the poster for a real nocookie iframe on demand.
+_YT_JS = ('<script>(function(){'
+ 'function arm(f){var v=f.getAttribute("data-vid"),t=f.getAttribute("data-title")||"";'
+ 'var i=document.createElement("iframe");'
+ 'i.src="https://www.youtube-nocookie.com/embed/"+v+"?autoplay=1";i.title=t;'
+ 'i.allow="autoplay; encrypted-media; picture-in-picture";i.allowFullscreen=true;'
+ 'i.style.cssText="width:100%;height:100%;border:0;border-radius:10px";'
+ 'f.replaceWith(i);}'
+ 'document.addEventListener("click",function(e){'
+ 'var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f)arm(f);});'
+ 'document.addEventListener("keydown",function(e){'
+ 'if(e.key!=="Enter"&&e.key!==" ")return;'
+ 'var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;'
+ 'if(f){e.preventDefault();arm(f);}});})();</script>')
 _THEME_JS = ('<script>(function(){var b=document.getElementById("theme-btn");if(!b)return;'
  'var ord=["sepia","dark"],mc={dark:"#1a1622",sepia:"#f4ecd8"};'
  'function eff(){var t=document.documentElement.getAttribute("data-theme");'
@@ -432,7 +465,9 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <meta name="theme-color" content="#f4ecd8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
 {_THEME_HEAD_JS}
+<link rel="preconnect" href="https://i.ytimg.com">
 {ADS_HEAD}
+{_THIRD_PARTY_LOADER}
 <style>{CSS}</style>
 {jsonld}
 </head>
@@ -447,6 +482,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 </main>
 {extra}
 {_THEME_JS}
+{_YT_JS}
 </body>
 </html>'''
 
@@ -461,10 +497,19 @@ def ad_unit(slot):
             f'<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>')
 
 def iframe_html(vid, title):
-    """Lazy YouTube iframe; title is escaped (Studio titles carry quotes)."""
-    return (f'<iframe src="https://www.youtube.com/embed/{vid}" title="{html.escape(title)}" '
-            f'loading="lazy" allowfullscreen style="width:100%;height:100%;border:0;'
-            f'border-radius:10px"></iframe>')
+    """Click-to-load YouTube facade (BL#52, 08.11; also the eli5 fix pattern,
+    BL#51): ships a poster div + CSS play button — ZERO YouTube JS/CSS/iframe
+    bytes until the reader asks for playback (the old loading=lazy iframe
+    still pulled ~594KB of embed JS and hit TBT on every chapter page).
+    hqdefault is 4:3-letterboxed; center/cover in the 16:9 wrapper crops the
+    bars. Keyboard: role=button + Enter/Space handler in _YT_JS. The
+    youtube-nocookie embed domain also removes the third-party-cookie noise
+    flagged by PageSpeed Best Practices."""
+    t = html.escape(title, quote=True)
+    return (f'<div class="yt-facade" data-vid="{vid}" data-title="{t}" role="button" tabindex="0" '
+            f'aria-label="Play video: {t}" '
+            f'style="background-image:url(https://i.ytimg.com/vi/{vid}/hqdefault.jpg)">'
+            f'<span class="yt-play" aria-hidden="true"></span></div>')
 
 def video_block_for(w, m):
     """Dual video (2026-11-01, per kraser's 'дуально и шортс и полное'):
@@ -705,8 +750,8 @@ By the last page you own all 850 words of Basic English &mdash; and the hero rem
 <p><a href="{chap_path(0)}" style="font:700 18px Arial">Open Chapter 0 &rarr;</a> &nbsp; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">or jump straight into Chapter 1: Come</a></p>
 <h2>The idea, in six minutes</h2>
 <p>The whole method on one video: how 850 simple words cover almost everything you ever need to say &mdash; and how this book feeds them to you one chapter at a time. In a hurry? There is a quick vertical version too.</p>
-<div class="video" style="margin:16px 0 8px;aspect-ratio:16/9;width:100%">{iframe_html(TITLE_VIDEO['video'], 'Book850 &mdash; the method in 850 words')}</div>
-<details class="short-toggle"><summary>In a hurry? Watch the quick version &mdash; {html.escape(TITLE_SHORT['short_title'])}</summary><div class="video-short vertical">{iframe_html(TITLE_SHORT['short'], 'Book850 &mdash; quick intro')}</div></details>
+<div class="video" style="margin:16px 0 8px;aspect-ratio:16/9;width:100%">{iframe_html(TITLE_VIDEO['video'], 'Book850 — the method in 850 words')}</div>
+<details class="short-toggle"><summary>In a hurry? Watch the quick version &mdash; {html.escape(TITLE_SHORT['short_title'])}</summary><div class="video-short vertical">{iframe_html(TITLE_SHORT['short'], 'Book850 — quick intro')}</div></details>
 </article>''')
 open(os.path.join(SITE,'index.html'),'w',encoding='utf-8').write(cover)
 print('wrote root cover')
