@@ -765,11 +765,23 @@ chapter that is not published yet &mdash; or to a word that has not learned to s
 print('wrote 404.html')
 
 chap_nums = sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter')
-urls = [(f'{DOMAIN}/', 'daily'), (f'{DOMAIN}/words/', 'weekly')] + \
-       [(f'{DOMAIN}{chap_path(n)}', 'weekly') for n in chap_nums]
+# lastmod = REAL last-significant-change, not build date (2026-11-08: Google
+# crawled a sitemap where every page claimed "changed today" — false freshness
+# is a trust signal we cannot afford on a young domain with no backlinks).
+# A chapter changes when it is published (frontmatter 'published'); the cover
+# and /words/ change when a new chapter lands -> date of the latest chapter.
+def _pub_iso(n):
+    p = (CHAPTERS[n].get('published') or TODAY).strip()
+    try:
+        return datetime.date.fromisoformat(p).isoformat()
+    except ValueError:
+        return TODAY
+_last_pub = max((_pub_iso(n) for n in chap_nums), default=TODAY)
+urls = [(f'{DOMAIN}/', 'daily', _last_pub), (f'{DOMAIN}/words/', 'weekly', _last_pub)] + \
+       [(f'{DOMAIN}{chap_path(n)}', 'weekly', _pub_iso(n)) for n in chap_nums]
 open(os.path.join(SITE,'sitemap.xml'),'w',encoding='utf-8').write(
  '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
- '\n'.join(f'  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><changefreq>{f}</changefreq></url>' for u, f in urls) +
+ '\n'.join(f'  <url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq></url>' for u, f, m in urls) +
  '\n</urlset>\n')
 open(os.path.join(SITE,'rss.xml'),'w',encoding='utf-8').write(
  '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n'
@@ -837,4 +849,4 @@ if WARNINGS:
     print('\n== WARNINGS ==')
     for wmsg in WARNINGS: print(' -', wmsg)
 print('\n== BUILD OK ==')
-print('pages:', 2 + len(chap_nums), '| lastmod:', TODAY, '| domain placeholder:', DOMAIN)
+print('pages:', 2 + len(chap_nums), '| sitemap lastmod span:', _last_pub, '(real publish dates)', '| domain placeholder:', DOMAIN)

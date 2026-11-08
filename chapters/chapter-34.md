@@ -3,7 +3,7 @@ word: through
 title: Through
 url: /through/
 type: chapter
-published: 2026-11-07
+published: 2026-11-05
 faq-q: What does "through" mean in Basic English?
 faq-a: Through is the word of the going-through. It says that a thing goes in at one side and comes out at the other: "the say goes through me" &mdash; it comes in me and goes out of me; "I go through the send" &mdash; I come out on the far side of it; "the send goes through the four" &mdash; it goes from one end of them to the other. It is word 34 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through.
 faq-q: How does "through" work with the verbs?

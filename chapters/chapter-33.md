@@ -3,7 +3,7 @@ word: over
 title: Over
 url: /over/
 type: chapter
-published: 2026-11-06
+published: 2026-11-05
 faq-q: What does "over" mean in Basic English?
 faq-a: Over is the word of the going-over. It says that a thing goes over another thing, or that a thing is over a thing: "the say goes over the send" &mdash; it goes across it, above it; "they keep it over me" &mdash; it is over me and it stays; "I go over the four" &mdash; I pass over them. It is word 33 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over.
 faq-q: How does "over" work with the verbs?

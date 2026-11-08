@@ -3,7 +3,7 @@ word: among
 title: Among
 url: /among/
 type: chapter
-published: 2026-11-03
+published: 2026-11-04
 faq-q: What does "among" mean in Basic English?
 faq-a: Among is the word of the middle of a group. A thing is among other things when it is in the middle of them, and they are all round about it. "I am among them" &mdash; they are round about me, and I am one of them. It is word 23 of the 850 &mdash; the fifth word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among puts the hero in the middle of them all.
 faq-q: How does "among" work with the verbs?

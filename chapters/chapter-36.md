@@ -3,7 +3,7 @@ word: under
 title: Under
 url: /under/
 type: chapter
-published: 2026-11-09
+published: 2026-11-05
 faq-q: What does "under" mean in Basic English?
 faq-a: Under is the word of the low side. It says where a thing keeps when it keeps under another thing: "the say keeps under the one" &mdash; the say is under it, and I go under and take it; "the send is over me; I am under the send" &mdash; the two of us hold the two sides of one space. It is word 36 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to took the act to its end; under puts him under, in the keep under the send.
 faq-q: How does "under" work with the verbs?

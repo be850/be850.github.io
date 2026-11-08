@@ -3,7 +3,7 @@ word: to
 title: To
 url: /to/
 type: chapter
-published: 2026-11-08
+published: 2026-11-05
 faq-q: What does "to" mean in Basic English?
 faq-a: To is the word of the going-to. It says where the act ends: "I go to the four" &mdash; the four are the end of my going; "the say goes to them" &mdash; they are the ones who get it; "I give the say to them" &mdash; I put it in their hands. It is word 35 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to takes the act to its end.
 faq-q: How does "to" work with the verbs?
