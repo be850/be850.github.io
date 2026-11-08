@@ -1,0 +1,10 @@
+<!-- plan: ch66 "though" (word 66): micro-arc = the say went against the from and kept the go of it — if put a say under a say: the from under, the go over, and the say over went on the from; though keeps the from under the say and puts the go of the say against that from: the say goes against the from, and the go of the say keeps. no say of the from takes the go from the say — the go is of the say, no of the from; the from under keeps as it came, and the say over goes by it against the from. The keep keeps the say with the though in it as it keeps every say; no though is at the keep — the though came in the go of the say, from the one that said it. cliffhanger/teaser: after though comes the word that holds two says side by side in one go (word 67 "while" teaser, the word itself no part of the body); beat "The though says" x3 (the go against the from; the go keeps; the keep keeps the say with the though in it); fragment: though came after the if — i had a say and the if put a from under it, the say of me went on the from of it; i put though in the say of me and the say of me went against the from of it, and the go of the say of me kept; the keep kept the say with the though in it as it kept every say; video: no key for though in be40_word_videos.json — fields omitted, no fakes -->
+number: 66
+word: though
+title: Though
+url: /though/
+type: chapter
+
+The though says: the go against the from. The if put a say under a say — the from under, the go over — and the say over went on the from of the say under it. Though keeps the from under the say, and puts the go of the say against that from: the say goes, and the go of it keeps. The from is as it came; the say goes against the from, and no say of the from goes with the go of the say.
+
+<i>though came after the if. i had a say, and the if put a from under it — the say of me went on the from of it, and the go came with the say. i put though in the say of me: the say of me went against the from of it, and the go of the say of me kept. The keep kept the say with the though in it as it kept every say. It was me.</i>
