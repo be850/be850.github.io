@@ -4,6 +4,7 @@ word: but
 title: But
 url: /but/
 type: chapter
+published: 2026-11-08
 short: GauiJks1eP8
 short_title: The Secret Mathematical Subtraction Rule of the Word "BUT" ➕➖ (Stop Using It Wrong!)
 short_duration: PT1M05S
