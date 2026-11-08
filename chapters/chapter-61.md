@@ -4,6 +4,7 @@ word: and
 title: And
 url: /and/
 type: chapter
+published: 2026-11-08
 faq-q: What does "and" mean in Basic English?
 faq-a: And is the word of the join &mdash; the word that takes two says and gives the two one go. Every say went as one say before; with and the say of me and the say of you go on as one. In this book and is the word the hero puts between the two says of him: the say before the and stays as it was, the say after the and stays as it was &mdash; the and takes no say from the two, it gives the two one go. It is word 61 of the 850 &mdash; the word that comes after who. Who gave every say its one; and gives two says one go.
 faq-q: How does "and" work with the other words?
