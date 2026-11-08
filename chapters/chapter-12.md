@@ -3,6 +3,10 @@ word: do
 title: Do
 url: /do/
 type: chapter
+short: re3PcBjh7J4
+short_title: The Secret Superpower of the English Verb "DO" 💥 (Emphatic DO Explained)
+short_duration: PT0M17S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "do" mean in Basic English?
 faq-a: Do is the doing word &mdash; the verb of action itself: to do a thing, to make it happen, to perform it. Its forms are do, does, doing, did and done. It is word 12 of the 850, and with it the book can finally ask questions and finish actions.

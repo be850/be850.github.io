@@ -3,6 +3,10 @@ word: may
 title: May
 url: /may/
 type: chapter
+short: upbyCLtdhUA
+short_title: How the Modal Verb "MAY" Changes English Sentences! 🔑 (May Go vs May Goes)
+short_duration: PT1M01S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "may" mean in Basic English?
 faq-a: May is the verb of leave and of chance. "May I see it?" asks for leave &mdash; it puts a question where an order might have been. "It may come" speaks of chance &mdash; the thing is possible, and nothing more. May is word 17 of the 850 &mdash; and with it the book gets its open door: the hero can ask, and the world can answer with a possibility instead of a fact.

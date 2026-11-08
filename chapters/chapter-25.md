@@ -3,6 +3,10 @@ word: before
 title: Before
 url: /before/
 type: chapter
+short: WPaOcqM2STE
+short_title: How the English Word "BEFORE" Structures Time! ⏳ (Master Timeline Grammar)
+short_duration: PT1M06S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "before" mean in Basic English?
 faq-a: Before is the word of time. It puts one thing in front of another thing: the first thing came first, the second thing came after it. "I saw it before I said it" &mdash; the seeing came first; the saying came after. It is word 25 of the 850 &mdash; the seventh word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gives his acts their order in time.

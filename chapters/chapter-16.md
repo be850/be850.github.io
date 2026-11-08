@@ -3,6 +3,10 @@ word: send
 title: Send
 url: /send/
 type: chapter
+short: Td56Fjl63S4
+short_title: The Hidden Physics of the English Verb "SEND" ✉️ (Send vs Deliver Explained)
+short_duration: PT1M04S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "send" mean in Basic English?
 faq-a: Send is the verb of distance: to send a thing is to make it go from you to a person or a place &mdash; it leaves you and arrives. Its forms are send, sends, sending and sent. It is word 16 of the 850 &mdash; and with it the book gets distance: what the hero holds can now leave him and arrive where he is not.

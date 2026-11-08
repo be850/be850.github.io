@@ -3,6 +3,10 @@ word: have
 title: Have
 url: /have/
 type: chapter
+short: ogJdbRSrxxk
+short_title: The Hidden Grammar Power of the English Verb "HAVE" 🪟 (Present Perfect Explained)
+short_duration: PT1M11S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "have" mean in Basic English?
 faq-a: Have is the verb of possession: to have a thing is to hold it, to own it, to keep it as yours. Its forms are have, has, having and had. It is word 13 of the 850 &mdash; and with it the book can finally say what belongs to whom: I have it; they have it; I had it.

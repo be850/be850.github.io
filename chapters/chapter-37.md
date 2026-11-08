@@ -3,6 +3,10 @@ word: up
 title: Up
 url: /up/
 type: chapter
+short: ZAbNx-r_-Hc
+short_title: How the Word "UP" Transforms into a Verb! 🎈 (Secret English Grammar Hack)
+short_duration: PT1M12S
+short_date: 2026-08-25
 published: 2026-11-05
 faq-q: What does "up" mean in Basic English?
 faq-a: Up is the word of the going from under. It says where a thing goes when it comes up: "I take the say up" &mdash; the say was under, and the take puts it up; "the say goes up from under the four" &mdash; it was kept under, and it comes up; "I go up after it" &mdash; the going ends where the say is. It is word 37 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to took the act to its end; under put the keep under the send; up takes him up.

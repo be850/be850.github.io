@@ -3,6 +3,10 @@ word: by
 title: By
 url: /by/
 type: chapter
+short: EjI32N9dabM
+short_title: The Secret Grammar Arrow: How the Word "BY" Works! ⛵ (Active vs Passive Voice)
+short_duration: PT1M12S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "by" mean in Basic English?
 faq-a: By is the word of the doer and the near thing. With a doer: "the send was made by them" &mdash; by names the one who made it. With a near thing: "I am by the send" &mdash; by puts a person or a thing near another thing. It is word 27 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by names the doer and keeps the near thing near.

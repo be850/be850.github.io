@@ -3,6 +3,10 @@ word: see
 title: See
 url: /see/
 type: chapter
+short: GPZ43DXzko0
+short_title: Why the Pope’s Seat Is Called a "SEE" ⛪ (The Secret Meaning of "SEE")
+short_duration: PT1M00S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "see" mean in Basic English?
 faq-a: See is the verb of perception: to see a thing is to have it come to your eyes &mdash; light goes from the thing to you, and you know it is there. Its forms are see, sees, seeing, saw and seen. It is word 15 of the 850 &mdash; and with it the book gets eyes: the cave is no longer only touched and owned; it is witnessed.

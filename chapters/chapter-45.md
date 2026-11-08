@@ -4,6 +4,10 @@ word: the
 title: The
 url: /the/
 type: chapter
+short: APYmpD6hWsE
+short_title: The Secret Math Rule of the English Word "THE" ⚙️ (The... The... Structure Explained!)
+short_duration: PT1M23S
+short_date: 2026-08-26
 published: 2026-11-06
 faq-q: What does "the" mean in Basic English?
 faq-a: The goes before a say and says which one it is: the say, the keep, the coming. "A say" is one of the says; "the say" is the one you see before you. It is word 45 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to took the act to its end; under put the keep under the send; up took the say up from under; with keeps the say with him; as says the being of one in the place of the other; for says who the give is for; of says what the give is part of; till says how long the say goes on; than says the measure of the one against the other; a takes one from the rest; the says which one it is.

@@ -4,6 +4,10 @@ word: till
 title: Till
 url: /till/
 type: chapter
+short: snZFfVvez04
+short_title: The 3 Secret Lives of the Word "TILL" 🌾⏰💵 (Time, Farming & Cash Registers!)
+short_duration: PT1M01S
+short_date: 2026-08-26
 published: 2026-11-06
 faq-q: What does "till" mean in Basic English?
 faq-a: Till says how long an act goes on: the say till the coming, the keep till the going. It is word 42 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down to the low place; from said where the coming starts; in put him inside; off took a thing away; on put it back; over took it over; through took it through; to took the act to its end; under put the keep under the send; up took the say up from under; with keeps the say with him; as says the being of one in the place of the other; for says who the give is for; of says what the give is part of; till says how long the say goes on.

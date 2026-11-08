@@ -4,6 +4,10 @@ word: or
 title: Or
 url: /or/
 type: chapter
+short: CUEK5eTOWsE
+short_title: The Secret Mechanics of "OR": How English Creates Alternatives! ☕🍵 (The Core Coordinator)
+short_duration: PT1M05S
+short_date: 2026-08-27
 faq-q: What does "or" mean in Basic English?
 faq-a: Or is the word of the fork &mdash; the word that puts two says in the place of one say. And gave two says one go; but put a say against the say before it; or puts the say of the one and the say of the other in one say, and one of the two goes out of it. i put or between the say of the one and the say of the other, and the two says go in one say as two sides of it. The or takes no say from the two &mdash; the say of the one is as it came, the say of the other is as it came, and the fork keeps both of them whole. It is word 64 of the 850 &mdash; the word that comes after but. But put the against between two says; or puts the fork between them.
 faq-q: How does "or" work with the other words?

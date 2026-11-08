@@ -3,6 +3,10 @@ word: on
 title: On
 url: /on/
 type: chapter
+short: tHK5H4DV1-0
+short_title: The Hanging Apple Paradox: How the Word "ON" REALLY Works 🍎 (Stop Confusing Prepositions!)
+short_duration: PT1M02S
+short_date: 2026-08-25
 published: 2026-11-05
 faq-q: What does "on" mean in Basic English?
 faq-a: On is the word of the putting-back. It says that a thing is put on a thing, or that a thing keeps going: "they put the say on me" &mdash; the say is on me again; "the send goes on" &mdash; it keeps going; "they keep it on me" &mdash; it is put on me and it stays. It is word 32 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off took a thing away; on puts it back.

@@ -4,6 +4,10 @@ word: but
 title: But
 url: /but/
 type: chapter
+short: GauiJks1eP8
+short_title: The Secret Mathematical Subtraction Rule of the Word "BUT" ➕➖ (Stop Using It Wrong!)
+short_duration: PT1M05S
+short_date: 2026-08-27
 faq-q: What does "but" mean in Basic English?
 faq-a: But is the word of the against between two says &mdash; the word that puts a say against the say before it. Every say went with the from under it after because came; with but a say may go against: i put but between the say of me and the say of you, and the say of you goes against the say of me. The but makes no other say and takes no say from the two &mdash; the say before but is as it came, and the say after but is a say with the who of it on it. It is word 63 of the 850 &mdash; the word that comes after because. Because put the from of one say under another; but puts the against of the one say on the go of the other.
 faq-q: How does "but" work with the other words?

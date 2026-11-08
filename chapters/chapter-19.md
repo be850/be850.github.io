@@ -3,6 +3,10 @@ word: about
 title: About
 url: /about/
 type: chapter
+short: k_JEpvx4h24
+short_title: The Secret Power of the English Word "ABOUT" ⏱️ (Stop Sounding Too Rigid!)
+short_duration: PT1M09S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "about" mean in Basic English?
 faq-a: About is the word that goes round a thing. "A story about the cave" points at what the story holds inside it; "they say it about me" points at whom the saying stands. About is also the little word of "here and there": "I go about" &mdash; I move from place to place, with no road and no end in view. It is word 19 of the 850 &mdash; the first word of the list that is not a verb &mdash; and with it the book can point at a subject, not only at an act.

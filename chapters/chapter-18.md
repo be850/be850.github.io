@@ -3,6 +3,10 @@ word: will
 title: Will
 url: /will/
 type: chapter
+short: 3Cf9WdIRxtY
+short_title: The Hidden Secret of the English Verb "WILL" ☀️ (Future Fact vs Active Intent)
+short_duration: PT1M12S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "will" mean in Basic English?
 faq-a: Will is the verb of the future. "It will come" puts the coming after now &mdash; and it is fixed: the coming is certain, and no chance is left in it. Will keeps one form for every person: I will, you will, he will, they will. It is word 18 of the 850 &mdash; and with it the book gets its firm line: word 17 opened a door of chance, and will says what walks through it. In the story the hero stops asking &mdash; he answers.

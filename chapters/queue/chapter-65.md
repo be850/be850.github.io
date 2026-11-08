@@ -4,6 +4,10 @@ word: if
 title: If
 url: /if/
 type: chapter
+short: avxhr5v7YxM
+short_title: How the Word "IF" Controls Reality! 🔀🧠 (The Logic That Built Coding)
+short_duration: PT1M12S
+short_date: 2026-08-27
 faq-q: What does "if" mean in Basic English?
 faq-a: If is the word of the from under the say &mdash; the word that puts one say under another say. The say under is the from; the say over it goes on that from. If the say under it is a say, the say over goes; if the say under it is no say, the go of the say keeps in it. The if takes no say from the two &mdash; the say under is as it came, the say over is as it came, and the two go as one go.
 faq-q: How does "if" work with the other words?

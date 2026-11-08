@@ -4,6 +4,10 @@ word: though
 title: Though
 url: /though/
 type: chapter
+short: JxlEmvpKDCA
+short_title: How Moving One Word Changes Everything! 🔄📝 (The Secret Power of "THOUGH")
+short_duration: PT0M57S
+short_date: 2026-08-27
 faq-q: What does "though" mean in Basic English?
 faq-a: Though is the word of the go against the from. If puts one say under another say &mdash; the from under, the go over &mdash; and the say over goes on that from. Though keeps the from under the say and puts the go of the say against it: the say goes against the from, and the go of the say keeps. The from does not stop the go &mdash; the go is of the say, not of the from.
 faq-q: How does "though" work with the other words?

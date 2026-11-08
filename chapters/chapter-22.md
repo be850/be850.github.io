@@ -3,6 +3,10 @@ word: against
 title: Against
 url: /against/
 type: chapter
+short: d6sKjOVO7_Q
+short_title: The Hidden Physics Behind the English Word "AGAINST" 💥 (Opposition vs Contact)
+short_duration: PT1M20S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "against" mean in Basic English?
 faq-a: Against is the word of the push back. One thing is against another when it goes the other way than that thing goes, or when it comes up to it and rests on it with a push. "They come against me" &mdash; they come my way, and my way is the other way. It is word 22 of the 850 &mdash; the fourth word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gives the line a push the other way.

@@ -3,6 +3,10 @@ word: in
 title: In
 url: /in/
 type: chapter
+short: fUi11gUi4yY
+short_title: The Cardboard Box Logic of the Word "IN" 📦 (Secret English Preposition Rule)
+short_duration: PT0M55S
+short_date: 2026-08-25
 published: 2026-11-05
 faq-q: What does "in" mean in Basic English?
 faq-a: In is the word of the inside. It says that a thing is within a place, a time or a group: "the say is in the send" &mdash; the say is inside the send; "in the morning" &mdash; inside that time; "I am in the four" &mdash; I am one of them, inside the group. It is word 30 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in puts him inside.

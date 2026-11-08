@@ -3,6 +3,10 @@ word: after
 title: After
 url: /after/
 type: chapter
+short: W87F1NnRPR8
+short_title: How the English Word "AFTER" Works on a Timeline! ⏰ (Grammar Bridge Explained)
+short_duration: PT0M52S
+short_date: 2026-08-24
 published: 2026-11-04
 faq-q: What does "after" mean in Basic English?
 faq-a: After is the word of order in time: one thing goes, and the next thing comes after it. "I came after the send" &mdash; the send went, and my coming was the next thing. It is word 21 of the 850 &mdash; the third word of the list that is not a verb, after "about" and "across". About rounds a thing where it stands; across gives the road its far side; after puts the acts of the story in their line &mdash; this one goes, and that one comes after it. With about the hero got his subject; with across he got his road; with after he gets the order of his days.

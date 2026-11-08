@@ -4,6 +4,10 @@ word: while
 title: While
 url: /while/
 type: chapter
+short: mgCdg4Chcs4
+short_title: How the Word "WHILE" Locks Two Actions in Time! ⏳🔗 (The Ultimate Temporal Pin)
+short_duration: PT1M04S
+short_date: 2026-08-27
 faq-q: What does "while" mean in Basic English?
 faq-a: While is the word that holds two says side by side in one go. It puts two says together in the same go: one say goes, and the other say goes with it, side by side, one by the other. No one of the two takes the go of the other &mdash; the go of the first say is of the first say, and the go of the second say is of the second say. The two says go in one go, and the one go keeps the two.
 faq-q: How does "while" work with the other words?

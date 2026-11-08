@@ -3,6 +3,10 @@ word: say
 title: Say
 url: /say/
 type: chapter
+short: zw4C-NgP4ag
+short_title: How to Conjugate the English Verb "SAY" Correctly! 🗣️ (Say vs Says vs Said)
+short_duration: PT1M01S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "say" mean in Basic English?
 faq-a: Say is the verb of speech: to say a thing is to put it into words and let it go &mdash; to speak it so that another person has it. Its forms are say, says, saying and said. It is word 14 of the 850 &mdash; and with it the book gets a voice: the cave can finally talk back.

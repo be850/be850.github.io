@@ -3,6 +3,10 @@ word: at
 title: At
 url: /at/
 type: chapter
+short: YkCWJwzNIQI
+short_title: The Secret Pinpoint Power of the English Word "AT" 📍 (In vs On vs At)
+short_duration: PT1M17S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "at" mean in Basic English?
 faq-a: At is the word of one point. A thing is at a place when it is there and only there &mdash; one place, one point, no group. "I am at the door" &mdash; I am not round about the house; I am at one point of it, and the point keeps me there. It is word 24 of the 850 &mdash; the sixth word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at takes him out of the middle and puts him at one point of it.

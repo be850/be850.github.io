@@ -3,6 +3,10 @@ word: off
 title: Off
 url: /off/
 type: chapter
+short: 4Bnp5flYHpE
+short_title: The 1 Hidden Rule Behind the English Word "OFF" 💡 (Dark Rooms, Spoiled Meat & Days Off!)
+short_duration: PT1M16S
+short_date: 2026-08-25
 published: 2026-11-05
 faq-q: What does "off" mean in Basic English?
 faq-a: Off is the word of the taking-away. It says that a thing is taken from a thing, or that a thing goes away: "I take the say off me" &mdash; the say is away from me; "the send goes off" &mdash; the send is gone; "they keep me off the send" &mdash; they keep me away from it. It is word 31 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from said where the coming starts; in put him inside; off takes a thing away.

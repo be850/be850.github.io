@@ -3,6 +3,10 @@ word: across
 title: Across
 url: /across/
 type: chapter
+short: 6PDrCzZZneE
+short_title: The 3 Hidden Rules of the English Word "ACROSS" 🌉 (Stop Confusing Prepositions!)
+short_duration: PT1M06S
+short_date: 2026-08-24
 published: 2026-11-03
 faq-q: What does "across" mean in Basic English?
 faq-a: Across is the word of the crossing: from this side to that side, over a thing and out on its far side. "I go across it" &mdash; I put the thing between my start and my end, and I come out on the other side of it. It is word 20 of the 850 &mdash; the second word of the list that is not a verb, after "about". About rounds a thing where it stands; across gives the road its far side. With about the hero got his subject; with across he gets the line from here to there &mdash; the first road of the book.

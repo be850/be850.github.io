@@ -3,6 +3,10 @@ word: from
 title: From
 url: /from/
 type: chapter
+short: 9DaHeHgUQaA
+short_title: The Secret Zero-Mark Rule of the English Word "FROM" 📍 (Master Prepositions!)
+short_duration: PT1M09S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "from" mean in Basic English?
 faq-a: From is the word of the start. It says where a thing comes out of: "the say came from the one" &mdash; the say had its start at the one; "I go from the low place" &mdash; the going has its start there; "I take it from them" &mdash; it was by them, and now it is by me. It is word 29 of the 850 &mdash; the next word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gave him the middle space; by named the doer and kept the near thing near; down took him down the line to the low place; from now says where the coming starts.

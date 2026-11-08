@@ -3,6 +3,10 @@ word: between
 title: Between
 url: /between/
 type: chapter
+short: DE1prfsi0Rw
+short_title: How the English Word "BETWEEN" Finds Anything! 🗺️ (The Spatial Sandwich Rule)
+short_duration: PT0M53S
+short_date: 2026-08-25
 published: 2026-11-04
 faq-q: What does "between" mean in Basic English?
 faq-a: Between is the word of the middle space. It needs two things: one thing on this side, one thing on that side, and the between-thing in the middle of them. "I am between the send and the say" &mdash; the send is on one side, the say is on the other, and the hero stands in the middle. It is word 26 of the 850 &mdash; the eighth word in the line that began with "about". About gave the hero his subject; across gave him his road; after put his acts in their line; against gave the line a push the other way; among put him in the middle of the group; at took him to one point of it; before gave his acts their order in time; between gives him the space between two things.

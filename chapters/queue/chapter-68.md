@@ -4,6 +4,10 @@ word: how
 title: How
 url: /how/
 type: chapter
+short: 13HJAyJyx7Q
+short_title: How the Word "HOW" Turns Questions Into Instruction Manuals! ⚙️📖 (The Mechanism of Language)
+short_duration: PT0M59S
+short_date: 2026-08-27
 faq-q: What does "how" mean in Basic English?
 faq-a: How is the word that says the go of a say. A say goes, and the how says how the go went: it went up, or it went down; it went before a say, or it went after a say; it went with a say, or it went against a say. The how takes no say over the say and no say under the say &mdash; the who gave the ones of the say, the because gave the from under it, and the how gives the go of the say. In this book how is word 68 of the 850 &mdash; the word that came after while.
 faq-q: How does "how" work with the other words?
