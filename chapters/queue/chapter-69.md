@@ -9,6 +9,17 @@ short_title: How the Word "WHEN" Controls Time in English! ⏰🔗 (The Secret R
 short_duration: PT1M06S
 short_date: 2026-08-27
 
+faq-q: What does "when" mean in Basic English?
+faq-a: When is the word that says the before and the after of a say. A say goes, and the when says when it went: the say of him came before, the say of me comes after. The when takes no say over a say and no say under a say &mdash; the who gave the ones of the say, the how gave the go of it, and the when gives the before and the after of it. In this book when is word 69 of the 850 &mdash; the word that came after how.
+faq-q: How does "when" work with the other words?
+faq-a: With who: who gave the ones of a say, and when gives the before and the after of it. With how: how says the go of a say, and when says when the go came &mdash; before a say, or after it. With because: because puts the from under the say, and when puts the say of the time on it. With the keep: the keep keeps the says and the goes of them, and the when of every say comes from the one that sees the says come and go.
+faq-q: What is the difference between "when" and "while"?
+faq-a: While puts two says one by the other in one go: the two says went together, say by say. When says the one of the two: this say came before, and that say comes after. Two says in a while went as one go; two says in a when go one before the other &mdash; the when says which of them came first.
+faq-q: What word comes after "when"?
+faq-a: The next word is "where" &mdash; word 70 of the 850. When says the before and the after of a say; where will put its say on the from and the to of a go &mdash; the say of the place of the go, of the go that goes from a from and comes to a to. When gave the says their order in the go; where will give them their from and their to.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far &mdash; the fragments form a second, hidden story under the main one. In this chapter the hero sees that the say of him came before the say of me, and the no of the keep came between them; the when of the says is the last thing the hero keeps of that go.
+
 The when says: a say goes, and the when says the before and the after of it. The who came with the say and gave the ones of it; the how put the go on the say. The when takes no say over a say and no say under a say: it goes with the say and says when the say is — the say of him came before, the say of me comes after. i may see two says, and i may put when on the go of them — when did the say come? The when gives no who and no go; the say of the when is the before and the after of the say.
 
 <i>when came after the how. i saw the go of the two says, and i saw no before and no after on the go of them: when did the say of him come? The keep said no to the say of me, and i saw when the no came — the no came before the says of him and after the says of me; the other came in the after of the no, and the say of him went on the go of me — It was me.</i>
