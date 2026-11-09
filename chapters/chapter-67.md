@@ -4,6 +4,7 @@ word: while
 title: While
 url: /while/
 type: chapter
+published: 2026-11-09
 short: mgCdg4Chcs4
 short_title: How the Word "WHILE" Locks Two Actions in Time! ⏳🔗 (The Ultimate Temporal Pin)
 short_duration: PT1M04S
