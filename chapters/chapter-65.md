@@ -4,6 +4,7 @@ word: if
 title: If
 url: /if/
 type: chapter
+published: 2026-11-09
 short: avxhr5v7YxM
 short_title: How the Word "IF" Controls Reality! 🔀🧠 (The Logic That Built Coding)
 short_duration: PT1M12S
