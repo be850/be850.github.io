@@ -4,6 +4,7 @@ word: how
 title: How
 url: /how/
 type: chapter
+published: 2026-11-10
 short: 13HJAyJyx7Q
 short_title: How the Word "HOW" Turns Questions Into Instruction Manuals! ⚙️📖 (The Mechanism of Language)
 short_duration: PT0M59S
