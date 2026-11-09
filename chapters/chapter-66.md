@@ -4,6 +4,7 @@ word: though
 title: Though
 url: /though/
 type: chapter
+published: 2026-11-09
 short: JxlEmvpKDCA
 short_title: How Moving One Word Changes Everything! 🔄📝 (The Secret Power of "THOUGH")
 short_duration: PT0M57S
