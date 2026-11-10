@@ -4,6 +4,7 @@ word: when
 title: When
 url: /when/
 type: chapter
+published: 2026-11-10
 short: wweaciFamFU
 short_title: How the Word "WHEN" Controls Time in English! ⏰🔗 (The Secret Relative Clock)
 short_duration: PT1M06S
