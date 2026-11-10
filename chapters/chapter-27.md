@@ -3,6 +3,10 @@ word: by
 title: By
 url: /by/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT4M39S
+video_title: Small Word, BIG Jobs: Mastering the Power of "BY" (Basic English)
+video: LKt215_wOrQ
 short: EjI32N9dabM
 short_title: The Secret Grammar Arrow: How the Word "BY" Works! ⛵ (Active vs Passive Voice)
 short_duration: PT1M12S

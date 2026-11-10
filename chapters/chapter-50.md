@@ -4,6 +4,10 @@ word: much
 title: Much
 url: /much/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M44S
+video_title: The Giant of Quantity: How to Use the Word "MUCH" (Basic English)
+video: ugzMS3nZgyA
 short: D4cRgME3Sfs
 short_title: The Secret Passive Voice Rule of the Word "MUCH" ⚠️ (Stop Making This Mistake!)
 short_duration: PT1M16S

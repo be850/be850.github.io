@@ -3,6 +3,10 @@ word: about
 title: About
 url: /about/
 type: chapter
+video_date: 2026-01-23
+video_duration: PT4M49S
+video_title: The Swiss Army Knife of Words: Why "ABOUT" is a Top 1,000 Word (Basic English)
+video: W0C4GPQQytk
 short: k_JEpvx4h24
 short_title: The Secret Power of the English Word "ABOUT" ⏱️ (Stop Sounding Too Rigid!)
 short_duration: PT1M09S

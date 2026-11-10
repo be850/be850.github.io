@@ -4,6 +4,10 @@ word: other
 title: Other
 url: /other/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M26S
+video_title: The Word of Difference: Why You Need "OTHER" (Basic English)
+video: jWvQKqjwHqg
 short: I4AI9NmZ9ME
 short_title: The Secret Mental Shortcut of the English Word "OTHER" 📚🧩 (Organize Chaos Instantly!)
 short_duration: PT1M12S

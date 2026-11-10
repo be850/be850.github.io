@@ -4,6 +4,10 @@ word: though
 title: Though
 url: /though/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT4M32S
+video_title: The Shortcut to Fluency: Mastering the Word "THOUGH" (Basic English)
+video: QHFl4Wb47y4
 published: 2026-11-09
 short: JxlEmvpKDCA
 short_title: How Moving One Word Changes Everything! 🔄📝 (The Secret Power of "THOUGH")

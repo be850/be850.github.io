@@ -4,6 +4,10 @@ word: because
 title: Because
 url: /because/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT4M15S
+video_title: The Engine of Explanation: Mastering the Word "BECAUSE" (Basic English)
+video: ncYrvh1SYRQ
 short: bRzVJkQFpJk
 short_title: Stop Mixing Up BECAUSE vs BECAUSE OF! 🧩🧠 (The Secret Bridge Rule in English)
 short_duration: PT1M05S

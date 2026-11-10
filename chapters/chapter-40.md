@@ -4,6 +4,10 @@ word: for
 title: For
 url: /for/
 type: chapter
+video_date: 2026-01-26
+video_duration: PT4M43S
+video_title: The Goal Getter: Why the Word "FOR" is a Communication Powerhouse (Basic English)
+video: BE36Ax4hS_Q
 short: sqo1Xe-ZaSc
 short_title: The Invisible Arrow Rule: How the Word "FOR" Really Works 🎯 (Stop Making Basic Mistakes!)
 short_duration: PT1M18S

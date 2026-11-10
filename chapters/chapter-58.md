@@ -4,6 +4,10 @@ word: he
 title: He
 url: /he/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT5M26S
+video_title: The Tiny Pillar: Mastering the Word "HE" (Basic English)
+video: wzgcO-M_XNg
 short: 7F7e9KilrZY
 short_title: The Secret 4-in-1 Rule of the Pronoun "HE" in English! 🔴🏃‍♂️ (He, Him, His, Himself)
 short_duration: PT1M07S

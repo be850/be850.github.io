@@ -3,6 +3,10 @@ word: to
 title: To
 url: /to/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT4M54S
+video_title: The Direction of Success: Why the Word "TO" is Everywhere (Basic English)
+video: HWpAM8Mh4sw
 short: upkfdfJsDa0
 short_title: The Secret Destination Rule of the English Word "TO" 🎯 (Master Direction & Time!)
 short_duration: PT1M10S

@@ -4,6 +4,10 @@ word: or
 title: Or
 url: /or/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT3M48S
+video_title: The Engine of Decisions: Mastering the Power of "OR" (Basic English)
+video: fUKtiooGSEk
 published: 2026-11-09
 short: CUEK5eTOWsE
 short_title: The Secret Mechanics of "OR": How English Creates Alternatives! ☕🍵 (The Core Coordinator)

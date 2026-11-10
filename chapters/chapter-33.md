@@ -3,6 +3,10 @@ word: over
 title: Over
 url: /over/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT5M16S
+video_title: Above and Beyond: The Secret Power of "OVER" (Basic English)
+video: dcXqWZESq5E
 short: Bc8XAD1jpFA
 short_title: The Secret Math Code in the Word "OVER" ➗ (Why Fractions Use Prepositions!)
 short_duration: PT0M57S

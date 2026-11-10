@@ -3,6 +3,10 @@ word: in
 title: In
 url: /in/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT4M31S
+video_title: Inside the Language: Mastering the Power of "IN" (Basic English)
+video: x0H4naeJRVM
 short: fUi11gUi4yY
 short_title: The Cardboard Box Logic of the Word "IN" 📦 (Secret English Preposition Rule)
 short_duration: PT0M55S

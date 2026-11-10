@@ -4,6 +4,10 @@ word: such
 title: Such
 url: /such/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M11S
+video_title: The Emphasis Engine: How to Use the Word "SUCH" (Basic English)
+video: YJOPSOKqC98
 short: kf_YveeaxMg
 short_title: The Hidden Word Order Trick: SUCH vs SO in English! 🩺✨ (Stop Saying "A Such...")
 short_duration: PT1M15S

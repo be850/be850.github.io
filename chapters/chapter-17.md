@@ -3,6 +3,10 @@ word: may
 title: May
 url: /may/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT4M05S
+video_title: Possibility vs. Permission: The Hidden Power of the Word "MAY" (Basic English)
+video: mcf2ExfJYps
 short: upbyCLtdhUA
 short_title: How the Modal Verb "MAY" Changes English Sentences! 🔑 (May Go vs May Goes)
 short_duration: PT1M01S

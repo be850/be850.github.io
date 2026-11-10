@@ -4,6 +4,10 @@ word: a
 title: A
 url: /a/
 type: chapter
+video_date: 2026-01-27
+video_duration: PT4M36S
+video_title: The One-Letter Secret: Why "A" is a Global Communication Powerhouse (Basic English)
+video: TQGhUY_spRY
 short: gTnjsormKd4
 short_title: The Hidden Science of the English Article "A" (Stop Confusing A vs AN!) 📖
 short_duration: PT1M13S

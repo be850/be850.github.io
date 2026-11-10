@@ -4,6 +4,10 @@ word: how
 title: How
 url: /how/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT5M18S
+video_title: The Master of Method: 3 Secret Powers of the Word "HOW" (Basic English)
+video: aqH4Sj7Mz9M
 published: 2026-11-10
 short: 13HJAyJyx7Q
 short_title: How the Word "HOW" Turns Questions Into Instruction Manuals! ⚙️📖 (The Mechanism of Language)

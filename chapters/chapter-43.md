@@ -4,6 +4,10 @@ word: than
 title: Than
 url: /than/
 type: chapter
+video_date: 2026-01-27
+video_duration: PT4M56S
+video_title: The Engine of Comparison: Why the Word "THAN" is Fundamental (Basic English)
+video: yQgbV4Q2tyE
 short: Xhuq09bxNDE
 short_title: The Secret Fulcrum Rule of the Word "THAN" ⚖️ (Master English Comparisons Instantly!)
 short_duration: PT1M01S

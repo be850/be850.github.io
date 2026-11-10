@@ -3,6 +3,10 @@ word: will
 title: Will
 url: /will/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT5M47S
+video_title: One Word, Four Secret Identities: The Power of "WILL" (Basic English)
+video: ZhjEgp7DODg
 short: 3Cf9WdIRxtY
 short_title: The Hidden Secret of the English Verb "WILL" ☀️ (Future Fact vs Active Intent)
 short_duration: PT1M12S

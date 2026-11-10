@@ -4,6 +4,10 @@ word: little
 title: Little
 url: /little/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M52S
+video_title: Small Word, Big Impact: Why You Need "LITTLE" (Basic English)
+video: 8BS5sP3KwXs
 short: JyfY4228uu0
 short_title: The Secret 4-in-1 Rule of the English Word "LITTLE" 🐶⏳🍲 (Size, Time & Age!)
 short_duration: PT1M04S

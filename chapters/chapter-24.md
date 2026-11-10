@@ -3,6 +3,10 @@ word: at
 title: At
 url: /at/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT5M09S
+video_title: The Master of Precision: Why the Word "AT" is a Power Tool (Basic English)
+video: K6s5AWPOm8E
 short: YkCWJwzNIQI
 short_title: The Secret Pinpoint Power of the English Word "AT" 📍 (In vs On vs At)
 short_duration: PT1M17S

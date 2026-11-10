@@ -3,6 +3,10 @@ word: have
 title: Have
 url: /have/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT5M57S
+video_title: The Grammatical Superhero: Unlocking the Hidden Power of "HAVE" (Basic English)
+video: VB2rOHjY59w
 short: ogJdbRSrxxk
 short_title: The Hidden Grammar Power of the English Verb "HAVE" 🪟 (Present Perfect Explained)
 short_duration: PT1M11S

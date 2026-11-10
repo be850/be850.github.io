@@ -3,6 +3,10 @@ word: from
 title: From
 url: /from/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT4M39S
+video_title: The Word of Origins: Why You Can't Speak English Without "FROM" (Basic English)
+video: 8iSL8YYEWgA
 short: 9DaHeHgUQaA
 short_title: The Secret Zero-Mark Rule of the English Word "FROM" 📍 (Master Prepositions!)
 short_duration: PT1M09S

@@ -3,6 +3,10 @@ word: under
 title: Under
 url: /under/
 type: chapter
+video_date: 2026-01-26
+video_duration: PT4M44S
+video_title: Hidden Power: Why the Word "UNDER" is a Top 850 Essential (Basic English)
+video: M3VdGhTWnsc
 short: _VvxnWWrBr0
 short_title: The Secret Psychology of the English Word "UNDER" 📦 (Apples, Leaders & Courtrooms!)
 short_duration: PT1M02S

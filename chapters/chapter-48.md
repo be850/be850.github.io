@@ -4,6 +4,10 @@ word: every
 title: Every
 url: /every/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT5M06S
+video_title: The Power of Patterns: Mastering the Word "EVERY" (Basic English)
+video: yMKdQ-ANkzk
 short: eR38mjkJemg
 short_title: The 100% Inclusion Rule of the Word "EVERY" 🗓️ (Stop Making Grammar Mistakes!)
 short_duration: PT1M12S

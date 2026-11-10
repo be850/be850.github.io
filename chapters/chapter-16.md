@@ -3,6 +3,10 @@ word: send
 title: Send
 url: /send/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT4M08S
+video_title: One Word, 850 Possibilities: The Secret Power of "SEND" (Basic English)
+video: ukJMnQ7Xx_Q
 short: Td56Fjl63S4
 short_title: The Hidden Physics of the English Verb "SEND" ✉️ (Send vs Deliver Explained)
 short_duration: PT1M04S

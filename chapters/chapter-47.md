@@ -4,6 +4,10 @@ word: any
 title: Any
 url: /any/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT5M01S
+video_title: The Power of Choice: Mastering the Word "ANY" (Basic English)
+video: L14UvYHFp4g
 short: rq5Dij2Kt4c
 short_title: The Secret 2-in-1 Rule of the English Word "ANY" ✏️ (Quantity vs. Limitless Choice!)
 short_duration: PT1M21S

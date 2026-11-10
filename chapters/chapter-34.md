@@ -3,6 +3,10 @@ word: through
 title: Through
 url: /through/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT4M23S
+video_title: The Tunnel Word: Mastering the Power of "THROUGH" (Basic English)
+video: xm7nlcX_f7U
 short: 4vSNZQEULoU
 short_title: The Needle & Thread Rule of the Word "THROUGH" 🪡 (Stop Confusing IN vs THROUGH!)
 short_duration: PT1M00S

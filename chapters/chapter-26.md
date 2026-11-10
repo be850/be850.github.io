@@ -3,6 +3,10 @@ word: between
 title: Between
 url: /between/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT4M42S
+video_title: The Glue of Language: Why the Word "BETWEEN" is Essential (Basic English)
+video: HNm5DRLHBbo
 short: DE1prfsi0Rw
 short_title: How the English Word "BETWEEN" Finds Anything! 🗺️ (The Spatial Sandwich Rule)
 short_duration: PT0M53S

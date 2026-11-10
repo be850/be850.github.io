@@ -3,6 +3,10 @@ word: against
 title: Against
 url: /against/
 type: chapter
+video_date: 2026-01-23
+video_duration: PT4M29S
+video_title: The Line in the Sand: Decoding the Power of "AGAINST" (Basic English)
+video: 46Al_BjMUe0
 short: d6sKjOVO7_Q
 short_title: The Hidden Physics Behind the English Word "AGAINST" 💥 (Opposition vs Contact)
 short_duration: PT1M20S

@@ -3,6 +3,10 @@ word: do
 title: Do
 url: /do/
 type: chapter
+video_date: 2026-01-19
+video_duration: PT5M11S
+video_title: The "Swiss Army Knife" Word: Master the Power of "DO" (Basic English)
+video: JAllsBbEjhs
 short: re3PcBjh7J4
 short_title: The Secret Superpower of the English Verb "DO" 💥 (Emphatic DO Explained)
 short_duration: PT0M17S

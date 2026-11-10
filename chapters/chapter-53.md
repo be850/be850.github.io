@@ -4,6 +4,10 @@ word: some
 title: Some
 url: /some/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M54S
+video_title: The Superpower of Vagueness: Mastering the Word "SOME" (Basic English)
+video: 94d802mXmWs
 short: 4xcz1ICED9k
 short_title: The Secret 3-in-1 Power of the Word "SOME" 🍇👤📊 (Stop Overthinking English Numbers!)
 short_duration: PT1M10S

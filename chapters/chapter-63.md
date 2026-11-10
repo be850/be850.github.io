@@ -4,6 +4,10 @@ word: but
 title: But
 url: /but/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT5M13S
+video_title: The Master of Contrast: 3 Secrets of the Word "BUT" (Basic English)
+video: rCe7KpN-0v4
 published: 2026-11-08
 short: GauiJks1eP8
 short_title: The Secret Mathematical Subtraction Rule of the Word "BUT" ➕➖ (Stop Using It Wrong!)

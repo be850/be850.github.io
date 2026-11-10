@@ -4,6 +4,10 @@ word: all
 title: All
 url: /all/
 type: chapter
+video_date: 2026-01-27
+video_duration: PT4M43S
+video_title: The Word of Everything: Mastering the Power of "ALL" (Basic English)
+video: gmogRxJu5Jg
 short: g_vJm6I3aPI
 short_title: The 100% Math Rule Behind the English Word "ALL" 🌕 (Stop Making Simple Mistakes!)
 short_duration: PT1M05S

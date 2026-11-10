@@ -4,6 +4,10 @@ word: till
 title: Till
 url: /till/
 type: chapter
+video_date: 2026-01-27
+video_duration: PT3M50S
+video_title: The Time Anchor: Mastering the Power of "TILL" (Basic English)
+video: Mfh46q9wrBc
 short: snZFfVvez04
 short_title: The 3 Secret Lives of the Word "TILL" 🌾⏰💵 (Time, Farming & Cash Registers!)
 short_duration: PT1M01S

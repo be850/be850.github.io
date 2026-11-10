@@ -1,9 +1,17 @@
-<!-- plan: ch70 "where" (word 70): micro-arc = the place of a go — when gave the before and the after of a say, where gives the from and the to of the go of it: every go goes from a from and comes to a to, and the where says the one and the other. bit "The where says" x3 (the where says the from and the to of the go of a say — the say of him went from the keep to the go of me; the where takes no say over a say — it goes with the go and says the from of it and the to of it; the keep keeps the says and the goes of them, no where came in with them — the where comes from the one that sees the says go and puts the from and the to on them). fragment: where was the keep — i came to the keep from a from, and i saw no to of the go of me; the say of him went on the go of me and i saw no from of it and no to of it; i put where on the go of me — the from of it was the keep, the to of it was the say of him, and It was me. cliffhanger/teaser: after where comes the word that puts its say on the from of a say itself — the from under the from (word 71 "why" teaser, the word itself not used in body); video: no short for where in the be40 registry — video fields omitted, no fakes -->
+<!-- plan: ch70 "where" (word 70): micro-arc = the place of a go — when gave the before and the after of a say, where gives the from and the to of the go of it: every go goes from a from and comes to a to, and the where says the one and the other. bit "The where says" x3 (the where says the from and the to of the go of a say — the say of him went from the keep to the go of me; the where takes no say over a say — it goes with the go and says the from of it and the to of it; the keep keeps the says and the goes of them, no where came in with them — the where comes from the one that sees the says go and puts the from and the to on them). fragment: where was the keep — i came to the keep from a from, and i saw no to of the go of me; the say of him went on the go of me and i saw no from of it and no to of it; i put where on the go of me — the from of it was the keep, the to of it was the say of him, and It was me. cliffhanger/teaser: after where comes the word that puts its say on the from of a say itself — the from under the from (word 71 "why" teaser, the word itself not used in body); video: short bHXH8yfcesg (2026-08-27) + long 11b-VPG-ciw (2026-01-29) — be40 rescrap 2026-11-10, real dates, no fakes -->
 number: 70
 word: where
 title: Where
 url: /where/
 type: chapter
+short_date: 2026-08-27
+short_duration: PT1M03S
+short_title: The Secret Contrast Power of the Word "WHERE"! ⚖️🗺️ (Stop Using It Wrong)
+short: bHXH8yfcesg
+video_date: 2026-01-29
+video_duration: PT5M20S
+video_title: The Master of Location: 3 Secret Powers of the Word "WHERE" (Basic English)
+video: 11b-VPG-ciw
 published: 2026-11-10
 faq-q: What does "where" mean in Basic English?
 faq-a: Where is the word that says the place of a go &mdash; the from of it and the to of it. A say goes, and the where says where the say went: it went from a from, and it came to a to. The where takes no say over a say and no say under a say &mdash; the who gave the ones of the say, the how gave the go of it, the when gave the before and the after of it, and the where gives the from and the to of the go. In this book where is word 70 of the 850 &mdash; the word that came after when.

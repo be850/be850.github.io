@@ -3,6 +3,10 @@ word: across
 title: Across
 url: /across/
 type: chapter
+video_date: 2026-01-23
+video_duration: PT4M50S
+video_title: Movement, Location, Connection: The Secret Power of "ACROSS" (Basic English)
+video: p1B5zn7x32Y
 short: 6PDrCzZZneE
 short_title: The 3 Hidden Rules of the English Word "ACROSS" 🌉 (Stop Confusing Prepositions!)
 short_duration: PT1M06S

@@ -3,6 +3,10 @@ word: with
 title: With
 url: /with/
 type: chapter
+video_date: 2026-01-26
+video_duration: PT4M32S
+video_title: The Connection King: Why the Word "WITH" is Essential (Basic English)
+video: bc_4ZxKRXQE
 short: yWXSo0P4LL8
 short_title: The Secret Tool Rule of the English Word "WITH" 🔨 (Master Prepositions of Instrument!)
 short_duration: PT1M03S

@@ -4,6 +4,10 @@ word: while
 title: While
 url: /while/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT4M36S
+video_title: The Vocabulary Swiss Army Knife: 3 Secrets of the Word "WHILE" (Basic English)
+video: Kn1SlgoZF_k
 published: 2026-11-09
 short: mgCdg4Chcs4
 short_title: How the Word "WHILE" Locks Two Actions in Time! ⏳🔗 (The Ultimate Temporal Pin)

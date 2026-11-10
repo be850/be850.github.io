@@ -4,6 +4,10 @@ word: as
 title: As
 url: /as/
 type: chapter
+video_date: 2026-01-26
+video_duration: PT5M19S
+video_title: The Two-Letter Puzzle: Unlocking the Superpowers of "AS" (Basic English)
+video: PrYY34s2yCw
 short: J8qJ4ViNlXE
 short_title: The Secret Time Machine Rule: How the Word "AS" Works! ⏳ (Stop Confusing Then vs As)
 short_duration: PT1M12S

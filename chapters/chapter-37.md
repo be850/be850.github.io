@@ -3,6 +3,10 @@ word: up
 title: Up
 url: /up/
 type: chapter
+video_date: 2026-01-26
+video_duration: PT4M51S
+video_title: The Word of High Energy: Mastering the Power of "UP" (Basic English)
+video: BUwoqMZdwPI
 short: ZAbNx-r_-Hc
 short_title: How the Word "UP" Transforms into a Verb! 🎈 (Secret English Grammar Hack)
 short_duration: PT1M12S

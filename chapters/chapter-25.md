@@ -3,6 +3,10 @@ word: before
 title: Before
 url: /before/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT4M16S
+video_title: The Logic of Time and Place: Mastering the Word "BEFORE" (Basic English)
+video: jex6B6JwwJ4
 short: WPaOcqM2STE
 short_title: How the English Word "BEFORE" Structures Time! ⏳ (Master Timeline Grammar)
 short_duration: PT1M06S

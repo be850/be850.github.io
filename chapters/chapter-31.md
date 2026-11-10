@@ -3,6 +3,10 @@ word: off
 title: Off
 url: /off/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT5M37S
+video_title: The "Switch" Word: Unlocking the Hidden Power of "OFF" (Basic English)
+video: 2a3J3uPX_KA
 short: 4Bnp5flYHpE
 short_title: The 1 Hidden Rule Behind the English Word "OFF" 💡 (Dark Rooms, Spoiled Meat & Days Off!)
 short_duration: PT1M16S

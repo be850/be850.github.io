@@ -4,6 +4,10 @@ word: when
 title: When
 url: /when/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT4M35S
+video_title: The Master of Moments: Mastering the Word "WHEN" (Basic English)
+video: m-6U_2_KG8A
 published: 2026-11-10
 short: wweaciFamFU
 short_title: How the Word "WHEN" Controls Time in English! ⏰🔗 (The Secret Relative Clock)

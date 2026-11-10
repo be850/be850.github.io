@@ -4,6 +4,10 @@ word: that
 title: That
 url: /that/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M40S
+video_title: The Master of Disguise: Unlocking the Power of "THAT" (Basic English)
+video: TOLUsCvBqhs
 short: 8RJBJ6R4mMg
 short_title: The Invisible "Spatial Ruler" of the English Word "THAT" 📚📏 (Stop Pointing Mistakes!)
 short_duration: PT1M04S

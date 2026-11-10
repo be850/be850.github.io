@@ -3,6 +3,10 @@ word: say
 title: Say
 url: /say/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT4M30S
+video_title: The Secret Vocabulary Club: Why the Word "SAY" is a Powerhouse (Basic English)
+video: 7VRyRyEoMCU
 short: zw4C-NgP4ag
 short_title: How to Conjugate the English Verb "SAY" Correctly! 🗣️ (Say vs Says vs Said)
 short_duration: PT1M01S

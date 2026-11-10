@@ -4,6 +4,10 @@ word: and
 title: And
 url: /and/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT5M37S
+video_title: The Ultimate Connector: Why the Word "AND" is a Secret Superstar (Basic English)
+video: lQS3tHhX7_M
 short: -8_tBHYSV9I
 short_title: Stop Listing Verbs Like a Robot: The Hidden Power of "AND" in English! 🤖⌨️ (Story Flow Secrets)
 short_duration: PT1M12S

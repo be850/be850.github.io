@@ -4,6 +4,10 @@ word: who
 title: Who
 url: /who/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M59S
+video_title: The Bridge of People: Mastering the Word "WHO" (Basic English)
+video: nTgrAq9KwaQ
 short: ZL9wO8bZOQc
 short_title: Stop Sounding Robotic: How the Word "WHO" Connects English Sentences! 🌉👤 (Relative Pronouns)
 short_duration: PT1M05S

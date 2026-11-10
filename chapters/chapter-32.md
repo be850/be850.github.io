@@ -3,6 +3,10 @@ word: on
 title: On
 url: /on/
 type: chapter
+video_date: 2026-01-25
+video_duration: PT5M35S
+video_title: The Master Connector: Why You Need the Word "ON" (Basic English)
+video: p22RoyRbMMQ
 short: tHK5H4DV1-0
 short_title: The Hanging Apple Paradox: How the Word "ON" REALLY Works 🍎 (Stop Confusing Prepositions!)
 short_duration: PT1M02S

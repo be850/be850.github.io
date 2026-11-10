@@ -4,6 +4,10 @@ word: i
 title: I
 url: /i/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT4M22S
+video_title: The Smallest Powerhouse: Why the Word "I" is Essential (Basic English)
+video: a2PH2ViVkxU
 short: xQXHAWe9DEM
 short_title: The Secret 4-in-1 Power of the Letter "I" in English! 👁️👑🧪 (Grammar to Chemistry)
 short_duration: PT1M06S

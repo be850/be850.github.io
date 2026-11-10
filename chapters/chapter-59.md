@@ -4,6 +4,10 @@ word: you
 title: You
 url: /you/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT5M34S
+video_title: The Invisible Heavyweight: Why "YOU" is the Ultimate Power Word (Basic English)
+video: 0huvBSOaxuY
 short: rm3z2DmbHcI
 short_title: Why the Word "YOU" Breaks English Grammar! 🤯 (The Hidden "You Guys" Secret)
 short_duration: PT1M16S

@@ -3,6 +3,10 @@ word: see
 title: See
 url: /see/
 type: chapter
+video_date: 2026-01-22
+video_duration: PT6M20S
+video_title: The Tiny Word with a Global Secret: Why You Need "SEE" (Basic English)
+video: 2PxrJYaSH38
 short: GPZ43DXzko0
 short_title: Why the Pope’s Seat Is Called a "SEE" ⛪ (The Secret Meaning of "SEE")
 short_duration: PT1M00S

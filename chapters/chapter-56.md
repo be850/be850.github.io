@@ -4,6 +4,10 @@ word: this
 title: This
 url: /this/
 type: chapter
+video_date: 2026-01-28
+video_duration: PT5M15S
+video_title: The Storyteller's Secret: Why You Need "THIS" (Basic English)
+video: V2ZS7UYoUrQ
 short: sCflEtvI7ew
 short_title: The Invisible "Proximity Laser" of the English Word "THIS" 🪑📍 (Stop Pointing Confusion!)
 short_duration: PT1M08S

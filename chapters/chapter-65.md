@@ -4,6 +4,10 @@ word: if
 title: If
 url: /if/
 type: chapter
+video_date: 2026-01-29
+video_duration: PT5M04S
+video_title: The Vocabulary Swiss Army Knife: Mastering the Word "IF" (Basic English)
+video: b5r-efZ497E
 published: 2026-11-09
 short: avxhr5v7YxM
 short_title: How the Word "IF" Controls Reality! 🔀🧠 (The Logic That Built Coding)

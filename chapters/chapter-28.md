@@ -3,6 +3,10 @@ word: down
 title: Down
 url: /down/
 type: chapter
+video_date: 2026-01-24
+video_duration: PT4M50S
+video_title: More Than Just a Direction: The Secret Power of "DOWN" (Basic English)
+video: vXgjvLTRMsI
 short: LwtoJOm0Vc0
 short_title: The Hidden Physics of the English Word "DOWN" 📉 (Gravity Applied to Math!)
 short_duration: PT1M02S

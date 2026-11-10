@@ -3,6 +3,10 @@ word: after
 title: After
 url: /after/
 type: chapter
+video_date: 2026-01-23
+video_duration: PT5M55S
+video_title: The Sequence Secret: Why "AFTER" is a Two-for-One Deal (Basic English)
+video: US9fh46J4ZY
 short: W87F1NnRPR8
 short_title: How the English Word "AFTER" Works on a Timeline! ⏰ (Grammar Bridge Explained)
 short_duration: PT0M52S
