@@ -145,9 +145,13 @@ def audit(ch, cfg, A):
     # 4 word block
     A.check('word-of-today block', f'The word of today: {w}' in html_text)
     # 5 full embed
+    # 5 full embed (11.11: real lazy nocookie iframe is the PRIMARY player —
+    # GSC «Video isn't on a watch page» fix; facade must NOT be the full embed)
     vid = (meta.get('video') or '').strip()
     if vid:
-        A.check(f'full embed {vid}', f'/embed/{vid}' in html_text)
+        A.check(f'full embed {vid}', f'youtube-nocookie.com/embed/{vid}' in html_text)
+        A.check('full embed is real iframe', bool(re.search(
+            r'<iframe[^>]+youtube-nocookie\.com/embed/%s[^>]+>' % re.escape(vid), html_text)))
     # 6 short lesson (2026-11-08: mirror build_poc.py — the <details> toggle
     # renders ONLY for short+video pairs; short-only chapters get a plain
     # quick-lesson iframe (elif branch), so demanding <details> there was a
@@ -156,7 +160,10 @@ def audit(ch, cfg, A):
     if sid and vid:
         A.check(f'short toggle {sid}', '<details class="short-toggle">' in html_text)
         m = re.search(r'<details class="short-toggle">.*?</details>', html_text, re.DOTALL)
-        A.check('short inside details', bool(m and f'/embed/{sid}' in m.group(0)))
+        # 11.11: short embed renders as a click-facade div (data-vid), legacy
+        # builds may still carry a real iframe (/embed/) — accept both
+        A.check('short inside details', bool(m and (f'data-vid="{sid}"' in m.group(0)
+                                                     or f'/embed/{sid}' in m.group(0))))
     elif sid:
         A.check(f'short quick-lesson {sid}', f'/embed/{sid}' in html_text)
     # 7 VideoObjects

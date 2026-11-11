@@ -324,6 +324,7 @@ CSS = (f':root{{{_SEPIA_VARS};color-scheme:light}}'
  '.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--accent);cursor:pointer}'
  '.video-short{aspect-ratio:16/9;width:100%;margin:14px auto 0}'
  '.video-short.vertical{width:min(100%,270px);aspect-ratio:9/16}'
+ '.video iframe,.video-short iframe{display:block;width:100%;height:100%;border:0;border-radius:10px;background:#000}'
  '.yt-facade{position:relative;width:100%;height:100%;background:#000 center/cover no-repeat;border-radius:10px;cursor:pointer}'
  '.yt-facade:focus-visible{outline:3px solid var(--accent);outline-offset:2px}'
  '.yt-play{position:absolute;inset:0;margin:auto;width:66px;height:46px;border-radius:12px;background:rgba(23,18,30,.82);display:flex;align-items:center;justify-content:center}'
@@ -516,6 +517,18 @@ def iframe_html(vid, title):
             f'style="background-image:url(https://i.ytimg.com/vi/{vid}/hqdefault.jpg)">'
             f'<span class="yt-play" aria-hidden="true"></span></div>')
 
+def real_iframe(vid, title):
+    """Crawlable primary player (GSC fix 11.11, dm-ход kraser 'нужен фикс
+    везде'): the PRIMARY video of a page must be real HTML (<iframe>) in the
+    served DOM — a click-facade keeps the player out of Googlebot's reach and
+    the page fails the 'watch page' test (54 eli5 pages, Nov crawl). Real
+    lazy nocookie iframe, no autoplay; the click-to-load facade stays ONLY
+    for secondary embeds (quick lesson inside <details>)."""
+    t = html.escape(title, quote=True)
+    return (f'<iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{t}" loading="lazy" '
+            f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; '
+            f'picture-in-picture; web-share" allowfullscreen></iframe>')
+
 def video_block_for(w, m):
     """Dual video (2026-11-01, per kraser's 'дуально и шортс и полное'):
     full lesson 16:9 as the primary embed + the quick lesson in a collapsed
@@ -534,7 +547,7 @@ def video_block_for(w, m):
     out = ''
     if vid:
         out += ('<div class="video" style="margin:24px 0 8px;aspect-ratio:16/9;width:100%">'
-                + iframe_html(vid, f'{w} — Basic English lesson') + '</div>'
+                + real_iframe(vid, f'{w} — Basic English lesson') + '</div>'
                 f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
                 f'Watch the video lesson for the word <strong>{w}</strong> from the Basic English channel.</p>')
     st = (m.get('short_title') or '').strip() or f'{w} in 60 seconds'
@@ -542,7 +555,7 @@ def video_block_for(w, m):
         out += (f'<details class="short-toggle"><summary>In a hurry? Watch the quick lesson — {html.escape(st)}</summary>'
                 f'<div class="{vcls}">' + iframe_html(sid, f'{w} — quick lesson') + '</div></details>')
     elif sid:
-        out += (f'<div class="{vcls}">' + iframe_html(sid, f'{w} — quick lesson') + '</div>'
+        out += (f'<div class="{vcls}">' + real_iframe(sid, f'{w} — quick lesson') + '</div>'
                 f'<p class="note" style="font:14px/1.5 Arial,sans-serif;color:var(--muted)">'
                 f'The quick version: <strong>{w}</strong> in about a minute.</p>')
     # No video data -> no slot at all (rule: "данных нет — слоты пустые,
@@ -650,7 +663,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
           "name":vt, "description":f"Full Basic English video lesson for the word \"{w}\" (word {num} of 850): meaning, grammar patterns and spoken examples.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"],
           "uploadDate":iso_dt(vdate), "duration":vdur,
-          "embedUrl":f"https://www.youtube.com/embed/{vid}",
+          "embedUrl":f"https://www.youtube-nocookie.com/embed/{vid}",
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif vid and not vdate:
         WARNINGS.append(f'ch{num}: VideoObject skipped — need video_date from Studio (title/duration known: {vt!r} {vdur!r})')
@@ -666,7 +679,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
           "name":st, "description":f"Quick vertical video lesson for the word \"{w}\" (word {num} of 850): the key rule in about a minute.",
           "thumbnailUrl":[f"https://i.ytimg.com/vi/{sid}/hqdefault.jpg"],
           "uploadDate":iso_dt(sdate), "duration":sdur,
-          "embedUrl":f"https://www.youtube.com/embed/{sid}",
+          "embedUrl":f"https://www.youtube-nocookie.com/embed/{sid}",
           "publisher":{"@type":"Person","name":"BasicEnglish40"}})
     elif sid and not sdate:
         WARNINGS.append(f'ch{num}: quick-lesson VideoObject skipped — need short_date (title/duration known: {st!r} {sdur!r})')
@@ -687,6 +700,7 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
 <article>
 <div class="progress">Chapter {num} &middot; Word {num} of 850 &middot; {cat}</div>
 <h1>{m['title']}</h1>
+{video_block}
 <div class="story">{story_html}</div>
 
 {ad_a}
@@ -694,7 +708,6 @@ for num in sorted(n for n in CHAPTERS if CHAPTERS[n].get('type') == 'chapter'):
 <h2>The word of today: {w}</h2>
 <div class="card"><strong>{w}</strong> &mdash; {cat.replace('_',' ')}. {faq[0][1]}
 <br><br><strong>See it in the story:</strong> every sentence of Chapter {num} is built from words 1&ndash;{num}.
-{video_block}
 </div>
 
 <h2>FAQ</h2>
@@ -737,14 +750,14 @@ cover = page('Book850 — The Book That Teaches Itself',
      "description":"The whole Book850 method in one video: how 850 Basic English words cover almost everything you need to say.",
      "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_VIDEO['video']}/hqdefault.jpg"],
      "uploadDate":iso_dt(TITLE_VIDEO['video_date']), "duration":TITLE_VIDEO['video_duration'],
-     "embedUrl":f"https://www.youtube.com/embed/{TITLE_VIDEO['video']}",
+     "embedUrl":f"https://www.youtube-nocookie.com/embed/{TITLE_VIDEO['video']}",
      "publisher":{"@type":"Person","name":"BasicEnglish40"}})
  + ld({"@context":"https://schema.org","@type":"VideoObject",
      "name":TITLE_SHORT['short_title'],
      "description":"Quick vertical intro to Book850: fluent English from 850 words — the Word Builder secret in about a minute.",
      "thumbnailUrl":[f"https://i.ytimg.com/vi/{TITLE_SHORT['short']}/hqdefault.jpg"],
      "uploadDate":iso_dt(TITLE_SHORT['short_date']), "duration":TITLE_SHORT['short_duration'],
-     "embedUrl":f"https://www.youtube.com/embed/{TITLE_SHORT['short']}",
+     "embedUrl":f"https://www.youtube-nocookie.com/embed/{TITLE_SHORT['short']}",
      "publisher":{"@type":"Person","name":"BasicEnglish40"}}),
  f'''<article>
 <div class="progress">850 words &middot; 850 chapters &middot; one story</div>
@@ -753,10 +766,10 @@ cover = page('Book850 — The Book That Teaches Itself',
 chapter N gives you word N and uses only the words you already know.
 By the last page you own all 850 words of Basic English &mdash; and the hero remembers who he is.</p>
 <p><a href="{chap_path(0)}" style="font:700 18px Arial">Open Chapter 0 &rarr;</a> &nbsp; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">or jump straight into Chapter 1: Come</a></p>
+<div class="video" style="margin:16px 0 8px;aspect-ratio:16/9;width:100%">{real_iframe(TITLE_VIDEO['video'], 'Book850 — the method in 850 words')}</div>
+<details class="short-toggle"><summary>In a hurry? Watch the quick version &mdash; {html.escape(TITLE_SHORT['short_title'])}</summary><div class="video-short vertical">{iframe_html(TITLE_SHORT['short'], 'Book850 — quick intro')}</div></details>
 <h2>The idea, in six minutes</h2>
 <p>The whole method on one video: how 850 simple words cover almost everything you ever need to say &mdash; and how this book feeds them to you one chapter at a time. In a hurry? There is a quick vertical version too.</p>
-<div class="video" style="margin:16px 0 8px;aspect-ratio:16/9;width:100%">{iframe_html(TITLE_VIDEO['video'], 'Book850 — the method in 850 words')}</div>
-<details class="short-toggle"><summary>In a hurry? Watch the quick version &mdash; {html.escape(TITLE_SHORT['short_title'])}</summary><div class="video-short vertical">{iframe_html(TITLE_SHORT['short'], 'Book850 — quick intro')}</div></details>
 </article>''')
 open(os.path.join(SITE,'index.html'),'w',encoding='utf-8').write(cover)
 print('wrote root cover')
