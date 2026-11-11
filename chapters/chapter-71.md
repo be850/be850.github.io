@@ -4,6 +4,7 @@ word: why
 title: Why
 url: /why/
 type: chapter
+published: 2026-11-11
 short_date: 2026-08-27
 short_duration: PT1M10S
 short_title: How the Word "WHY" Becomes a Countable Noun! ❓📦 (The Grammar Secret of "The Whys")
