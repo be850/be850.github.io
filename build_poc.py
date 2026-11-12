@@ -43,6 +43,35 @@ _GA_SNIPPET = ('<!-- Google tag (gtag.js) — src loaded on idle, see _THIRD_PAR
                "  gtag('config', '__GA_ID__');\n"
                '</script>')
 GA_HEAD = (_GA_SNIPPET.replace('__GA_ID__', GA_ID)) if GA_ID else ''
+# Consent Mode v2 (2026-11-12, kraser 08:43Z «cookie-минимум как policies.google.com»;
+# BACKLOG #72 = зеркало eli5 62dba67): всё denied по умолчанию — никаких analytics/
+# ad-куков до явного согласия. Блок обязателен ПЕРЕД GA_HEAD/config в <head>.
+CONSENT_HEAD = ('<!-- Consent Mode v2: denied by default (cookie minimum) -->\n'
+                '<script>\n'
+                '  window.dataLayer = window.dataLayer || [];\n'
+                '  function gtag(){dataLayer.push(arguments);}\n'
+                "  gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied',"
+                " ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500});\n"
+                '</script>\n')
+# Минимальная cookie-пилюля (fixed bottom-left, одна строка, 2 кнопки,
+# localStorage 'ck' — тот же паттерн, что eli5_build_pages.py).
+_CK_CSS = ('#ck{position:fixed;left:10px;bottom:10px;z-index:9;background:var(--card);'
+           'border:1px solid var(--border);border-radius:999px;padding:.4rem .8rem;font-size:13px;'
+           'line-height:1.45;max-width:min(92vw,470px);box-shadow:0 2px 10px rgba(0,0,0,.12)}'
+           '#ck button{border:0;border-radius:999px;padding:.25rem .65rem;font:600 12px/1.3 inherit;'
+           'background:var(--accent);color:#fff;cursor:pointer;margin-left:.3rem}'
+           '#ck #ck-no{background:transparent;color:var(--accent);border:1px solid var(--border)}')
+_CK_HTML = ('<div id="ck" hidden role="region" aria-label="Cookie notice">Anonymous traffic analytics. '
+            '<button id="ck-ok" type="button">OK</button>'
+            '<button id="ck-no" type="button">Essential only</button></div>\n'
+            '<script>(function(){var b=document.getElementById("ck");'
+            'function save(v){try{localStorage.setItem("ck",v)}catch(e){}b.hidden=true}'
+            'var s=null;try{s=localStorage.getItem("ck")}catch(e){}'
+            'if(s==="ok"&&window.gtag){gtag("consent","update",{analytics_storage:"granted"})}'
+            'if(b){b.hidden=!!s;'
+            'document.getElementById("ck-ok").onclick=function(){save("ok");'
+            'if(window.gtag){gtag("consent","update",{analytics_storage:"granted"})}};'
+            'document.getElementById("ck-no").onclick=function(){save("no")}}})()</script>\n')
 # One loader for BOTH third-party srcs (BL#52): nothing network/main-thread
 # heavy before idle. requestIdleCallback with a 4s cap, setTimeout fallback.
 _TP_URLS = ([f'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}']
@@ -453,7 +482,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{GA_HEAD}
+{CONSENT_HEAD}{GA_HEAD}
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}">
@@ -474,7 +503,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <link rel="preconnect" href="https://i.ytimg.com">
 {ADS_HEAD}
 {_THIRD_PARTY_LOADER}
-<style>{CSS}</style>
+<style>{CSS}{_CK_CSS}</style>
 {jsonld}
 </head>
 <body>
@@ -486,6 +515,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 <p><a href="/words/">Start here</a> &middot; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">Chapter 1</a> &middot; The Basic English 850-word system</p>
 </footer>
 </main>
+{_CK_HTML}
 {extra}
 {_THEME_JS}
 {_YT_JS}
