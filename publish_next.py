@@ -133,6 +133,51 @@ def chapter_num(fname):
     return int(m.group(1)) if m else None
 
 
+def remote_name():
+    """Preferred git remote name ('github' after 10.11 rename, 'origin' on Actions)."""
+    r = subprocess.run(['git', 'remote'], cwd=BASE, capture_output=True, text=True)
+    names = (r.stdout or '').split()
+    for pref in ('github', 'origin'):
+        if pref in names:
+            return pref
+    return names[0] if names else None
+
+
+def replay_guard(nums):
+    """Idempotency for re-runs (2026-11-12, kraser 'оптимизируй чтобы не
+    повторялось'): a re-run/re-deploy of an OLD run checks out the old tree
+    where the wave is still queued, re-publishes it and dies on a rejected
+    push (non-fast-forward) — red runs + failed deployment cards with zero
+    site impact. Guard: if remote main already carries this wave (its
+    state.json last_chapter >= ours), discard the local replay, rebuild from
+    remote main and exit 0 so any re-run is a green no-op redeploy."""
+    if args is None or getattr(args, 'no_git', False):
+        return False
+    rem = remote_name()
+    if not rem:
+        return False
+    f = subprocess.run(['git', 'fetch', rem, 'main'], cwd=BASE,
+                       capture_output=True, text=True)
+    if f.returncode != 0:
+        print(f'replay guard: fetch {rem} failed (offline?) — continuing')
+        return False
+    rs = subprocess.run(['git', 'show', f'{rem}/main:state.json'], cwd=BASE,
+                        capture_output=True, text=True)
+    try:
+        rl = int(json.loads(rs.stdout or '{}').get('last_chapter') or 0)
+    except Exception:
+        rl = 0
+    if rl < max(nums):
+        return False
+    print(f'replay guard: remote main already has ch{rl} >= ch{max(nums)} '
+          f'— discarding local replay, rebuilding from {rem}/main (green no-op)')
+    subprocess.run(['git', 'reset', '--hard', f'{rem}/main'], cwd=BASE,
+                   capture_output=True, text=True)
+    subprocess.run([sys.executable, os.path.join(BASE, 'build_poc.py')],
+                   capture_output=True, text=True)
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--n', type=int, default=1, help='how many chapters to publish now')
@@ -140,7 +185,9 @@ def main():
     ap.add_argument('--no-ping', action='store_true', help='skip IndexNow ping')
     ap.add_argument('--force', action='store_true',
                     help='ignore min_hours_between_chapters pace gate')
+    global args
     args = ap.parse_args()
+    args.no_git = args.no_git or not os.path.isdir(os.path.join(BASE, '.git'))
 
     if not os.path.isdir(QUEUE):
         print('queue: no chapters/queue directory — nothing to publish')
@@ -162,6 +209,10 @@ def main():
     batch = files[:max(1, args.n)]
     nums = [chapter_num(f) for f in batch]
     print('publishing:', ', '.join(f'{f} (#{n})' for f, n in zip(batch, nums)))
+
+    # 0.5) replay guard: remote main already has this wave -> green no-op
+    if replay_guard(nums):
+        return 0
 
     # 1) move queue -> chapters (+ real publish-date stamp)
     moved = []

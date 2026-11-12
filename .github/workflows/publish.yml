@@ -13,7 +13,10 @@ name: publish
 
 on:
   schedule:
-    - cron: '15 * * * *'        # hourly at :15 (top-of-hour queues are congested)
+    - cron: '15,45 * * * *'     # twice hourly (2026-11-12): GitHub chronically
+      # drops scheduled runs (4 in a row on 09/10.11, 10 on 11/12.11) — the
+      # second slot is the retry; the pace gate in publish_next.py makes the
+      # extra runs harmless no-ops. Closes BACKLOG #68.
   workflow_dispatch:
     inputs:
       force:
