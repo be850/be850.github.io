@@ -143,6 +143,22 @@ def remote_name():
     return names[0] if names else None
 
 
+def remote_state_chapter():
+    """last_chapter from remote main's state.json (None on any failure).
+    Shared by the replay guard and the race recovery (single fetch+show)."""
+    rem = remote_name()
+    if not rem:
+        return None
+    subprocess.run(['git', 'fetch', rem, 'main'], cwd=BASE,
+                   capture_output=True, text=True)
+    rs = subprocess.run(['git', 'show', f'{rem}/main:state.json'], cwd=BASE,
+                        capture_output=True, text=True)
+    try:
+        return int(json.loads(rs.stdout or '{}').get('last_chapter') or 0)
+    except Exception:
+        return None
+
+
 def replay_guard(nums):
     """Idempotency for re-runs (2026-11-12, kraser 'оптимизируй чтобы не
     повторялось'): a re-run/re-deploy of an OLD run checks out the old tree
@@ -156,17 +172,10 @@ def replay_guard(nums):
     rem = remote_name()
     if not rem:
         return False
-    f = subprocess.run(['git', 'fetch', rem, 'main'], cwd=BASE,
-                       capture_output=True, text=True)
-    if f.returncode != 0:
+    rl = remote_state_chapter()
+    if rl is None:
         print(f'replay guard: fetch {rem} failed (offline?) — continuing')
         return False
-    rs = subprocess.run(['git', 'show', f'{rem}/main:state.json'], cwd=BASE,
-                        capture_output=True, text=True)
-    try:
-        rl = int(json.loads(rs.stdout or '{}').get('last_chapter') or 0)
-    except Exception:
-        rl = 0
     if rl < max(nums):
         return False
     print(f'replay guard: remote main already has ch{rl} >= ch{max(nums)} '
@@ -236,7 +245,13 @@ def main():
     # 2.5) green build -> stamp the wave (drives the pace gate on next runs)
     write_state(nums)
 
-    # 3) commit & push
+    # 3) commit & push (race-safe, 2026-11-14): red run #251 was two push
+    #    events 9s apart (5753339 -> 0aecb6b) executed out of order — the stale
+    #    run's replay-guard fetch predated the fresh run's push, so the guard
+    #    missed and the stale push died non-fast-forward (exit 1, red card,
+    #    zero site impact). Recovery: on any push failure re-check the remote
+    #    wave; already there -> discard replay (green no-op); remote merely
+    #    ahead -> rebase onto remote main and retry the push once.
     if args.no_git or not os.path.isdir(os.path.join(BASE, '.git')):
         print('git: skipped (no repo or --no-git)')
     else:
@@ -245,15 +260,46 @@ def main():
             mm = re.search(r'^word:\s*(\S+)', open(dst, encoding='utf-8').read(), re.M)
             words.append(mm.group(1) if mm else '?')
         msg = 'publish: ' + ', '.join(f'ch{n} ({w})' for n, w in zip(nums, words)) + ' [skip ci]'
-        for cmd in (['git', 'add', '-A', 'chapters', 'state.json'],
-                    ['git', 'commit', '-m', msg],
-                    ['git', 'push']):
-            g = subprocess.run(cmd, cwd=BASE, capture_output=True, text=True)
-            print('$', ' '.join(cmd))
-            if (g.stdout or '').strip(): print(g.stdout.strip())
-            if (g.stderr or '').strip(): print(g.stderr.strip())
-            if g.returncode != 0:
-                print('git step failed — chapter files stay published locally, push again later')
+
+        def try_commit_push():
+            for cmd in (['git', 'add', '-A', 'chapters', 'state.json'],
+                        ['git', 'commit', '-m', msg],
+                        ['git', 'push']):
+                g = subprocess.run(cmd, cwd=BASE, capture_output=True, text=True)
+                print('$', ' '.join(cmd))
+                if (g.stdout or '').strip(): print(g.stdout.strip())
+                if (g.stderr or '').strip(): print(g.stderr.strip())
+                if g.returncode != 0:
+                    out = (g.stdout or '') + (g.stderr or '')
+                    if cmd[1] == 'commit' and ('nothing to commit' in out
+                                               or 'nothing added to commit' in out
+                                               or 'no changes added to commit' in out):
+                        continue  # wave commit already in place (e.g. after rebase)
+                    return cmd[1], g
+            return None, None
+
+        failed, g = try_commit_push()
+        if failed:
+            rl = remote_state_chapter()
+            if rl is not None and rl >= max(nums):
+                print(f'race recovery: remote main already has ch{rl} >= ch{max(nums)} '
+                      f'— discarding local replay (green no-op)')
+                subprocess.run(['git', 'reset', '--hard', f'{remote_name()}/main'],
+                               cwd=BASE, capture_output=True, text=True)
+                subprocess.run([sys.executable, os.path.join(BASE, 'build_poc.py')],
+                               capture_output=True, text=True)
+                return 0
+            if failed == 'push':
+                print('push rejected and remote lacks the wave — rebasing onto remote main, one retry')
+                r1 = subprocess.run(['git', 'pull', '--rebase', remote_name(), 'main'],
+                                    cwd=BASE, capture_output=True, text=True)
+                print((r1.stdout or '') + (r1.stderr or ''))
+                f2, _ = try_commit_push() if r1.returncode == 0 else ('pull', None)
+                if f2:
+                    print('git push failed after recovery — chapter files stay published locally, push again later')
+                    return 1
+            else:
+                print(f'git step failed ({failed}) — chapter files stay published locally, push again later')
                 return 1
     if not args.no_ping:
         indexnow_ping(nums)

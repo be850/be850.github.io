@@ -43,6 +43,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        id: co
+        continue-on-error: true      # transient runner flake: red #251 class
+      - name: checkout retry (once, on transient failure)
+        if: steps.co.outcome == 'failure'
+        uses: actions/checkout@v4
 
       - name: Machine identity (for state commits)
         run: |
