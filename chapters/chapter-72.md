@@ -4,7 +4,7 @@ word: again
 title: Again
 url: /again/
 type: chapter
-published:
+published: 2026-11-14
 short_date: 2026-08-27
 short_duration: PT1M1S
 short_title: The Looping Secret of the Word "AGAIN"! 🔄🗣️ (How to Repeat Time in English)
