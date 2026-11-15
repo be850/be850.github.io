@@ -4,7 +4,7 @@ word: far
 title: Far
 url: /far/
 type: chapter
-published:
+published: 2026-11-15
 short_date: 2026-08-27
 short_duration: PT1M4S
 short_title: The Secret Dual Nature of the Word "FAR"! 📏🎛️ (Physical Ruler vs. Intensity Dial)
