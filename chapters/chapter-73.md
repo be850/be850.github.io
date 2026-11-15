@@ -4,7 +4,7 @@ word: ever
 title: Ever
 url: /ever/
 type: chapter
-published:
+published: 2026-11-15
 short_date: 2026-08-27
 short_duration: PT1M13S
 short_title: Why "EVER" Breaks Your English Sentences! 🛑⚠️ (The Hidden Grammar Trap)
