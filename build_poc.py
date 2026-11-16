@@ -512,7 +512,7 @@ def page(title, desc, canonical, crumbs, jsonld, content, extra=''):
 {content}
 <footer>
 <p>Book850 &mdash; a novel that teaches itself English, one word per chapter, 850 words total.</p>
-<p><a href="/words/">Start here</a> &middot; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">Chapter 1</a> &middot; The Basic English 850-word system</p>
+<p><a href="/words/">Start here</a> &middot; <a href="{chap_path(1) if 1 in CHAPTERS else '/words/'}">Chapter 1</a> &middot; <a href="https://www.sok.lv/">sok.lv</a> &middot; <a href="https://www.sok.lv/privacy/">Privacy</a></p>
 </footer>
 </main>
 {_CK_HTML}
