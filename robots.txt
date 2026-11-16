@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://be850.sok.lv/sitemap.xml
