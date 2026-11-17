@@ -4,7 +4,7 @@ word: forward
 title: Forward
 url: /forward/
 type: chapter
-published:
+published: 2026-11-17
 short_date:
 short_duration: PT0M52S
 short_title: Why the Word "FORWARD" Has 4 Totally Different Meanings! ➡️🚀 (Mastering Basic English)
