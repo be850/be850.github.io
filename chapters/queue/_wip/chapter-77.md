@@ -13,6 +13,16 @@ video_date:
 video_duration: PT4M12S
 video_title: The Shape-Shifter: Why the Word "NEAR" is a Linguistic VIP (Basic English)
 video: pXIhwKMg7NY
+faq-q: What does "near" mean in Basic English?
+faq-a: Near is the word for the little of the far. A go goes from a from to a to; the far says the much of the from; the near says how little of the from stands between the here of me and the thing i see. In this book near is 77 of the 850 &mdash; the word that came after here.
+faq-q: How does "near" work with the other words?
+faq-a: With far: the far says the much of the from, and the near says the little of it &mdash; two says of one from. With here: the near of every say takes the here of the one that sees it for the from of it &mdash; no here, and no near. With forward: the forward puts the go of every go on, to the to of it, and the near of it comes up with every go of me.
+faq-q: What is the difference between "near" and "far"?
+faq-a: The far asks about the much of the from; the near says the little of it. "The keep is far" says the from of it is much; "The keep is near" says the from of it is little at the here of me. One word gives the much of the from, the other gives its little &mdash; and the near of a thing may change with a go of me while the far of it stays with the from of it.
+faq-q: What word comes after "near"?
+faq-a: The next of the 850 is "now" &mdash; 78 of them. Near says the little of the far &mdash; how little of the from stands between the here of me and the thing i see. Now will say the bit of the when the one that speaks is in: the when put the before and the after on every go, and now is the bit of the go that is on. Near gave the far its little; now will give the says their when.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far &mdash; the fragments form a hidden story under the main one. In this chapter the hero sees that the near of every say came with the go of him &mdash; the keep went no where, and the near of it went with him &mdash; and the one that gives the near of every seeing: It was me.
 
 The near says: the far said the much of the from, and the near says the little of it — the go that is little from the here of me. No say is near of the say: the near of every say is the near to the one that sees it, and it takes the here of that one for the from of it — no here, and no near. The far keeps with the from and the to of the go; the near keeps with the one that sees: i may see two goes in one where, and the near of the one of them will be little to me, and the near of the other of them will be much to him — the where of the two is one where, and the near of them is two says.
 
