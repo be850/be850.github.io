@@ -4,7 +4,7 @@ word: here
 title: Here
 url: /here/
 type: chapter
-published:
+published: 2026-11-18
 short_date:
 short_duration: PT1M15S
 short_title: How the Word "HERE" Changes Space and Reality! 📍🗺️ (The Secret Zero-Point of English)
