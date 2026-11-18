@@ -13,6 +13,16 @@ video_date:
 video_duration: PT5M40S
 video_title: The Cornerstone of Location: Why the Word "HERE" is Essential (Basic English)
 video: 8M32Y907FXc
+faq-q: What does "here" mean in Basic English?
+faq-a: Here is the word for the place of the one that speaks. A go goes from a from to a to; the where gives the from and the to of the go; the here is the from of the seeing &mdash; the place every say comes from. In this book here is 76 of the 850 &mdash; the word that came after forward.
+faq-q: How does "here" work with the other words?
+faq-a: With where: the where gives the from and the to of a go, and the here gives the place of the one that sees the go. With from: every say goes from a from, and the here of me is the from of the say of me. With forward: the forward puts the go of it on, to the to of it, and the here of it keeps with the one that says.
+faq-q: What is the difference between "here" and "where"?
+faq-a: The where asks about the place of a thing or a go; the here says the place of the one that speaks. "Where is the keep?" asks for a place; "The keep is here" puts the place at me. One word asks for a place, the other word gives the place of the asking itself.
+faq-q: What word comes after "here"?
+faq-a: The next of the 850 is "near" &mdash; 77 of them. Here is the place of the one that speaks; near will say the little of the far &mdash; how little of the from stands between the here of me and the thing i see. Here gave the says their place; near will give the far its little.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far &mdash; the fragments form a hidden story under the main one. In this chapter the hero sees that the here of him came with the go of him &mdash; every from and every to of the keep is seen from the here of him &mdash; and the one that is the here of every seeing: It was me.
 
 The here says: the where gave the from and the to of every go, the when put the before and the after on the go, the far said the much of the from, and the forward put the go of every go on, to the to of it — and the here of them all is the from of every say: every from and every to of them is seen from the here of the one that sees them. The here is no from and no to of the go; the here is the from of the seeing — the say of me goes from the here of me as the go of me goes from the from of it, and every where of the say takes the here of me for the from of it.
 
