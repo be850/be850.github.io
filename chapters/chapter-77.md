@@ -4,7 +4,7 @@ word: near
 title: Near
 url: /near/
 type: chapter
-published:
+published: 2026-11-19
 short_date:
 short_duration: PT1M2S
 short_title: Why the Word "NEAR" Is a Total Shape-Shifter! 🚢✨ (Mastering English Grammar)
