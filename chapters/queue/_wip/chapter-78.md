@@ -13,6 +13,16 @@ video_date:
 video_duration: PT4M32S
 video_title: The 4 Faces of "NOW": Why Simple Words are a Superpower (Basic English)
 video: Kxa5Yf-90W0
+faq-q: What does "now" mean in Basic English?
+faq-a: Now is the word for the bit of the when the go is on. A go goes from a from to a to; the when keeps the before and the after of it; the now is the say of the go that is on, between the before and the after. In this book now is 78 of the 850 &mdash; the word that came after near.
+faq-q: How does "now" work with the other words?
+faq-a: With when: the when keeps the before and the after of every go, and the now says the go that is on between them. With here: the here gave the from of the seeing, and the now gives the when of it &mdash; the seeing of me is here, and the go of me is now. With near: the near of every say is other at every go of me, and every go of me is on in the now of it.
+faq-q: What is the difference between "now" and "when"?
+faq-a: The when asks about the before and the after of every go; the now says the go that is on. "When did the go come?" asks for the before and the after of it; "The go is on now" says the go is on in the now of it. One word gives the go its before and its after; the other gives the say of the go that is on &mdash; and no go is on at two says of the when.
+faq-q: What word comes after "now"?
+faq-a: The next of the 850 is "out" &mdash; 79 of them. Now says the go that is on, between the before and the after. Out will say the from of the go that goes from the in of a keep to the no-in of it. Now gave the says the go that is on; out will give the go the from of its going.
+faq-q: Why is part of the chapter in italics?
+faq-a: Italics are memory. The hero recovers his past one fragment per chapter, told only with the words the book has given him so far &mdash; the fragments form a hidden story under the main one. In this chapter the hero puts a say on a go of the keep, and the now of the go comes with the say of him &mdash; and the one that had every now of the keep under the say of him: It was me.
 
 The now says: the when gave the before and the after to every go. The before of a go is the go that went; the after of it is the go that is to come; and between the two the when put the now — the now is the say of the go that is on. No go is on at two says of the when: the go came up, and the now of it came up with it; the go went, and the now of it went with it. And no now of a go came again after the go of it, for a go that comes again is other than the go that went, and the now of it goes with the go that is on. The now keeps no keep: the keep keeps the says of it, the where keeps the from and the to of every go, the when keeps the before and the after — and the now keeps the go that is on, and it lets the go go.
 
