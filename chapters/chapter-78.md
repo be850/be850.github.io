@@ -4,7 +4,7 @@ word: now
 title: Now
 url: /now/
 type: chapter
-published:
+published: 2026-11-20
 short_date:
 short_duration: PT1M8S
 short_title: How the Word "NOW" Triggers Human Behavior! ⏱️🧠 (The Secret Causal Bridge)
