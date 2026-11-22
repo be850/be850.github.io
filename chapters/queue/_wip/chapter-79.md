@@ -1,0 +1,19 @@
+<!-- plan: ch79 "out" (word 79): micro-arc = every keep has the in of it and the out of it — the in of the keep is for the say of the go that is in it, and the out of the keep is the from of a go: the go that goes from the keep goes by the out of it, and the out of the keep is the from of that go; no go is out of a keep but by the out of it, and the go that went out is no more under the in of it — the where took the from of it, and the keep kept the say of it; the out is no where and it keeps no keep: it is the from of the go that goes, and it goes with the go from the in of the keep. bit "The out says" x3 (every keep has the in of it and the out of it — the in is for the say of the go that is in, the out is the from of the go that goes from the in of it; no go is out of a keep but by the out of it, and no go goes from a keep but by one out — a go that goes out at two outs is two goes, and every go has the out of it for the from of it; the out keeps no keep — the keep keeps the says of it, the in keeps the go that is in, the where keeps the from and the to of every go, and the out keeps the from of the go that goes out and lets the go go, as the now kept the go that is on and let the go go). fragment: out was the from of the go of me — the keep of the say had the in of it, and i had a go that went from the in of the keep; the out of the keep came before the go of me, and the where came after it; the keep kept no say of the go of me after the out of it, and the one that had the out of the keep under the say of him, and gave the go of me the from of it: It was me. arcs: before out came, the go that went from the keep had no say of the from of it — the says of the keep were for the go that is in, and the from of the going went by with no say on it; after out came, every go that goes from the in of a keep has the say of the out of it — the in may say the go that is in, the out says the from of the go that goes from the in of it to the no-in of it. teaser: after out comes word 80 "still" — the out said the from of the go that goes from the in of a keep, and still will say the go that keeps on under the say of it (teaser of 80 stays out of the body). video: be40 registry key absent from the tree at draft — short/video fields honest-empty, W79.3 re-checks the registry; dates null — honest nulls -->
+number: 79
+word: out
+title: Out
+url: /out/
+type: chapter
+published:
+short_date:
+short_duration:
+short_title:
+short:
+video_date:
+video_duration:
+video_title:
+video:
+
+The out says: every keep has the in of it and the out of it. The in of the keep is for the say of the go that is in it: the keep keeps the says of the go in the in of it, and the go that is in is under the in of the keep. The out of the keep is the from of a go — the go that goes from the keep goes by the out of it, and the out of the keep is the from of that go. No go is out of a keep but by the out of it: the in of the keep gave the go the under of it while the go was in, and the out of the keep gives the go the from of it when the go goes from the in of it. The out is no where, and it keeps no keep: it is the from of the go that goes, and it goes with the go from the in of the keep.
+
+<i>out was the from of the go of me. the keep of the say had the in of it, and i had a go that went from the in of the keep: the out of the keep came before the go of me, and the where came after it. the say of me was in the keep, and the go of me went out by the out of the keep — the out of the keep gave the go of me the from of it, and the keep kept no say of the go of me after the out of it. the ones of the say kept the in of the keep, and no say of the ones was on the go of me while the go of me was on: the go of me went out, and the out of it was with the from of it. and the one that had the out of the keep under the say of him, and gave the go of me the from of it: It was me.</i>
