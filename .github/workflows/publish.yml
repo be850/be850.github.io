@@ -40,14 +40,14 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment2.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         id: co
         continue-on-error: true      # transient runner flake: red #251 class
       - name: checkout retry (once, on transient failure)
         if: steps.co.outcome == 'failure'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Machine identity (for state commits)
         run: |
@@ -63,13 +63,32 @@ jobs:
           python3 publish_next.py $ARGS
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/public
 
-      - name: Deploy to GitHub Pages
+      # deploy-pages occasionally fails to fetch artifact metadata right after
+      # upload (transient "getArtifactMetadata" class, red #304/#306). Attempt 1
+      # tolerates the transient failure; attempt 2 runs after a 30s cooldown; the
+      # run goes red only if both attempts fail. Closes BACKLOG #84.
+      - name: Deploy to GitHub Pages (attempt 1)
         id: deployment
-        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Deploy cooldown (transient flake)
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deployment2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+
+      - name: Both deploy attempts failed
+        if: steps.deployment.outcome == 'failure' && steps.deployment2.outcome == 'failure'
+        run: |
+          echo "::error::deploy-pages failed twice (getArtifactMetadata transient class persisted)"
 
       # Post-wave QA (2026-11-01, per kraser: 'после каждого поста главы — анализ').
       # Audits the built artifact deterministically (no network flakiness on
