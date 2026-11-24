@@ -4,7 +4,7 @@ word: out
 title: Out
 url: /out/
 type: chapter
-published:
+published: 2026-11-24
 short_date:
 short_duration:
 short_title:
